@@ -5,4 +5,16 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    i {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.2em;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    .bi-play-circle{
+        font-size: 2.1em;
+    }
 }
+

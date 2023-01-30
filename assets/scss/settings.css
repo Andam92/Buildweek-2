@@ -202,4 +202,15 @@ header section {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+.sectionPlayBar i {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.sectionPlayBar:hover {
+  cursor: pointer;
+}
+.sectionPlayBar .bi-play-circle {
+  font-size: 2.1em;
 }/*# sourceMappingURL=settings.css.map */
