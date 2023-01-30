@@ -1,0 +1,68 @@
+// ARTIST SECTION
+
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  .artistContainer {
+    background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
+    height: 400px;
+    .verifiedArtist {
+      @include fontStyle($fontFamily, 0.8rem, white);
+      margin: 0;
+    }
+    .songTitle {
+      @include fontStyle($fontFamily, 5rem, white);
+      font-weight: 700;
+    }
+    .monthlyViewers {
+      @include fontStyle($fontFamily, 1rem, white);
+    }
+  }
+}
+
+// FOLLOWING SECTION
+
+main {
+  .following {
+    background-color: $spotifyBlack;
+    button {
+      @include button($mainGreen);
+      border-radius: 50%;
+      margin-right: 2rem;
+      border: none;
+    }
+    .followBtn {
+      height: 2rem;
+      margin: 0;
+      margin-right: 2rem;
+      padding: 0 1rem;
+      padding-top: 3px;
+      border: 1px solid white;
+      border-radius: 8px;
+      @include fontStyle($fontFamily, 1rem, white);
+    }
+    p:last-child {
+      @include fontStyle($fontFamily, 2rem, grey);
+      margin: 0;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+// SONGS SECTION
+
+main {
+  .songsSection {
+    background: linear-gradient(
+      180deg,
+      rgba(50, 50, 50, 1) 0%,
+      rgba(25, 20, 20, 1) 39%
+    );
+    color: white;
+    h4 {
+      @include fontStyle($fontFamily, 1.3rem, white);
+      font-weight: 700;
+    }
+  }
+}
