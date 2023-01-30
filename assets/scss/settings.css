@@ -5,4 +5,60 @@
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: black;
+}
+
+main {
+  background-color: #191414;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main .artistContainer {
+  background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
+  height: 400px;
+}
+main .artistContainer .verifiedArtist {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  margin: 0;
+}
+main .artistContainer .songTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+}
+main .artistContainer .monthlyViewers {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+main .following button {
+  background-color: #1db954;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: none;
+}
+main .following .followBtn {
+  height: 2rem;
+  margin: 0;
+  margin-right: 2rem;
+  padding: 0 1rem;
+  padding-top: 3px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+main .following p:last-child {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: grey;
+  margin: 0;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=settings.css.map */
