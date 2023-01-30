@@ -1,7 +1,6 @@
 // ARTIST SECTION
 
 main {
-  background-color: $spotifyBlack;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,6 +25,7 @@ main {
 
 main {
   .following {
+    background-color: $spotifyBlack;
     button {
       @include button($mainGreen);
       border-radius: 50%;
@@ -46,6 +46,23 @@ main {
       @include fontStyle($fontFamily, 2rem, grey);
       margin: 0;
       padding-bottom: 10px;
+    }
+  }
+}
+
+// SONGS SECTION
+
+main {
+  .songsSection {
+    background: linear-gradient(
+      180deg,
+      rgba(50, 50, 50, 1) 0%,
+      rgba(25, 20, 20, 1) 39%
+    );
+    color: white;
+    h4 {
+      @include fontStyle($fontFamily, 1.3rem, white);
+      font-weight: 700;
     }
   }
 }

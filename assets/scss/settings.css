@@ -8,7 +8,6 @@
 }
 
 main {
-  background-color: #191414;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,6 +34,9 @@ main .artistContainer .monthlyViewers {
   color: white;
 }
 
+main .following {
+  background-color: #191414;
+}
 main .following button {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
@@ -61,4 +63,15 @@ main .following p:last-child {
   color: grey;
   margin: 0;
   padding-bottom: 10px;
+}
+
+main .songsSection {
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
+  color: white;
+}
+main .songsSection h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
 }/*# sourceMappingURL=settings.css.map */
