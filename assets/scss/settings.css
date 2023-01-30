@@ -11,7 +11,11 @@ main {
   margin: 0 auto;
   padding: 0 1.5em;
   background: rgb(25, 20, 20);
-  background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(25, 20, 20) 25%,
+    rgb(231, 200, 88) 100%
+  );
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -23,4 +27,73 @@ main #profile {
 main #description p,
 main #profile p {
   font-size: x-small;
-}/*# sourceMappingURL=settings.css.map */
+}
+
+.mainBody {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainBody .artistContainer {
+  background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
+  height: 400px;
+}
+.mainBody .artistContainer .verifiedArtist {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  margin: 0;
+}
+.mainBody .artistContainer .songTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+}
+.mainBody .artistContainer .monthlyViewers {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.mainBody .following {
+  background-color: #191414;
+}
+.mainBody .following button {
+  background-color: #1db954;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  border-radius: 50%;
+  margin-right: 2rem;
+  border: none;
+}
+.mainBody .following .followBtn {
+  height: 2rem;
+  margin: 0;
+  margin-right: 2rem;
+  padding: 0 1rem;
+  padding-top: 3px;
+  border: 1px solid white;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+.mainBody .following p:last-child {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: grey;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.mainBody .songsSection {
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
+  color: white;
+}
+.mainBody .songsSection h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+} /*# sourceMappingURL=settings.css.map */
