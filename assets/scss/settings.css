@@ -30,22 +30,34 @@ header section {
   font-size: 0.7em;
 }
 
-main {
+.albumSection {
   margin: 0 auto;
-  padding: 0 1.5em;
   background: rgb(25, 20, 20);
   background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
-main #profile {
+.albumSection #profile {
   background-color: #191414;
   border-radius: 20px;
   padding: 0 4px;
 }
-main #description p,
-main #profile p {
+.albumSection #description p,
+.albumSection #profile p {
   font-size: x-small;
+}
+.albumSection .section2 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.albumSection .section2 button {
+  background-color: #1db954;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+}
+.albumSection .section2 button i {
+  font-size: large;
 }
 
 main {
@@ -115,4 +127,28 @@ main .songsSection h4 {
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
+}
+
+.recentActivity {
+  background-color: #191414;
+  color: white;
+  padding: 1% 0.5% 1% 1.5%;
+}
+
+.recentActivityCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin: 2% 0;
+}
+.recentActivityCard p {
+  margin: 0;
+}
+.recentActivityCard h6 {
+  font-size: 0.3em;
+}
+
+.recentActivityCardText {
+  font-size: 0.3em;
 }/*# sourceMappingURL=settings.css.map */
