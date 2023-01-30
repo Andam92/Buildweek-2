@@ -29,43 +29,75 @@
       <!--INIZIO NAV-->
       <section class="navBarMenu">
         <div>
-          <p><span><i class="bi bi-three-dots"></i></span></p>
-          <p><span><i class="bi bi-house-door"></i></span> Home </p>
-          <p><span><i class="bi bi-search"></i></span> Cerca </p>
-          <p><span><i class="bi bi-collection"></i></span>La tua libreria</p>
+          <<<<<<< HEAD
+          <p>
+            <span><i class="bi bi-three-dots"></i></span>
+          </p>
+          <p>
+            <span><i class="bi bi-house-door"></i></span> Home
+          </p>
+          <p>
+            <span><i class="bi bi-search"></i></span> Cerca
+          </p>
+          <p>
+            <span><i class="bi bi-collection"></i></span>La tua libreria
+          </p>
+          =======
+          <p>
+            <span><i class="bi bi-three-dots"></i></span>
+          </p>
+          <p>
+            <span><i class="bi bi-house-door"></i></span> Home
+          </p>
+          <p>
+            <span><i class="bi bi-search"></i></span> Cerca
+          </p>
+          <p>
+            <span><i class="bi bi-collection"></i></span>La tua libreria
+          </p>
+          >>>>>>> feature/artistPage
         </div>
         <div>
-          <p><span><i class="bi bi-plus-square-fill"></i></span>Crea playlist</p>
-          <p><span><i class="bi bi-heart-fill"></i></span>Brani che ti piacciono </p>
-          <p><span><i class="bi bi-bookmarks"></i></span>I tuoi episodi</p>
+          <p>
+            <span><i class="bi bi-plus-square-fill"></i></span>Crea playlist
+          </p>
+          <p>
+            <span><i class="bi bi-heart-fill"></i></span>Brani che ti piacciono
+          </p>
+          <p>
+            <span><i class="bi bi-bookmarks"></i></span>I tuoi episodi
+          </p>
         </div>
-        </section>
-        <section class="navBarPlaylist d-none d-md-block">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
+      </section>
+      <section class="navBarPlaylist d-none d-md-block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </section>
     </header>
     <!--FINE HEADER-->
 
     <!-- INIZIO MAIN-->
-    <main class="col-12 col-md-7">
+    <main class="col-12 col-md-7 mainBody">
       <!--INIZIO ARTIST SECTION -->
       <section
         class="d-flex flex-column justify-content-end artistContainer p-4"
       >
-        <p class="verifiedArtist">(icona) Artista verificato</p>
+        <p class="verifiedArtist">
+          <i class="bi bi-patch-check-fill text-primary fs-5"></i> Artista
+          verificato
+        </p>
         <h1 class="songTitle">Titolo</h1>
         <p class="monthlyViewers">nb_fan ascoltatori mensili</p>
       </section>
@@ -73,7 +105,7 @@
 
       <!-- INIZIO FOLLOWING SECTION-->
       <section class="d-flex align-items-center p-4 following">
-        <button>pl</button>
+        <button><i class="bi bi-play-fill fs-2"></i></button>
         <p class="followBtn">Following</p>
         <p>...</p>
       </section>
@@ -126,16 +158,22 @@
             </div>
           </div>
         </section>
-        <div class="col-5">
+        <section class="col-5 likedSection">
           <h4>Brani che ti piacciono</h4>
-          <div class="d-flex">
-            <div>img</div>
+          <div class="d-flex align-items-center">
             <div>
+              <img
+                class="likedImg"
+                src="https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/120x120-000000-80-0-0.jpg"
+                alt=""
+              />
+            </div>
+            <div class="likedSong">
               <p>Hai messo mi piace a x brani</p>
-              <p>di Yellowcard</p>
+              <p class="likedArtist">di Yellowcard</p>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
     <aside class="d-none d-md-block col-md-2 recentActivity">
@@ -147,36 +185,41 @@
             <i class="bi bi-person-add"></i>
             <i class="bi bi-x-lg"></i>
           </div>
-        </div>        
+        </div>
       </section>
-        <div class="recentActivityCard">
-          <p><i class="bi bi-person-circle"></i></p>
-          <div class="recentActivityCardText">
-            <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
-            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
-          </div>
-          <h6>15 ore fa</h6>
+      <div class="recentActivityCard">
+        <p><i class="bi bi-person-circle"></i></p>
+        <div class="recentActivityCardText">
+          <p>Nome Utente</p>
+          <p>Titolo Canzone<span>- Artista</span></p>
+          <p>
+            <span><i class="bi bi-music-note-beamed"></i></span> Titolo Album
+          </p>
         </div>
-        <div class="recentActivityCard">
-          <p><i class="bi bi-person-circle"></i></p>
-          <div class="recentActivityCardText">
-            <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
-            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
-          </div>
-          <h6>15 ore fa</h6>
+        <h6>15 ore fa</h6>
+      </div>
+      <div class="recentActivityCard">
+        <p><i class="bi bi-person-circle"></i></p>
+        <div class="recentActivityCardText">
+          <p>Nome Utente</p>
+          <p>Titolo Canzone<span>- Artista</span></p>
+          <p>
+            <span><i class="bi bi-music-note-beamed"></i></span> Titolo Album
+          </p>
         </div>
-        <div class="recentActivityCard">
-          <p><i class="bi bi-person-circle"></i></p>
-          <div class="recentActivityCardText">
-            <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
-            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
-          </div>
-          <h6>15 ore fa</h6>
+        <h6>15 ore fa</h6>
+      </div>
+      <div class="recentActivityCard">
+        <p><i class="bi bi-person-circle"></i></p>
+        <div class="recentActivityCardText">
+          <p>Nome Utente</p>
+          <p>Titolo Canzone<span>- Artista</span></p>
+          <p>
+            <span><i class="bi bi-music-note-beamed"></i></span> Titolo Album
+          </p>
         </div>
-
+        <h6>15 ore fa</h6>
+      </div>
     </aside>
     <footer></footer>
     <script
@@ -185,5 +228,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/script/script.js"></script>
+    <script src="./assets/script/artistPage.js"></script>
   </body>
 </html>
