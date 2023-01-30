@@ -1,21 +1,40 @@
-.bottone {
-  background-color: #1db954;
-  padding: 1.2rem 1.6rem;
-  border-radius: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: black;
+header {
+  background-color: #191414;
+  color: white;
+  padding: 1% 2%;
+}
+header section {
+  margin-bottom: 5%;
+}
+
+.navBarMenu {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.navBarMenu p {
+  display: flex;
+}
+.navBarMenu p span {
+  margin-right: 3%;
+  cursor: pointer;
+}
+.navBarMenu pspan:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.navBarMenu div {
+  margin-bottom: 15%;
+}
+
+.navBarPlaylist p {
+  font-size: 0.7em;
 }
 
 main {
   margin: 0 auto;
   padding: 0 1.5em;
   background: rgb(25, 20, 20);
-  background: linear-gradient(
-    0deg,
-    rgb(25, 20, 20) 25%,
-    rgb(231, 200, 88) 100%
-  );
+  background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -29,37 +48,37 @@ main #profile p {
   font-size: x-small;
 }
 
-.mainBody {
+main {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.mainBody .artistContainer {
+main .artistContainer {
   background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
   height: 400px;
 }
-.mainBody .artistContainer .verifiedArtist {
+main .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   color: white;
   margin: 0;
 }
-.mainBody .artistContainer .songTitle {
+main .artistContainer .songTitle {
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   color: white;
   font-weight: 700;
 }
-.mainBody .artistContainer .monthlyViewers {
+main .artistContainer .monthlyViewers {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: white;
 }
 
-.mainBody .following {
+main .following {
   background-color: #191414;
 }
-.mainBody .following button {
+main .following button {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
   border-radius: 20px;
@@ -67,7 +86,7 @@ main #profile p {
   margin-right: 2rem;
   border: none;
 }
-.mainBody .following .followBtn {
+main .following .followBtn {
   height: 2rem;
   margin: 0;
   margin-right: 2rem;
@@ -79,7 +98,7 @@ main #profile p {
   font-size: 1rem;
   color: white;
 }
-.mainBody .following p:last-child {
+main .following p:last-child {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: grey;
@@ -87,13 +106,13 @@ main #profile p {
   padding-bottom: 10px;
 }
 
-.mainBody .songsSection {
+main .songsSection {
   background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
   color: white;
 }
-.mainBody .songsSection h4 {
+main .songsSection h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
-} /*# sourceMappingURL=settings.css.map */
+}/*# sourceMappingURL=settings.css.map */
