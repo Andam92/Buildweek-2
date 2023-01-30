@@ -18,10 +18,6 @@ header section {
   margin-right: 3%;
   cursor: pointer;
 }
-.navBarMenu pspan:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 .navBarMenu div {
   margin-bottom: 15%;
 }
@@ -121,22 +117,35 @@ main .songsSection h4 {
   background-color: #191414;
   color: white;
   padding: 1% 0.5% 1% 1.5%;
+  cursor: pointer;
+}
+.recentActivityi:hover {
+  transform: scale(1.1);
 }
 
 .recentActivityCard {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 2% 0;
 }
 .recentActivityCard p {
   margin: 0;
 }
 .recentActivityCard h6 {
-  font-size: 0.3em;
+  font-size: 0.4em;
 }
 
 .recentActivityCardText {
-  font-size: 0.3em;
+  font-size: 0.4em;
+}
+
+.sectionPlayBar {
+  background-color: #181818;
+  color: white;
+  padding: 1%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }/*# sourceMappingURL=settings.css.map */

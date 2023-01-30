@@ -36,7 +36,7 @@
           <p><span><i class="bi bi-bookmarks"></i></span>I tuoi episodi</p>
         </div>
         </section>
-        <section class="navBarPlaylist">
+        <section class="navBarPlaylist d-none d-md-block">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -139,7 +139,7 @@
           <p><i class="bi bi-person-circle"></i></p>
           <div class="recentActivityCardText">
             <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
+            <p>Titolo Canzone<span> - Artista</span></p>
             <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
           </div>
           <h6>15 ore fa</h6>
@@ -148,7 +148,7 @@
           <p><i class="bi bi-person-circle"></i></p>
           <div class="recentActivityCardText">
             <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
+            <p>Titolo Canzone<span> - Artista</span></p>
             <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
           </div>
           <h6>15 ore fa</h6>
@@ -157,15 +157,37 @@
           <p><i class="bi bi-person-circle"></i></p>
           <div class="recentActivityCardText">
             <p>Nome Utente</p>
-            <p>Titolo Canzone<span>- Artista</span></p>
+            <p>Titolo Canzone<span> - Artista</span></p>
             <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
           </div>
           <h6>15 ore fa</h6>
         </div>
       </article>
-
     </aside>
-    <footer></footer>
+    <footer class="sectionPlayBar d-flex justify-content-between">
+      <div class="d-flex cardPlayBar">
+        <img src="" alt="">
+        <div class="cardPlayContainer">
+          <h5>Titolo</h5>
+          <p>Artista</p>
+        </div>
+        <i class="bi bi-heart"></i>
+      </div>
+      <div class="playBarContainer d-flex flex-column justify-content-center align-items-center">
+        <div class="buttonCommand d-flex ">
+          <i class="bi bi-shuffle"></i>
+          <i class="bi bi-skip-backward-fill"></i>          
+          <i class="bi bi-play-circle"></i>
+          <i class="bi bi-skip-forward-fill"></i>
+          <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="playBar">prima o poi la faremo
+
+        </div>
+      </div>
+
+
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
