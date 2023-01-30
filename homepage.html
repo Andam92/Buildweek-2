@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
   <body class="d-flex flex-column flex-md-row">
     <!--INIZIO HEADER-->
@@ -28,28 +32,70 @@
 
     <!-- INIZIO MAIN-->
     <main class="col-12 col-md-7 bg-$spotifyBlack">
-      <div class="row primaRiga text-bg-dark">
-        <div class="col col-1">
-          <img src="" alt="cover image" />
-        </div>
-        <div class="col col-11">
-          <div class="infoAlbum">
-            <span>ALBUM</span>
-            <p>name song</p>
-            <p>name artist</p>
-            <p>Ascolta ilnuovo singolo di $artist</p>
+      <div class="row primaRiga text-bg-dark px-1">
+        <div class="col col-10">
+          <div class="row">
+            <div class="col col-1">
+              <img src="" alt="cover image" />
+            </div>
+            <div class="col col-11">
+              <div class="infoAlbum">
+                <span>ALBUM</span>
+                <p>name song</p>
+                <p>name artist</p>
+                <p>Ascolta ilnuovo singolo di $artist</p>
+              </div>
+              <div class="d-flex">
+                <button class="btn bottone">Play</button>
+                <button class="btn bottone text-bg-dark border border-light mx-3">
+                  Salva
+                </button>
+                <button class="btn bottone text-bg-dark">...</button>
+              </div>
+            </div>
           </div>
-          <div class="d-flex">
-            <button class="btn bottone">Play</button>
-            <button class="btn bottone text-bg-dark border border-light mx-3">
-              Salva
-            </button>
-            <button class="btn bottone text-bg-dark">...</button>
+        </div>
+        <div class="col-md-2">
+          <button class="btn text-secondary">NASCONDI ANNUNCI</button>
+        </div>
+      </div>
+    
+      <div class="row secondaRiga bg-secondary px-1">
+        <div class="col-12">
+          <div class="row d-flex justify-content-between"">
+            <div class="col">
+              <span>Buonasera</span>
+            </div>
+            <div class="col d-flex me-2 d-md-none">
+              <i class="bi bi-bell"></i>
+              <i class="bi bi-clock-history"></i>
+              <i class="bi bi-gear"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row secondaRiga"></div>
-      <div class="row terzaRiga"></div>
+        <div class="col-12 cardSongs">
+          <div class="row mx-0">
+            <div class="col col-6 col-md-4">
+              <div class="row" id="">Qui andranno le cards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row terzaRiga bg-primary px-1">
+          <div class="col-12">
+            <p>Altro di ciò che ti piace</p>
+          </div>
+          <div class="col-12 genereSongs">
+            <div class="row">
+              <div class="col col-6 col-md-4">
+                <div class="row mx-0"> </div>
+                <div class="col col-12 col-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- FINE MAIN-->
 
