@@ -5,4 +5,22 @@
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: black;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1.5em;
+  background: rgb(25, 20, 20);
+  background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+main #profile {
+  background-color: #191414;
+  border-radius: 20px;
+  padding: 0 4px;
+}
+main #description p,
+main #profile p {
+  font-size: x-small;
 }/*# sourceMappingURL=settings.css.map */

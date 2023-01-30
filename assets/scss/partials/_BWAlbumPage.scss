@@ -1,0 +1,21 @@
+main {
+  margin: 0 auto;
+  padding: 0 1.5em;
+  background: rgb(25, 20, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(25, 20, 20, 1) 25%,
+    rgb(231, 200, 88) 100%
+  );
+  color: white;
+  font-family: $fontFamily;
+  #profile {
+    background-color: $spotifyBlack;
+    border-radius: 20px;
+    padding: 0 4px;
+  }
+  #description p,
+  #profile p {
+    font-size: x-small;
+  }
+}
