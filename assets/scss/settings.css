@@ -57,6 +57,7 @@ header section {
 }
 
 .mainBody {
+  background-color: #191414;
   overflow: scroll;
   overflow-x: hidden;
   margin: 0;
