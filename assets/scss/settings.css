@@ -44,20 +44,23 @@ header section {
 }
 .albumSection #description p,
 .albumSection #profile p {
-  font-size: x-small;
+  font-size: xx-small;
 }
 .albumSection .section2 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .albumSection .section2 button {
   background-color: #1db954;
-  width: 40px;
-  height: 40px;
+  padding: 0 8px 0 11px;
   border: none;
   border-radius: 100%;
 }
 .albumSection .section2 button i {
   font-size: large;
+}
+.albumSection .section2 p,
+.albumSection .section2 i {
+  font-size: 0.7em;
 }
 
 main {
