@@ -1,0 +1,21 @@
+// FONT //
+$fontFamily: 'Roboto', sans-serif;
+
+// COLORI //
+$mainGreen: #1db954;
+$secondaryGreen:#1ed760;
+$spotifyBlack:#191414;
+
+// MIXIN //
+
+@mixin fontStyle ($family, $size, $color) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin button ($bg) {
+    background-color: $bg ;
+    padding: 1.2rem 1.6rem;
+    border-radius: 20px;
+}

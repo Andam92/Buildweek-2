@@ -1,0 +1,4 @@
+.bottone {
+    @include button ($mainGreen);
+    @include fontStyle ($fontFamily, 1rem, black)
+}
