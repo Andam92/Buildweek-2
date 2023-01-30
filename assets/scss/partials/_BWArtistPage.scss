@@ -1,12 +1,14 @@
 // ARTIST SECTION
 
-main {
+.mainBody {
+  overflow: scroll;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   .artistContainer {
     background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
-    height: 400px;
+    height: 340px;
     .verifiedArtist {
       @include fontStyle($fontFamily, 0.8rem, white);
       margin: 0;
@@ -14,16 +16,18 @@ main {
     .songTitle {
       @include fontStyle($fontFamily, 5rem, white);
       font-weight: 700;
+      margin-bottom: 1rem;
     }
     .monthlyViewers {
       @include fontStyle($fontFamily, 1rem, white);
+      margin: 0;
     }
   }
 }
 
 // FOLLOWING SECTION
 
-main {
+.mainBody {
   .following {
     background-color: $spotifyBlack;
     button {
@@ -31,6 +35,7 @@ main {
       border-radius: 50%;
       margin-right: 2rem;
       border: none;
+      padding: 0 8px 0 11px;
     }
     .followBtn {
       height: 2rem;
@@ -52,7 +57,7 @@ main {
 
 // SONGS SECTION
 
-main {
+.mainBody {
   .songsSection {
     background: linear-gradient(
       180deg,
@@ -65,4 +70,41 @@ main {
       font-weight: 700;
     }
   }
+  .likedSection {
+    .likedImg {
+      border-radius: 50%;
+      transform: scale(0.7);
+    }
+    .likedSong {
+      p {
+        @include fontStyle($fontFamily, 0.8rem, white);
+        font-weight: 700;
+        margin: 0;
+      }
+      .likedArtist {
+        font-weight: 400;
+        @include fontStyle($fontFamily, 0.7, rgb(186, 186, 186));
+      }
+    }
+  }
+}
+
+/* width */
+.mainBody::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mainBody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.mainBody::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.mainBody::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

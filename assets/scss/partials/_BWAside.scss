@@ -1,23 +1,23 @@
 .recentActivity {
-    background-color: $spotifyBlack;
-    color: white;
-    padding: 1% 0.5% 1% 1.5%;
+  background-color: $spotifyBlack;
+  color: white;
+  padding: 1% 0.5% 1% 1.5%;
 }
 
 .recentActivityCard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2em;
-    margin: 2% 0;
-    p{
-        margin: 0;
-    }
-    h6 {
-        font-size: 0.3em;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin: 2% 0;
+  p {
+    margin: 0;
+  }
+  h6 {
+    font-size: 0.3em;
+  }
 }
 
 .recentActivityCardText {
-    font-size: 0.3em
+  font-size: 0.3em;
 }

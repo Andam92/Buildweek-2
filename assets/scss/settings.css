@@ -48,45 +48,50 @@ main #profile p {
   font-size: x-small;
 }
 
-main {
+.mainBody {
+  overflow: scroll;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-main .artistContainer {
+.mainBody .artistContainer {
   background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
-  height: 400px;
+  height: 340px;
 }
-main .artistContainer .verifiedArtist {
+.mainBody .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   color: white;
   margin: 0;
 }
-main .artistContainer .songTitle {
+.mainBody .artistContainer .songTitle {
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   color: white;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
-main .artistContainer .monthlyViewers {
+.mainBody .artistContainer .monthlyViewers {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: white;
+  margin: 0;
 }
 
-main .following {
+.mainBody .following {
   background-color: #191414;
 }
-main .following button {
+.mainBody .following button {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
   border-radius: 20px;
   border-radius: 50%;
   margin-right: 2rem;
   border: none;
+  padding: 0 8px 0 11px;
 }
-main .following .followBtn {
+.mainBody .following .followBtn {
   height: 2rem;
   margin: 0;
   margin-right: 2rem;
@@ -98,7 +103,7 @@ main .following .followBtn {
   font-size: 1rem;
   color: white;
 }
-main .following p:last-child {
+.mainBody .following p:last-child {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: grey;
@@ -106,13 +111,74 @@ main .following p:last-child {
   padding-bottom: 10px;
 }
 
-main .songsSection {
+.mainBody .songsSection {
   background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
   color: white;
 }
-main .songsSection h4 {
+.mainBody .songsSection h4 {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
+}
+.mainBody .likedSection .likedImg {
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+.mainBody .likedSection .likedSong p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+.mainBody .likedSection .likedSong .likedArtist {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7;
+  color: rgb(186, 186, 186);
+}
+
+/* width */
+.mainBody::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mainBody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.mainBody::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.mainBody::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.recentActivity {
+  background-color: #191414;
+  color: white;
+  padding: 1% 0.5% 1% 1.5%;
+}
+
+.recentActivityCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin: 2% 0;
+}
+.recentActivityCard p {
+  margin: 0;
+}
+.recentActivityCard h6 {
+  font-size: 0.3em;
+}
+
+.recentActivityCardText {
+  font-size: 0.3em;
 }/*# sourceMappingURL=settings.css.map */
