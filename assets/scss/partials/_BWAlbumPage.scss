@@ -3,7 +3,7 @@
   background: rgb(25, 20, 20);
   background: linear-gradient(
     0deg,
-    rgba(25, 20, 20, 1) 75%,
+    rgba(25, 20, 20, 1) 45%,
     rgba(221, 191, 79, 1) 100%
   );
   color: white;
@@ -18,7 +18,7 @@
     font-size: xx-small;
   }
   .section2 {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.322);
     button {
       background-color: $mainGreen;
       padding: 0 8px 0 11px;
@@ -29,7 +29,10 @@
       padding: 0 8px 0 11px;
     }
     i {
-      font-size: large;
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
     }
   }
 }

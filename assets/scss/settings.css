@@ -33,7 +33,7 @@ header section {
 .albumSection {
   margin: 0 auto;
   background: rgb(25, 20, 20);
-  background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
+  background: linear-gradient(0deg, rgb(25, 20, 20) 45%, rgb(221, 191, 79) 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -47,20 +47,24 @@ header section {
   font-size: xx-small;
 }
 .albumSection .section2 {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.322);
 }
 .albumSection .section2 button {
   background-color: #1db954;
   padding: 0 8px 0 11px;
+  background-color: #1db954;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  border-radius: 50%;
+  margin-right: 2rem;
   border: none;
-  border-radius: 100%;
+  padding: 0 8px 0 11px;
 }
-.albumSection .section2 button i {
-  font-size: large;
-}
-.albumSection .section2 p,
 .albumSection .section2 i {
-  font-size: 0.7em;
+  font-size: 14px;
+}
+.albumSection .section2 p {
+  font-size: 14px;
 }
 
 main {
