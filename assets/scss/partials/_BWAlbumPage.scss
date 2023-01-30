@@ -1,6 +1,5 @@
-main {
+.albumSection {
   margin: 0 auto;
-  padding: 0 1.5em;
   background: rgb(25, 20, 20);
   background: linear-gradient(
     0deg,
@@ -17,5 +16,18 @@ main {
   #description p,
   #profile p {
     font-size: x-small;
+  }
+  .section2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    button {
+      background-color: $mainGreen;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 100%;
+      i {
+        font-size: large;
+      }
+    }
   }
 }

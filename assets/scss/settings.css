@@ -26,22 +26,38 @@ header section {
   font-size: 0.7em;
 }
 
-main {
+.albumSection {
   margin: 0 auto;
-  padding: 0 1.5em;
   background: rgb(25, 20, 20);
-  background: linear-gradient(0deg, rgb(25, 20, 20) 25%, rgb(231, 200, 88) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(25, 20, 20) 25%,
+    rgb(231, 200, 88) 100%
+  );
   color: white;
   font-family: "Roboto", sans-serif;
 }
-main #profile {
+.albumSection #profile {
   background-color: #191414;
   border-radius: 20px;
   padding: 0 4px;
 }
-main #description p,
-main #profile p {
+.albumSection #description p,
+.albumSection #profile p {
   font-size: x-small;
+}
+.albumSection .section2 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.albumSection .section2 button {
+  background-color: #1db954;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+}
+.albumSection .section2 button i {
+  font-size: large;
 }
 
 main {
@@ -148,4 +164,4 @@ main .songsSection h4 {
   width: 100%;
   position: fixed;
   bottom: 0;
-}/*# sourceMappingURL=settings.css.map */
+} /*# sourceMappingURL=settings.css.map */
