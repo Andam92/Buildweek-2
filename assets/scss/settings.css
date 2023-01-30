@@ -1,8 +1,55 @@
-.bottone {
-  background-color: #1db954;
-  padding: 1.2rem 1.6rem;
-  border-radius: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: black;
+header {
+  background-color: #191414;
+  color: white;
+  padding: 1% 2%;
+}
+header section {
+  margin-bottom: 5%;
+}
+
+.navBarMenu {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.navBarMenu p {
+  display: flex;
+}
+.navBarMenu p span {
+  margin-right: 3%;
+  cursor: pointer;
+}
+.navBarMenu pspan:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.navBarMenu div {
+  margin-bottom: 15%;
+}
+
+.navBarPlaylist p {
+  font-size: 0.7em;
+}
+
+.recentActivity {
+  background-color: #191414;
+  color: white;
+  padding: 1% 0.5% 1% 1.5%;
+}
+
+.recentActivityCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  margin: 2% 0;
+}
+.recentActivityCard p {
+  margin: 0;
+}
+.recentActivityCard h6 {
+  font-size: 0.3em;
+}
+
+.recentActivityCardText {
+  font-size: 0.3em;
 }/*# sourceMappingURL=settings.css.map */
