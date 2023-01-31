@@ -7,8 +7,7 @@ let fetch = async function () {
     if (res.ok) {
       let data = await res.json();
       console.log(data);
-      let jsonObject = Object.values(data);
-      let jsonArray = Object.values(jsonObject[0]);
+
       console.log("L'ARRAY E': ", jsonArray);
     } else {
       console.log("Attenzione! res !== ok");
