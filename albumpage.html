@@ -65,21 +65,21 @@
           </div>
         </div>
         <div class="d-column d-md-flex px-3 align-items-center justify-content-center justify-content-md-start ">
-          <div class="d-flex justify-content-center me-3"><img  src="http://placekitten.com/200/200" alt="" />
+          <div  class="d-flex justify-content-center me-3"><img id="albumImg" src="http://placekitten.com/200/200" alt="" />
 </div>
           <div class="d-flex flex-column mb-3 justify-content-center">
             <p class="fs-6 d-none d-lg-block">ALBUM</p>
-            <h1 class="fw-bold mt-3">Gioventù brucata</h1>
+            <h1 id="albumName" class="fw-bold mt-3"></h1>
             <div id="description" class="d-flex align-items-center">
-              <img
+              <img 
+              id="profileImg"
                 class="rounded-circle"
-                src="https://place.dog/40/40
-"
+                src=""
                 alt=""
               />
-              <p class="mb-0 ms-2">
-                Pinguini Tattici Nucleari · 2017<span class="d-none d-lg-inline"> · 12 brani,
-                <span class="opacity-75"> 53 min 20 sec.</span></span> 
+              <p id="albumAuthorandDate" class="mb-0 ms-2"></p>
+                <p id="albumTracksNumber" class="d-none d-lg-inline mb-0 ms-1"> · 12 brani,</p>
+                <p id="albumDuration" class="opacity-75 mb-0 ms-1"> 53 min 20 sec.</p>
               </p>
             </div>
             <p id="albumDateSmall" class="d-md-none opacity-75 mt-2 fs-5">Album · 2017</p>
@@ -106,14 +106,14 @@
             </div>
 
             <!--TEMPLATE CON PLACEHOLDER DI CANZONE-->
-
+            <section id="tracksContainer">
             <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
                     <p class="opacity-75 d-none d-md-block">1</p>
                     <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
-                      <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
+                      <p id="authorName" class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
               <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
@@ -121,6 +121,7 @@
               <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
+              
 
               <!--COPY&PASTE PLACEHOLDER-->
 
@@ -267,6 +268,7 @@
 
               <!--FINE COPY&PASTE-->
           </div>
+          </section>
         </div>
     </main>
     <aside class="recentActivity col-2">

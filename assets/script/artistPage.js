@@ -40,7 +40,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(1800);
+titleAssign(120);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 
@@ -81,4 +81,4 @@ const songGenerator = function (artistId) {
     });
 };
 
-songGenerator(1800);
+songGenerator(120);
