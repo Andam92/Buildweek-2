@@ -17,16 +17,23 @@
   #profile p {
     font-size: xx-small;
   }
+  #albumDateSmall {
+    font-size: xx-small !important;
+  }
   .section2 {
     background-color: rgba(0, 0, 0, 0.322);
     button {
       background-color: $mainGreen;
       padding: 0 8px 0 11px;
-      @include button($mainGreen);
+      @include button($secondaryGreen);
       border-radius: 50%;
       margin-right: 2rem;
       border: none;
       padding: 0 8px 0 11px;
+      @media screen and (max-width: 990px) {
+        color: white;
+        background-color: $mainGreen;
+      }
     }
     i {
       font-size: 14px;
