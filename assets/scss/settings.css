@@ -221,4 +221,43 @@ header section {
 }
 .sectionPlayBar .bi-play-circle {
   font-size: 2.1em;
+}
+
+.bottone1 {
+  background-color: #1db954;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+}
+
+.bottone2 {
+  background-color: #191414;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+  border: 1px solid white;
+}
+
+.bottone3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.mainBodyHome {
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
+}
+
+.bottoneX {
+  font-size: 0.8rem;
+}
+
+.cardContainer {
+  background-color: rgb(50, 50, 50) 0%;
+}
+
+.titleElement {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
 }/*# sourceMappingURL=settings.css.map */

@@ -1,0 +1,35 @@
+.bottone1 {
+  @include button($mainGreen);
+  padding: 0.5rem 1.3rem;
+}
+
+.bottone2 {
+  @include button($spotifyBlack);
+  padding: 0.5rem 1.3rem;
+  border: 1px solid white;
+}
+
+.bottone3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+.mainBodyHome {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(25, 20, 20, 1) 39%
+  );
+}
+
+.bottoneX {
+  font-size: 0.8rem;
+}
+
+.cardContainer {
+  background-color: rgba(50, 50, 50, 1) 0%;
+}
+
+.titleElement {
+  @include fontStyle($fontFamily, 4rem, white);
+  font-weight: 700;
+}

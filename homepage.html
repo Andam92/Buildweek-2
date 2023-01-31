@@ -56,95 +56,133 @@
     <!--FINE HEADER-->
 
     <!-- INIZIO MAIN-->
-    <main class="mx-0 col-12 col-md-7 bg-$spotifyBlack">
-      <div class="row mx-0 primaRiga text-bg-dark px-1 ">
-        <div class="col-10">
-          <div class="row ">
-            <div class="col-2">
-              <img src="http://placekitten.com/100/100" class="w-100" alt="cover image" />
-            </div>
-            <div class="col col-11">
-              <div class="infoAlbum">
-                <span>ALBUM</span>
-                <p>name song</p>
-                <p>name artist</p>
-                <p>Ascolta il nuovo singolo di $artist</p>
-              </div>
-              <div class="d-flex">
-                <button class="btn bottone">Play</button>
-                <button class="btn bottone text-bg-dark border border-light mx-3">
-                  Salva
-                </button>
-                <button class="btn bottone text-bg-dark">...</button>
-              </div>
-            </div>
+<main class="col-12 col-md-9 col-xl-7 text-light mainBodyHome">    
+  <div class="container d-flex flex-column mx-0">
+      <div class="row riga1 p-4">
+        <div class="col-12 bg-black d-flex border border-dark p-3">
+          <div class="col-3">
+            <img class="w-100" src="https://e-cdns-images.dzcdn.net/images/artist/0b17b99897d17ceb7027ed57cdbb7044/1000x1000-000000-80-0-0.jpg">
           </div>
+          <div class="col-6 ps-3">
+            <p class="fw-bold">ALBUM</p>
+            <h1 class="titleElement mb-0"> VIOLA </h1>
+            <p class="fw-bold">autore</p>
+            <p class="fw-bold">descrizione</p>
+            <div class="d-flex">
+              <button class="btn bottone1">Play</button>
+              <button class="btn bottone2 text-light mx-3">
+                Salva
+              </button>
+              <button class="btn bottone3 text-light">...</button>
+            </div>
         </div>
-        <div class="col-md-2">
-          <span class="btn text-secondary">NASCONDI ANNUNCI</span>
+        <div class="col-2">
+            <button class="btn bottoneX border border-secondary text-secondary ">NASCONDI ANNUNCI</button>
+        </div>
         </div>
       </div>
-    
-      <div class="mx-0 row secondaRiga bg-secondary px-1">
-        <div class="col-12">
-          <div class="row d-flex justify-content-between">
-            <div class="col">
-              <span>Buonasera</span>
-            </div>
-            <div class="col d-flex me-2 d-md-none">
-              <i class="bi bi-bell"></i>
-              <i class="bi bi-clock-history"></i>
-              <i class="bi bi-gear"></i>
-            </div>
-          </div>
+      <div class="d-flex justify-content-between">
+        <p>Buonasera</p>
+        <div class="d-flex me-2 d-md-none">
+          <i class="bi bi-bell me-2"></i>
+          <i class="bi bi-clock-history me-2"></i>
+          <i class="bi bi-gear me-2"></i>
         </div>
-        <div class="col-12 cardSongs">
-          <div class="row mx-0">
-            <div class="col col-6 col-md-4">
-              <div class="row" id="">
-                <div class="card mb-3" >
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="http://placekitten.com/100/100" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Aggiungi $song title</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mx-0 terzaRiga bg-primary px-1">
-
-        <div class="row">
-          <div class="col-10">
-            Altro di ciò che ti piace
-          </div>
-          <div class="col-2">
-            VISUALIZZA TUTTO
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1 cardRiga3">
-            <img src="http://placekitten.com/100/100">
-            <div class="d-flex flex-column">
-              <h5>Genere</h5>
-              <p>Descrizione</p>
-            </div>
-          </div>
-        </div>
-      </div>
+       </div>
+      <div class="row riga2">
       
-    </main>
+       <!--INIZIO CARD SECTION-->
+        <section class="d-flex flex-wrap p-3">
+          <!--PRIMA RIGA DI CARDS-->
+          <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+            <div class="cardContainer d-flex align-items-center border border-dark">
+            <div class="col-4">
+              <img src="http://placekitten.com/100/100">
+            </div>
+            <div class="col-8 ps-2">
+              <p> genere di musica - categorie</p>
+            </div>
+           </div>
+          </div>
+          <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+            <div class="cardContainer d-flex align-items-center border border-dark">
+            <div class="col-4">
+              <img src="http://placekitten.com/100/100">
+            </div>
+            <div class="col-8 ps-2">
+              <p> genere di musica - categorie</p>
+            </div>
+           </div>
+          </div>
+          <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+            <div class="cardContainer d-flex align-items-center border border-dark">
+            <div class="col-4">
+              <img src="http://placekitten.com/100/100">
+            </div>
+            <div class="col-8 ps-2">
+              <p> genere di musica - categorie</p>
+            </div>
+           </div>
+          </div>
+      <!--SECONDA RIGA DI CARDS-->
+      <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+        <div class="cardContainer d-flex align-items-center border border-dark">
+        <div class="col-3 col-md-4">
+          <img src="http://placekitten.com/100/100">
+        </div>
+        <div class="col-8 ps-2">
+          <p> genere di musica - categorie</p>
+        </div>
+       </div>
+      </div>
+      <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+        <div class="cardContainer d-flex align-items-center border border-dark">
+        <div class="col-4">
+          <img src="http://placekitten.com/100/100">
+        </div>
+        <div class="col-8 ps-2">
+          <p> genere di musica - categorie</p>
+        </div>
+       </div>
+      </div>
+      <div class="d-flex align-items-center col-6 cardReference col-md-4 mb-3">
+        <div class="cardContainer d-flex align-items-center border border-dark">
+        <div class="col-4">
+          <img src="http://placekitten.com/100/100">
+        </div>
+        <div class="col-8 ps-2">
+          <p> genere di musica - categorie</p>
+        </div>
+       </div>
+      </div>
+      </section>
+
+
+  <div class="row mx-0 riga3">
+    <div class="terzaRiga bg-primary">
+      <div class="row">
+        <div class="col-10">
+          Altro di ciò che ti piace
+        </div>
+        <div class="col-2">
+          VISUALIZZA TUTTO
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 cardRiga3">
+          <img src="http://placekitten.com/100/100">
+          <div class="d-flex flex-column">
+            <h5>Genere</h5>
+            <p>Descrizione</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
     <!-- FINE MAIN-->
 
-    <aside class="d-none d-md-block col-md-2 recentActivity">
+    <aside class="d-none d-lg-block col-lg-2 recentActivity">
       <!--INIZIO ASIDE-->
       <section>
         <div class="d-flex justify-content-between">
