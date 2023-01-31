@@ -91,20 +91,23 @@
       <!--INIZIO ARTIST SECTION -->
       <section
         class="d-flex flex-column justify-content-end artistContainer p-4"
+        id="artistBackground"
       >
         <p class="verifiedArtist">
           <i class="bi bi-patch-check-fill text-primary fs-5"></i> Artista
           verificato
         </p>
-        <h1 class="songTitle">Titolo</h1>
-        <p class="monthlyViewers">nb_fan ascoltatori mensili</p>
+        <h1 class="songTitle" id="title"></h1>
+        <p class="monthlyViewers" id="monthlyViewers">
+          nb_fan ascoltatori mensili
+        </p>
       </section>
       <!--FINE ARTIST SECTION -->
 
       <!-- INIZIO FOLLOWING SECTION-->
       <section class="d-flex align-items-center p-4 following">
-        <button><i class="bi bi-play-fill fs-2"></i></button>
-        <p class="followBtn">Following</p>
+        <button id="playBtn"><i class="bi bi-play-fill fs-2"></i></button>
+        <p class="followBtn" id="followBtn">Following</p>
         <p>...</p>
       </section>
       <!-- FINE FOLLOWING SECTION-->
@@ -113,7 +116,7 @@
       <section class="d-flex p-4 songsSection">
         <section class="col-7">
           <h4>Popolari</h4>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column" id="popularSongs">
             <div class="d-flex song">
               <div class="col-6">
                 <p>1</p>
