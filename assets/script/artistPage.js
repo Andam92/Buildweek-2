@@ -7,6 +7,10 @@ const playBtnReference = document.getElementById("playBtn");
 const followBtnReference = document.getElementById("followBtn");
 const popularSongsReference = document.getElementById("popularSongs");
 
+// API LINK
+
+let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
+
 // FUNZIONE PER GENERARE NEL DOM TITOLO e VIEWERS DINAMICAMENTE
 
 const titlePicker = function (title, background) {
