@@ -49,26 +49,27 @@
       <!-- SEZIONE 1 -->
       <div class="d-flex flex-column">
         <div class="d-flex justify-content-between px-3">
-          <div class="navigationArrows">
+          <div class="navigationArrows my-2">
             <i class="bi bi-arrow-left-circle me-1"></i>
             <i class="bi bi-arrow-right-circle"></i>
           </div>
-          <div id="profile" class="d-flex align-items-center">
+          <div id="profile" class="d-none d-lg-flex align-items-center mt-2">
             <img
               class="rounded-circle"
               src="https://place.dog/40/40
 "
               alt=""
             />
-            <p class="mb-0 ms-2">Lidia Nautilus</p>
+            <p class="mb-0 ms-2 ">Lidia Nautilus</p>
             <i class="bi bi-arrow-down-short mt-1 ms-2"></i>
           </div>
         </div>
-        <div class="d-flex px-3">
-          <img src="http://placekitten.com/200/200" alt="" />
-          <div class="d-flex flex-column ms-3 mb-3 justify-content-center">
-            <p class="fs-6">ALBUM</p>
-            <h1 class="fw-bold">Gioventù brucata</h1>
+        <div class="d-column d-lg-flex px-3 align-items-center justify-content-center justify-content-md-start ">
+          <div class="d-flex justify-content-center me-3"><img  src="http://placekitten.com/200/200" alt="" />
+</div>
+          <div class="d-flex flex-column mb-3 justify-content-center">
+            <p class="fs-6 d-none d-lg-block">ALBUM</p>
+            <h1 class="fw-bold mt-3">Gioventù brucata</h1>
             <div id="description" class="d-flex align-items-center">
               <img
                 class="rounded-circle"
@@ -77,28 +78,29 @@
                 alt=""
               />
               <p class="mb-0 ms-2">
-                Pinguini Tattici Nucleari - 2017 - 12 brani,
-                <span class="opacity-75"> 53 min 20 sec.</span>
+                Pinguini Tattici Nucleari · 2017<span class="d-none d-lg-inline"> · 12 brani,
+                <span class="opacity-75"> 53 min 20 sec.</span></span> 
               </p>
             </div>
+            <p id="albumDateSmall" class="d-lg-none opacity-75 mt-2 fs-5">Album · 2017</p>
           </div>
         </div>
       </div>
       <!-- SEZIONE 2 -->
       <div class="section2">
-        <div class="my-4 d-flex justify-content-start align-items-center">
-          <button class="my-3 ms-3"><i class="bi bi-play-fill fs-2"></i></button>
-          <i class="bi bi-heart me-4 fs-4 opacity-75"></i>
-          <i class="bi bi-arrow-down-circle fs-4 me-3 opacity-75"></i>
-          <i class="bi bi-three-dots fs-4 me-3 opacity-75"></i>
+        <div class="my-4 d-flex flex-row-reverse flex-lg-row justify-content-between justify-content-lg-start align-items-center">
+          <div class="d-flex align-items-center flex-md-row"><i class="bi bi-shuffle opacity-75 fs-4 d-lg-none"></i><button class="my-3 ms-3"><i class="bi bi-play-fill fs-4"></i></button></div>
+          <div><i class="bi bi-heart me-4 ms-2 fs-4 opacity-75"></i>
+          <i class="bi bi-arrow-down-circle ms-2 fs-4 me-3 opacity-75"></i>
+          <i class="bi bi-three-dots fs-4 ms-2 me-3 opacity-75"></i></div>
         </div>
         <div class="container">
           <div class="row">
             <div class="d-flex justify-content-between">
-              <div class="d-flex opacity-75"><p>#</p>
-              <p class="ms-3 opacity-75">TITOLO</p></div>
-              <p class="opacity-75 ms-5">RIPRODUZIONI</p>
-              <i class="bi bi-clock opacity-75"></i>
+              <div class="d-flex opacity-75 d-none d-md-flex"><p>#</p>
+              <p class="ms-3 opacity-75 d-none d-md-flex">TITOLO</p></div>
+              <p class="opacity-75 ms-5 d-none d-md-flex">RIPRODUZIONI</p>
+              <i class="bi bi-clock opacity-75 d-none d-md-flex"></i>
             </div>
             <hr class="opacity-25">        
             </div>
@@ -108,14 +110,15 @@
             <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
 
@@ -124,105 +127,141 @@
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.578</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
               <div class="row">
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center">
-                    <p class="opacity-75">1</p>
-                    <div class="ms-3">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
                       <p class="m-0">Montanelli - Intro</p>
                       <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
                     </div>
                   </div>
-              <div > <p class="opacity-75">694.5787</p> </div>
-              <div > <p class="opacity-75">1:28</p></div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
+            </div>   
+              </div>
+              <div class="row">
+              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
+                      <p class="m-0">Montanelli - Intro</p>
+                      <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
+                    </div>
+                  </div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
+            </div>   
+              </div>
+              <div class="row">
+              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                    <p class="opacity-75 d-none d-md-block">1</p>
+                    <div class="ms-0 ms-md-3">
+                      <p class="m-0">Montanelli - Intro</p>
+                      <p class="opacity-75 mt-1">Pinguini Tattici Nucleari</p>
+                    </div>
+                  </div>
+              <div > <p class="opacity-75 d-none d-md-block">694.578</p> </div>
+              <div > <p class="opacity-75 d-none d-md-block">1:28</p></div>
+              <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
             </div>   
               </div>
 
