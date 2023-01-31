@@ -72,7 +72,7 @@ header section {
   box-sizing: border-box;
 }
 .mainBody .artistContainer {
-  background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
+  background-position-y: -100px;
   height: 340px;
 }
 .mainBody .artistContainer .verifiedArtist {

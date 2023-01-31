@@ -11,7 +11,7 @@ const popularSongsReference = document.getElementById("popularSongs");
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
 
-// FUNZIONE PER GENERARE NEL DOM TITOLO e VIEWERS DINAMICAMENTE
+// FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
 
 const titlePicker = function (title, background) {
   typeof title === "string" || typeof title === "number"
@@ -24,17 +24,15 @@ const titlePicker = function (title, background) {
 // FUNZIONE PER GENERARE IL VALORE DI TITLE E DEL BACKGROUND IMG DAL JSON
 
 const titleAssign = function (artistId) {
-  fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${artistId}`)
+  fetch(`${apiLink}/${artistId}`)
     .then(function (response) {
       if (response.ok) {
         return response.json();
       }
     })
     .then(function (element) {
-      console.log("titolo", element.name);
-
       titlePicker(element.name, String(element.picture_xl));
     });
 };
 
-titleAssign(2019);
+titleAssign(2503);
