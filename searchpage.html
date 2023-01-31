@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./assets/scss/settings.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
   </head>
-  <body class="d-flex">
+  <body class="d-flex flex-column flex-md-row">
     <!--INIZIO HEADER-->
-    <header class="d-flex flex-column col-3">
+    <header class=" d-flex flex-column col-md-3">
       <!--INIZIO NAV-->
-      <section class="navBarMenu">
+      <section class="navBarMenu d-none d-md-block">
       <div>
         <p><span><i class="bi bi-three-dots"></i></i></span></p>
-        <p><span><i class="bi bi-house-door"></i></span> Home </p>
-        <p><span><i class="bi bi-search"></i></span> Cerca </p>
+        <a href="./homepage.html"> <p><span><i class="bi bi-house-door"></i></span> Home </p></a>
+        <a href="./searchpage.html"><p><span><i class="bi bi-search"></i></span> Cerca </p></a>
         <p><span><i class="bi bi-collection"></i></span>La tua libreria</p>
       </div>
       <div>
@@ -25,7 +25,7 @@
         <p><span><i class="bi bi-bookmarks"></i></span>I tuoi episodi</p>
       </div>
       </section>
-      <section class="navBarPlaylist d-none d-md-block">
+      <section class="d-none d-md-block navBarPlaylist">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -40,21 +40,93 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+      <section class="d-flex flex-wrap justify-content-evenly d-md-none p-1">
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        <div class="cardPlaylist d-flex justify-content-center align-items-center rounded">
+          <img src="http://placekitten.com/50/50" alt="">
+          <h6>Top 50 Italia</h6>
+        </div>
+        
+
       </section>
       <!--FINE NAVBAR-->
     </header>
     <!--FINE HEADER-->
-    <main class="d-flex justify-content-center align-items-center col-7">
+    <main class="mainPageSearch d-flex flex-column align-items-center col-12 col-md-9 col-xl-7">
       <!-- INIZIO MAIN-->
-      <section class="searchPage">
-        <input class="" type="search" placeholder="Cosa vuoi ascoltare?">
+      <section class="searchPage col-12 d-flex justify-content-between">
+        <input class="searchInput" type="search" placeholder="Cosa vuoi ascoltare?">
+        <div id="profile" class="d-flex align-items-center">
+            <img
+              class="rounded-circle"
+              src="https://place.dog/40/40"
+              alt=""
+            />
+            <p class="mb-0 ms-2">Profilo</p>
+            <i class="bi bi-arrow-down-short mt-1 ms-2"></i>
+          </div>
       </section>
-      <section class="searchSection">
-
+      <section class="searchGenreSection d-flex justify-content-evenly flex-wrap">
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
+        <div class="cardAlbumPage">
+            <h5>Genere musicale</h5>
+        </div>
       </section>
 
     </main>
-    <aside class="recentActivity col-2">
+    <aside class="recentActivity col-lg-2 d-none d-lg-block ">
       <!--INIZIO ASIDE-->
       <section>
         <div class="d-flex justify-content-between">
@@ -96,25 +168,25 @@
 
     </aside>
     <footer class="sectionPlayBar d-flex justify-content-between align-items-center">
-      <div class="d-flex justify-content-evenly align-items-center col-3 cardPlayBar">
+      <div class="d-flex justify-content-evenly align-items-center col-10 col-md-6 col-lg-4 cardPlayBar">
         <img src="http://placekitten.com/100/100" alt="">
         <div class="cardPlayContainer">
-          <h5>GATTONE PRESLEY</h5>
+          <p>GATTONE PRESLEY</p>
           <p>Love Me Pollon</p>
         </div>
         <i class="bi bi-heart"></i>
       </div>
-      <div class="playBarContainer col-6 d-flex flex-column justify-content-center align-items-center">
+      <div class="playBarContainer col-2 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
         <div class="buttonCommand d-flex justify-content-center align-items-center">
-          <i class="bi bi-shuffle"></i>
-          <i class="bi bi-skip-backward-fill"></i>          
+          <i class="bi bi-shuffle d-none d-md-block"></i>
+          <i class="bi bi-skip-backward-fill d-none d-md-block"></i>          
           <i class="bi bi-play-circle"></i>
-          <i class="bi bi-skip-forward-fill"></i>
-          <i class="bi bi-arrow-repeat"></i>
+          <i class="bi bi-skip-forward-fill d-none d-md-block"></i>
+          <i class="bi bi-arrow-repeat d-none d-md-block"></i>
         </div>
-        <div class="playBar"><span>1.30</span> -------------------- <span>3.50</span></div>
+        <div class="playBar d-none d-md-block"><span>1.30</span> -------------------- <span>3.50</span></div>
       </div>
-      <div class="playBarAside col-3 d-flex justify-content-center align-items-center flex-nowrap">
+      <div class="playBarAside d-none d-lg-block col-3 col-lg-4 d-flex justify-content-center align-items-center flex-nowrap">
         <i class="bi bi-mic-fill"></i>
         <i class="bi bi-menu-button-wide"></i>
         <i class="bi bi-pc-display"></i>
@@ -122,8 +194,14 @@
         <i class="bi bi-arrows-angle-expand"></i>
       </div>
     </footer>
-
-    </footer>   
+    <nav class="navBarMobile w-100 d-md-none ">
+        <div class="d-flex justify-content-evenly align-items-center">
+            <a href="./homepage.html"> <p><span><i class="bi bi-house-door"></i></span> Home </p></a>
+            <a href="./searchpage.html"><p><span><i class="bi bi-search"></i></span> Cerca </p></a>
+            <p><span><i class="bi bi-collection"></i></span>La tua libreria</p>
+          </div>
+    </nav>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./assets/script/script.js"></script>
   </body>

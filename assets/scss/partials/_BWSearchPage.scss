@@ -1,0 +1,26 @@
+.mainPageSearch {
+    background-color: $playBarColor;
+    padding: 2% 3%;
+    .searchInput {
+        padding: 5px 25px;
+        border-radius: 20px;
+    }
+
+    .searchGenreSection {
+        padding: 0.5% 0
+    }
+    .cardAlbumPage {
+        padding: 5%;
+        height: 150px;
+        border-radius: 20px;
+        background-color: salmon;
+        margin: 1%;
+
+    }
+    #profile {
+        background-color: $spotifyBlack;
+        border-radius: 20px;
+        padding: 0 4px;
+        color: white;
+    }
+}

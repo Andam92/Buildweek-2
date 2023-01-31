@@ -11,6 +11,10 @@ header section {
   width: 100%;
   border-bottom: 1px solid white;
 }
+.navBarMenu a {
+  text-decoration: none;
+  color: white;
+}
 .navBarMenu p {
   display: flex;
 }
@@ -24,6 +28,30 @@ header section {
 
 .navBarPlaylist p {
   font-size: 0.7em;
+}
+
+.navBarMobile {
+  background-color: #191414;
+  padding: 2%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+}
+.navBarMobile a {
+  text-decoration: none;
+  color: white;
+}
+
+.cardPlaylist {
+  background-color: #181818;
+  width: 30%;
+  margin: 1%;
+}
+.cardPlaylist img {
+  width: 50%;
+}
+.cardPlaylist h6 {
+  margin-left: 5%;
 }
 
 .albumSection {
@@ -203,6 +231,31 @@ header section {
   font-size: 0.4em;
 }
 
+.mainPageSearch {
+  background-color: #181818;
+  padding: 2% 3%;
+}
+.mainPageSearch .searchInput {
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+.mainPageSearch .searchGenreSection {
+  padding: 0.5% 0;
+}
+.mainPageSearch .cardAlbumPage {
+  padding: 5%;
+  height: 150px;
+  border-radius: 20px;
+  background-color: salmon;
+  margin: 1%;
+}
+.mainPageSearch #profile {
+  background-color: #191414;
+  border-radius: 20px;
+  padding: 0 4px;
+  color: white;
+}
+
 .sectionPlayBar {
   background-color: #181818;
   color: white;
@@ -210,6 +263,11 @@ header section {
   width: 100%;
   position: fixed;
   bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .sectionPlayBar {
+    bottom: 8%;
+  }
 }
 .sectionPlayBar i {
   margin-right: 10px;
