@@ -132,6 +132,10 @@ header section {
   margin: 0;
 }
 
+.bgArtist {
+  background: linear-gradient(0deg, rgb(2, 0, 2) -492%, rgba(255, 255, 255, 0.8293029872) 122%);
+}
+
 .mainBody .following {
   background-color: #191414;
 }
