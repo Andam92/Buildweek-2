@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Page - Spotify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/scss/settings.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
+  </head>
+  <body class="d-flex">
+    <!--INIZIO HEADER-->
+    <header class="d-flex flex-column col-3">
+      <!--INIZIO NAV-->
+      <section class="navBarMenu">
+      <div>
+        <p><span><i class="bi bi-three-dots"></i></i></span></p>
+        <p><span><i class="bi bi-house-door"></i></span> Home </p>
+        <p><span><i class="bi bi-search"></i></span> Cerca </p>
+        <p><span><i class="bi bi-collection"></i></span>La tua libreria</p>
+      </div>
+      <div>
+        <p><span><i class="bi bi-plus-square-fill"></i></span>Crea playlist</p>
+        <p><span><i class="bi bi-heart-fill"></i></span>Brani che ti piacciono </p>
+        <p><span><i class="bi bi-bookmarks"></i></span>I tuoi episodi</p>
+      </div>
+      </section>
+      <section class="navBarPlaylist d-none d-md-block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+      <!--FINE NAVBAR-->
+    </header>
+    <!--FINE HEADER-->
+    <main class="d-flex justify-content-center align-items-center col-7">
+      <!-- INIZIO MAIN-->
+      <section class="searchPage">
+        <input class="" type="search" placeholder="Cosa vuoi ascoltare?">
+      </section>
+      <section class="searchSection">
+
+      </section>
+
+    </main>
+    <aside class="recentActivity col-2">
+      <!--INIZIO ASIDE-->
+      <section>
+        <div class="d-flex justify-content-between">
+          <h5>Attività amici</h5>
+          <div>
+            <i class="bi bi-person-add"></i>
+            <i class="bi bi-x-lg"></i>
+          </div>
+        </div>        
+      </section>
+        <div class="recentActivityCard">
+          <p><i class="bi bi-person-circle"></i></p>
+          <div class="recentActivityCardText">
+            <p>Nome Utente</p>
+            <p>Titolo Canzone<span>- Artista</span></p>
+            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
+          </div>
+          <h6>15 ore fa</h6>
+        </div>
+        <div class="recentActivityCard">
+          <p><i class="bi bi-person-circle"></i></p>
+          <div class="recentActivityCardText">
+            <p>Nome Utente</p>
+            <p>Titolo Canzone<span>- Artista</span></p>
+            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
+          </div>
+          <h6>15 ore fa</h6>
+        </div>
+        <div class="recentActivityCard">
+          <p><i class="bi bi-person-circle"></i></p>
+          <div class="recentActivityCardText">
+            <p>Nome Utente</p>
+            <p>Titolo Canzone<span>- Artista</span></p>
+            <p><span><i class="bi bi-music-note-beamed"></i></span> Titolo Album</p>
+          </div>
+          <h6>15 ore fa</h6>
+        </div>
+      </article>
+
+    </aside>
+    <footer class="sectionPlayBar d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-evenly align-items-center col-3 cardPlayBar">
+        <img src="http://placekitten.com/100/100" alt="">
+        <div class="cardPlayContainer">
+          <h5>GATTONE PRESLEY</h5>
+          <p>Love Me Pollon</p>
+        </div>
+        <i class="bi bi-heart"></i>
+      </div>
+      <div class="playBarContainer col-6 d-flex flex-column justify-content-center align-items-center">
+        <div class="buttonCommand d-flex justify-content-center align-items-center">
+          <i class="bi bi-shuffle"></i>
+          <i class="bi bi-skip-backward-fill"></i>          
+          <i class="bi bi-play-circle"></i>
+          <i class="bi bi-skip-forward-fill"></i>
+          <i class="bi bi-arrow-repeat"></i>
+        </div>
+        <div class="playBar"><span>1.30</span> -------------------- <span>3.50</span></div>
+      </div>
+      <div class="playBarAside col-3 d-flex justify-content-center align-items-center flex-nowrap">
+        <i class="bi bi-mic-fill"></i>
+        <i class="bi bi-menu-button-wide"></i>
+        <i class="bi bi-pc-display"></i>
+        <input type="range">
+        <i class="bi bi-arrows-angle-expand"></i>
+      </div>
+    </footer>
+
+    </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
