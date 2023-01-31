@@ -1,0 +1,63 @@
+.bottone1 {
+  @include button($mainGreen);
+  padding: 0.5rem 1.3rem;
+}
+
+.bottone2 {
+  @include button($spotifyBlack);
+  padding: 0.5rem 1.3rem;
+  border: 1px solid white;
+}
+
+.bottone3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+.mainBodyHome {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(25, 20, 20, 1) 39%
+  
+  );
+  margin-bottom: 6%;
+
+}
+
+.bottoneX {
+  font-size: 0.8rem;
+}
+
+.cardContainer {
+  background-color: rgba(50, 50, 50, 1) 0%;
+}
+
+.card-text {
+  @media screen and (max-width: 430px) {
+    font-size: 0.7em;
+  }
+}
+
+.riga3 {
+  .cardRiga3{
+    background: linear-gradient(326deg, rgba(2,0,36,0.8748221906116643) 15%, rgba(255,118,0,1) 100%);
+  }
+}
+
+.titleElement {
+  @include fontStyle($fontFamily, 4rem, white);
+  font-weight: 700;
+}
+
+.albumPreview {
+  width: 60px;
+  height: 60px;
+  @media screen and (min-width: 576px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+  }
+}

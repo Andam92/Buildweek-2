@@ -70,19 +70,28 @@ header section {
 .albumSection #profile p {
   font-size: xx-small;
 }
+.albumSection #albumDateSmall {
+  font-size: xx-small !important;
+}
 .albumSection .section2 {
   background-color: rgba(0, 0, 0, 0.322);
 }
 .albumSection .section2 button {
   background-color: #1db954;
   padding: 0 8px 0 11px;
-  background-color: #1db954;
+  background-color: #1ed760;
   padding: 1.2rem 1.6rem;
   border-radius: 20px;
   border-radius: 50%;
   margin-right: 2rem;
   border: none;
   padding: 0 8px 0 11px;
+}
+@media screen and (max-width: 990px) {
+  .albumSection .section2 button {
+    color: white;
+    background-color: #1db954;
+  }
 }
 .albumSection .section2 i {
   font-size: 14px;
@@ -100,7 +109,7 @@ header section {
   box-sizing: border-box;
 }
 .mainBody .artistContainer {
-  background-image: url(https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/1000x1000-000000-80-0-0.jpg);
+  background-position-y: -100px;
   height: 340px;
 }
 .mainBody .artistContainer .verifiedArtist {
@@ -279,4 +288,71 @@ header section {
 }
 .sectionPlayBar .bi-play-circle {
   font-size: 2.1em;
+}
+
+.bottone1 {
+  background-color: #1db954;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+}
+
+.bottone2 {
+  background-color: #191414;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20px;
+  padding: 0.5rem 1.3rem;
+  border: 1px solid white;
+}
+
+.bottone3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.mainBodyHome {
+  background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
+  margin-bottom: 6%;
+}
+
+.bottoneX {
+  font-size: 0.8rem;
+}
+
+.cardContainer {
+  background-color: rgb(50, 50, 50) 0%;
+}
+
+@media screen and (max-width: 430px) {
+  .card-text {
+    font-size: 0.7em;
+  }
+}
+
+.riga3 .cardRiga3 {
+  background: linear-gradient(326deg, rgba(2, 0, 36, 0.8748221906) 15%, rgb(255, 118, 0) 100%);
+}
+
+.titleElement {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: white;
+  font-weight: 700;
+}
+
+.albumPreview {
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 576px) {
+  .albumPreview {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .albumPreview {
+    width: 100px;
+    height: 100px;
+  }
 }/*# sourceMappingURL=settings.css.map */
