@@ -312,6 +312,7 @@ header section {
 
 .mainBodyHome {
   background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
+  margin-bottom: 6%;
 }
 
 .bottoneX {
@@ -326,6 +327,10 @@ header section {
   .card-text {
     font-size: 0.7em;
   }
+}
+
+.riga3 .cardRiga3 {
+  background: linear-gradient(326deg, rgba(2, 0, 36, 0.8748221906) 15%, rgb(255, 118, 0) 100%);
 }
 
 .titleElement {
