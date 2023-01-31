@@ -29,6 +29,12 @@
   background-color: rgba(50, 50, 50, 1) 0%;
 }
 
+.card-text {
+  @media screen and (max-width: 430px) {
+    font-size: 0.7em;
+  }
+}
+
 .titleElement {
   @include fontStyle($fontFamily, 4rem, white);
   font-weight: 700;

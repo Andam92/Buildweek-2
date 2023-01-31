@@ -23,7 +23,7 @@
     <!--INIZIO HEADER-->
     <header class="col-12 col-md-3">
       <!--INIZIO NAV-->
-      <section class="navBarMenu">
+      <section class="navBarMenu d-none d-md-block">
         <div>
           <p><span><i class="bi bi-three-dots"></i></i></span></p>
           <a href="./homepage.html"> <p><span><i class="bi bi-house-door"></i></span> Home </p></a>
@@ -52,13 +52,14 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </section>
+        
     </header>
     <!--FINE HEADER-->
 
     <!-- INIZIO MAIN-->
 <main class="col-12 col-md-9 col-xl-7 text-light mainBodyHome">    
-  <div class="container d-flex flex-column mx-0">
-      <div class="row riga1 p-4">
+  <div class="container d-flex flex-column">
+      <div class="row d-none d-md-block riga1 p-4">
         <div class="col-12 bg-black d-flex border border-dark p-3">
           <div class="col-3">
             <img class="w-100" src="https://e-cdns-images.dzcdn.net/images/artist/0b17b99897d17ceb7027ed57cdbb7044/1000x1000-000000-80-0-0.jpg">
@@ -82,93 +83,120 @@
         </div>
       </div>
       <div class="d-flex justify-content-between">
-        <p>Buonasera</p>
+        <p class="fs-1">Buonasera</p>
         <div class="d-flex me-2 d-md-none">
           <i class="bi bi-bell me-2"></i>
           <i class="bi bi-clock-history me-2"></i>
           <i class="bi bi-gear me-2"></i>
         </div>
        </div>
+       <div class="d-flex justify-content-start d-md-none">
+        <p>Musica</p>
+        <p class="ms-3">Podcast e show</p>
+       </div>
       <div class="row riga2">
       
        <!--INIZIO CARD SECTION-->
-        <section class="d-flex flex-wrap p-3">
+        <section class="d-flex flex-wrap ">
           <!--PRIMA RIGA DI CARDS-->
-          <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
             <div class="cardContainer d-flex align-items-center border border-dark">
-            <div class="col-3 col-md-4">
+            <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
             </div>
             <div class="col-8 ps-2">
-              <p> genere di musica - categorie</p>
+              <p class="card-text"> genere di musica - categorie</p>
             </div>
            </div>
           </div>
-          <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
             <div class="cardContainer d-flex align-items-center border border-dark">
-            <div class="col-3 col-md-4">
+            <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
             </div>
             <div class="col-8 ps-2">
-              <p> genere di musica - categorie</p>
+              <p class="card-text"> genere di musica - categorie</p>
             </div>
            </div>
           </div>
-          <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
             <div class="cardContainer d-flex align-items-center border border-dark">
-            <div class="col-3 col-md-4">
+            <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
             </div>
             <div class="col-8 ps-2">
-              <p> genere di musica - categorie</p>
+              <p class="card-text"> genere di musica - categorie</p>
             </div>
            </div>
           </div>
       <!--SECONDA RIGA DI CARDS-->
-      <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
         <div class="cardContainer d-flex align-items-center border border-dark">
-        <div class="col-3 col-md-4">
+        <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
         </div>
         <div class="col-8 ps-2">
-          <p> genere di musica - categorie</p>
+          <p class="card-text"> genere di musica - categorie</p>
         </div>
        </div>
       </div>
-      <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
         <div class="cardContainer d-flex align-items-center border border-dark">
-        <div class="col-3 col-md-4">
+        <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
         </div>
         <div class="col-8 ps-2">
-          <p> genere di musica - categorie</p>
+          <p class="card-text"> genere di musica - categorie</p>
         </div>
        </div>
       </div>
-      <div class="d-flex align-items-center cardReference col-12 col-sm-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
         <div class="cardContainer d-flex align-items-center border border-dark">
-        <div class="col-3 col-md-4">
+        <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
         </div>
         <div class="col-8 ps-2">
-          <p> genere di musica - categorie</p>
+          <p class="card-text"> genere di musica - categorie</p>
         </div>
        </div>
       </div>
       </section>
 
 
-  <div class="row mx-0 riga3">
-    <div class="terzaRiga bg-primary">
-      <div class="row">
-        <div class="col-10">
-          Altro di ciò che ti piace
-        </div>
-        <div class="col-2">
-          VISUALIZZA TUTTO
-        </div>
+  <div class="row riga3 mb-5">
+      <div class="d-flex justify-content-between">
+        <p>Altro di ciò che ti piace</p>
+        <p>VISUALIZZA TUTTO</p>
       </div>
-      <div class="row">
+      <div class="d-flex flex-wrap justify-content-evenly">
+        <div class="col-12 col-md-2 m-1">
+          <img  src="https://api.deezer.com/artist/412/image">
+          <div class="d-flex flex-column">
+            <h5>Genere</h5>
+            <p>Descrizione</p>
+          </div>
+        </div>
+        <div class="col-1 cardRiga3">
+          <img  src="https://api.deezer.com/artist/412/image">
+          <div class="d-flex flex-column">
+            <h5>Genere</h5>
+            <p>Descrizione</p>
+          </div>
+        </div>
+        <div class="col-1 cardRiga3">
+          <img  src="https://api.deezer.com/artist/412/image">
+          <div class="d-flex flex-column">
+            <h5>Genere</h5>
+            <p>Descrizione</p>
+          </div>
+        </div>
+        <div class="col-1 cardRiga3">
+          <img  src="https://api.deezer.com/artist/412/image">
+          <div class="d-flex flex-column">
+            <h5>Genere</h5>
+            <p>Descrizione</p>
+          </div>
+        </div>
         <div class="col-1 cardRiga3">
           <img  src="https://api.deezer.com/artist/412/image">
           <div class="d-flex flex-column">
@@ -177,7 +205,7 @@
           </div>
         </div>
       </div>
-    </div>
+    
   </div>
 </main>
     <!-- FINE MAIN-->
@@ -223,7 +251,7 @@
       </article>
     </aside>
     <footer class="sectionPlayBar d-flex justify-content-between align-items-center">
-      <div class="d-flex justify-content-evenly align-items-center col-3 cardPlayBar">
+      <div class="d-flex justify-content-evenly align-items-center col-10 col-md-6 col-lg-4 cardPlayBar">
         <img src="https://api.deezer.com/artist/412/image" alt="">
         <div class="cardPlayContainer">
           <p>GATTONE PRESLEY</p>

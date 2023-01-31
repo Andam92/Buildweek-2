@@ -322,6 +322,12 @@ header section {
   background-color: rgb(50, 50, 50) 0%;
 }
 
+@media screen and (max-width: 430px) {
+  .card-text {
+    font-size: 0.7em;
+  }
+}
+
 .titleElement {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
