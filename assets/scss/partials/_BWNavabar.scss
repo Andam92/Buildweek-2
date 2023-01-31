@@ -17,17 +17,13 @@ header {
             margin-right: 3%;
             cursor: pointer;
         }
-        &span:hover {
-            transform: scale(1.1);
-            transition: 0.5s;
-        }
     }
     div {
         margin-bottom: 15%;
     }
 }
 
-.navBarPlaylist {
+.navBarPlaylist {  
     p {
         font-size: 0.7em;
     }
