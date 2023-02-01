@@ -14,8 +14,11 @@ const likedArtistReference = document.querySelector(".likedArtist");
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
 
 let dataFromUrl = new URLSearchParams(window.location.search);
-dataFromUrl = dataFromUrl.get("artistId");
-console.log(dataFromUrl);
+dataFromUrl = dataFromUrl.get("albumId");
+// console.log(dataFromUrl);
+if (dataFromUrl === null) {
+  window.location.href = "homepage.html";
+}
 
 // FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
 
