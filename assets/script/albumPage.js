@@ -81,7 +81,7 @@ const albumAssign = function (albumName) {
     });
 };
 
-albumAssign(75621062);
+albumAssign(dataFromUrl);
 
 /* let fetch = async function () {
   try {
