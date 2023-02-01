@@ -17,6 +17,10 @@ let apiLink = "https://striveschool-api.herokuapp.com/api/deezer/album";
 
 let dataFromUrl = new URLSearchParams(window.location.search);
 dataFromUrl = dataFromUrl.get("albumId");
+// console.log(dataFromUrl);
+if (dataFromUrl === null) {
+  window.location.href = "homepage.html";
+}
 
 // PER GENERARE NOME ALBUM E IMMAGINE
 
