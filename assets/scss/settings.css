@@ -540,6 +540,7 @@ header section {
 
 .cardContainer {
   background-color: rgb(50, 50, 50) 0%;
+  width: 95%;
 }
 
 @media screen and (max-width: 430px) {
@@ -554,9 +555,10 @@ header section {
 
 .titleElement {
   font-family: "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   font-weight: 700;
+  text-overflow: ellipsis;
 }
 
 .albumPreview {
@@ -574,4 +576,11 @@ header section {
     width: 100px;
     height: 100px;
   }
+}
+
+.viewEverything {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: grey;
+  margin: 0;
 }/*# sourceMappingURL=settings.css.map */

@@ -17,6 +17,9 @@ const playBarTitleReference = document.getElementById("playBarTitle");
 const footerReference = document.querySelector("footer");
 const audioReference = document.querySelector("audio");
 const audioSrcReference = document.getElementById("audioSrc");
+const pauseSignGreenBtnReference = document.getElementById(
+  "pauseSignGreenButton"
+);
 
 const overlayReference = document.querySelector(".overly");
 
@@ -117,7 +120,15 @@ const albumAssign = function (albumName) {
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
+
             overlayReference.classList.add("d-none");
+          });
+
+          // Esc o Barra spaziatrice ferma la canzone
+          document.addEventListener("keydown", function (e) {
+            if (e.key === " " || e.key === "Escape") {
+              audio.pause();
+            }
           });
         });
       });
@@ -187,6 +198,12 @@ playFunction.addEventListener("click", function () {
       overlayReference.addEventListener("click", function () {
         audio.pause();
         overlayReference.classList.add("d-none");
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === " " || e.key === "Escape") {
+          audio.pause();
+          overlayReference.classList.add("d-none");
+        }
       });
     });
 });
