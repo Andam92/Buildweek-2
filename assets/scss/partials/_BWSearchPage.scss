@@ -1,3 +1,15 @@
+@mixin cardAlbumPage {
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2%;
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+
 .mainPageSearch {
     background-color: $playBarColor;
     padding: 2% 3%;
@@ -10,19 +22,98 @@
     .searchGenreSection {
         padding: 0.5% 0
     }
-    .cardAlbumPage {
-        padding: 5%;
-        height: 150px;
-        border-radius: 20px;
-        background-color: salmon;
-        margin: 1%;
-
+    
+    .cardAlbumPage1 {
+        @include cardAlbumPage();
+        background-color: red;
+        &:hover{
+            transform: scale(1.1)
+        }
     }
-    #profile {
+    .cardAlbumPage2 {
+        @include cardAlbumPage();
+        background-color: blue;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage3 {
+        @include cardAlbumPage();
+        background-color: green;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage4 {
+        @include cardAlbumPage();
+        background-color: purple;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage5 {
+        @include cardAlbumPage();
+        background-color: salmon;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage6 {
+        @include cardAlbumPage();
+        background-color: brown;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage7 {
+        @include cardAlbumPage();
+        background-color: grey;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage8 {
+        @include cardAlbumPage();
+        background-color: palevioletred;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage9 {
+        @include cardAlbumPage();
+        background-color: fuchsia;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage10 {
+        @include cardAlbumPage();
+        background-color: darkblue;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage11 {
+        @include cardAlbumPage();
+        background-color: peru;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+    .cardAlbumPage12 {
+        @include cardAlbumPage();
+        background-color: orangered;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+
+    #profileSearch {
         background-color: $spotifyBlack;
         border-radius: 20px;
         padding: 0 4px;
         color: white;
+        width: 50%;
     }
 }
 
