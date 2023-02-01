@@ -227,9 +227,9 @@ header section {
 }
 
 .heartIcon {
+  bottom: 10%;
   position: absolute;
-  left: 65% !important;
-  top: 65%;
+  left: 60%;
   color: #1db954;
 }
 
