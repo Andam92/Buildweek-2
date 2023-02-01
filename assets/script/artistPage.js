@@ -20,7 +20,7 @@ const titlePicker = function (title, background, fans) {
     ? (titleReference.innerText = String(title))
     : (titleReference.innerText = `Oops something goeas wrong`);
 
-  artistBackgroundReference.style.backgroundImage = `url(${background})`;
+  artistBackgroundReference.style.backgroundImage = ` url(${background})`;
   monthlyViewersReference.innerText = `${fans} ascoltatori mensili`;
 };
 
