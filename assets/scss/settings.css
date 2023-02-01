@@ -26,6 +26,10 @@ header section {
   margin-bottom: 15%;
 }
 
+.navBarPlaylist {
+  overflow: scroll;
+  height: 200px;
+}
 .navBarPlaylist p {
   font-size: 0.7em;
 }
@@ -453,6 +457,10 @@ header section {
 }
 .sectionPlayBar .bi-play-circle {
   font-size: 2.1em;
+}
+
+.playBarAside input {
+  color: white;
 }
 
 .playBar {
