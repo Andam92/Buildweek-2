@@ -93,11 +93,17 @@ header section {
     background-color: #1db954;
   }
 }
-.albumSection .section2 i {
+.albumSection i {
   font-size: 14px;
 }
-.albumSection .section2 p {
+.albumSection p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 1100px) {
+  .songRanks {
+    display: none;
+  }
 }
 
 .mainBody {
@@ -109,7 +115,8 @@ header section {
   box-sizing: border-box;
 }
 .mainBody .artistContainer {
-  background-position-y: -100px;
+  background-position-y: -170px;
+  background-size: cover;
   height: 340px;
 }
 .mainBody .artistContainer .verifiedArtist {

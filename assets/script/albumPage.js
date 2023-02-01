@@ -13,6 +13,11 @@ const tracksContainerReference = document.getElementById("tracksContainer");
 
 let apiLink = "https://striveschool-api.herokuapp.com/api/deezer/album";
 
+// URL SEARCH PARAMS
+
+let dataFromUrl = new URLSearchParams(window.location.search);
+dataFromUrl = dataFromUrl.get("albumId");
+
 // PER GENERARE NOME ALBUM E IMMAGINE
 
 const albumPicker = function (title, image, length, tracks, profileImg) {
@@ -60,7 +65,7 @@ const albumAssign = function (albumName) {
                       }</p>
                     </div>
                   </div>
-              <div class="col-3 justify-content-start d-flex" > <p class="opacity-75 d-none d-md-block">${
+              <div class="col-3 justify-content-start d-flex" > <p class="opacity-75 d-none d-lg-block songRanks">${
                 trackList[index].rank
               }</p> </div>
               <div class="col-3 d-flex justify-content-end"> <p class="opacity-75 d-none d-md-block">${

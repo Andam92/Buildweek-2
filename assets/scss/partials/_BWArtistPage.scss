@@ -8,7 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   .artistContainer {
-    background-position-y: -100px;
+    background-position-y: -170px;
+    background-size: cover;
     height: 340px;
     .verifiedArtist {
       @include fontStyle($fontFamily, 0.8rem, white);
