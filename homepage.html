@@ -60,17 +60,17 @@
 <main class="col-md-9 col-xl-7 text-light mainBodyHome pb-5">    
   <div class="container d-flex flex-column">
       <div class="row d-none d-md-block riga1 p-4">
-        <div class="col-12 bg-black d-flex border border-dark p-3">
+        <div class="col-12 bg-black d-flex border border-dark p-3" id="">
           <div class="col-3">
-            <img class="w-100" src="https://e-cdns-images.dzcdn.net/images/artist/0b17b99897d17ceb7027ed57cdbb7044/1000x1000-000000-80-0-0.jpg">
+            <img id="albumImg" class="w-100">
           </div>
           <div class="col-6 ps-3">
             <p class="fw-bold">ALBUM</p>
-            <h1 class="titleElement mb-0"> VIOLA </h1>
-            <p class="fw-bold">autore</p>
-            <p class="fw-bold">descrizione</p>
+            <h1 class="titleElement mb-0"> QUEEN </h1>
+            <p class="fw-bold" id="author">autore</p>
+            <p class="fw-bold" id="description">descrizione</p>
             <div class="d-flex">
-              <button class="btn bottone1">Play</button>
+              <button id="play" class="btn bottone1">Play</button>
               <button class="btn bottone2 text-light mx-3">
                 Salva
               </button>
@@ -99,7 +99,7 @@
        <!--INIZIO CARD SECTION-->
         <section class="d-flex flex-wrap ">
           <!--PRIMA RIGA DI CARDS-->
-          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
             <div class="cardContainer d-flex align-items-center border border-dark">
             <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -109,7 +109,7 @@
             </div>
            </div>
           </div>
-          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
             <div class="cardContainer d-flex align-items-center border border-dark">
             <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -119,7 +119,7 @@
             </div>
            </div>
           </div>
-          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+          <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
             <div class="cardContainer d-flex align-items-center border border-dark">
             <div class="col-4 col-md-4">
               <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -130,7 +130,7 @@
            </div>
           </div>
       <!--SECONDA RIGA DI CARDS-->
-      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
         <div class="cardContainer d-flex align-items-center border border-dark">
         <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -140,7 +140,7 @@
         </div>
        </div>
       </div>
-      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
         <div class="cardContainer d-flex align-items-center border border-dark">
         <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -150,7 +150,7 @@
         </div>
        </div>
       </div>
-      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3">
+      <div class="d-flex align-items-center cardReference col-6  col-lg-4 mb-3 sideAlbums">
         <div class="cardContainer d-flex align-items-center border border-dark">
         <div class="col-4 col-md-4">
           <img class="albumPreview" src="https://api.deezer.com/artist/412/image">
@@ -320,17 +320,21 @@
       </div>
       <div class="playBarContainer col-2 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
         <div class="buttonCommand d-flex justify-content-center align-items-center">
-          <i class="bi bi-shuffle d-none d-md-block"></i>
-          <i class="bi bi-skip-backward-fill d-none d-md-block"></i>          
+          <i class="bi bi-shuffle d-none d-md-block" id="press1"></i>
+          <i class="bi bi-skip-backward-fill d-none d-md-block" ></i>          
           <i class="bi bi-play-circle"></i>
           <i class="bi bi-skip-forward-fill d-none d-md-block"></i>
-          <i class="bi bi-arrow-repeat d-none d-md-block"></i>
+          <i class="bi bi-arrow-repeat d-none d-md-block" id="press2"></i>
         </div>
-        <div class="playBar d-none d-md-block"><span>1.30</span> -------------------- <span>3.50</span></div>
+        <div class="d-flex justify-content-center align-items-center playBar">
+          <div class="timerCurrent">1.23</div>
+          <div class="containerBar"><div class="barra"></div></div>
+          <div class="totalTimer">3.50</div>
+        </div>
       </div>
       <div class="playBarAside d-none d-lg-block col-3 col-lg-4 d-flex justify-content-center align-items-center flex-nowrap">
-        <i class="bi bi-mic-fill"></i>
-        <i class="bi bi-menu-button-wide"></i>
+        <i class="bi bi-mic-fill" id="press3"></i>
+        <i class="bi bi-menu-button-wide" id="press4"></i>
         <i class="bi bi-pc-display"></i>
         <input type="range">
         <i class="bi bi-arrows-angle-expand"></i>

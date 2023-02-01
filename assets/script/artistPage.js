@@ -13,6 +13,10 @@ const likedArtistReference = document.querySelector(".likedArtist");
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
 
+let dataFromUrl = new URLSearchParams(window.location.search);
+dataFromUrl = dataFromUrl.get("artistId");
+console.log(dataFromUrl);
+
 // FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
 
 const titlePicker = function (title, background, fans) {
@@ -40,7 +44,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(120);
+titleAssign(dataFromUrl);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 
@@ -52,7 +56,6 @@ const songGenerator = function (artistId) {
       }
     })
     .then(function (element) {
-      console.log("ciao", element.data[0].title);
       element = element.data;
       let title;
       let rank;
@@ -81,50 +84,4 @@ const songGenerator = function (artistId) {
     });
 };
 
-songGenerator(120);
-
-//Funzioni extra al click
-let playButton = document.getElementById("playButton");
-let pauseButton = document.getElementById("pauseButton");
-
-function play() {
-  pauseButton.classList.add("visible");
-  playButton.classList.add("invisible");
-}
-
-function pause() {
-  pauseButton.classList.add("invisible");
-  playButton.classList.add("visible");
-}
-
-/* function playFunction() {
-  playButton.innerHTML = <i class="bi bi-play-circle d-none"></i>;
-  playButton.innerHTML = `<i class="bi bi-pause-circle d-block"></i>`;
-  ;
-}
-playButton.addEventListener("click", playFunction); */
-
-let pressedElem1 = document.getElementById("press1");
-let pressedElem2 = document.getElementById("press2");
-let pressedElem3 = document.getElementById("press3");
-let pressedElem4 = document.getElementById("press4");
-
-function pressGreen1() {
-  pressedElem1.classList.toggle("push");
-}
-pressedElem1.addEventListener("click", pressGreen1);
-
-function pressGreen2() {
-  pressedElem2.classList.toggle("push");
-}
-pressedElem2.addEventListener("click", pressGreen2);
-
-function pressGreen3() {
-  pressedElem3.classList.toggle("push");
-}
-pressedElem3.addEventListener("click", pressGreen3);
-
-function pressGreen4() {
-  pressedElem4.classList.toggle("push");
-}
-pressedElem4.addEventListener("click", pressGreen4);
+songGenerator(dataFromUrl);
