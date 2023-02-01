@@ -82,3 +82,14 @@ const songGenerator = function (artistId) {
 };
 
 songGenerator(120);
+
+//Funzioni extra al click
+
+let pressedElem = document.querySelectorAll(".press");
+/* pressedElem.forEach((el) => {
+    el.classList.toggle("push"); */
+for (let i = 0; i < pressedElem.length; i++) {
+  function pressGreen() {
+    pressedElem.classList.toggle("push");
+  }
+}

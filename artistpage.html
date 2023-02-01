@@ -191,12 +191,17 @@
         <section class="col-5 likedSection order-1 order-lg-2 mb-4 mb-lg-0">
           <h4>Brani che ti piacciono</h4>
           <div class="d-flex align-items-center">
-            <div>
+            <div class="position-relative">
               <img
                 class="likedImg"
                 src="https://e-cdns-images.dzcdn.net/images/artist/8e37e6bd2b28bfa0c4d2114e9737502a/120x120-000000-80-0-0.jpg"
                 alt=""
               />
+              <div class="heartIcon">
+                <i
+                  class="bi bi-suit-heart-fill position-absolute bottom-0 start-100"
+                ></i>
+              </div>
             </div>
             <div class="likedSong">
               <p>Hai messo mi piace a x brani</p>
@@ -270,11 +275,19 @@
         <div
           class="buttonCommand d-flex justify-content-center align-items-center"
         >
-          <i class="bi bi-shuffle d-none d-md-block"></i>
+          <i
+            class="bi press bi-shuffle d-none d-md-block"
+            id="press"
+            onclick="pressGreen()"
+          ></i>
           <i class="bi bi-skip-backward-fill d-none d-md-block"></i>
           <i class="bi bi-play-circle"></i>
           <i class="bi bi-skip-forward-fill d-none d-md-block"></i>
-          <i class="bi bi-arrow-repeat d-none d-md-block"></i>
+          <i
+            class="bi press bi-arrow-repeat d-none d-md-block"
+            id="press"
+            onclick="pressGreen()"
+          ></i>
         </div>
         <div class="playBar d-none d-md-block">
           <span>1.30</span> -------------------- <span>3.50</span>
@@ -283,8 +296,12 @@
       <div
         class="playBarAside d-none d-lg-block col-3 col-lg-4 d-flex justify-content-center align-items-center flex-nowrap"
       >
-        <i class="bi bi-mic-fill"></i>
-        <i class="bi bi-menu-button-wide"></i>
+        <i class="bi press bi-mic-fill" id="press" onclick="pressGreen()"></i>
+        <i
+          class="bi press bi-menu-button-wide"
+          id="press"
+          onclick="pressGreen()"
+        ></i>
         <i class="bi bi-pc-display"></i>
         <input type="range" />
         <i class="bi bi-arrows-angle-expand"></i>

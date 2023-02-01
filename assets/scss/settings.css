@@ -93,6 +93,11 @@ header section {
     background-color: #1db954;
   }
 }
+@media screen and (max-width: 1100px) {
+  .albumSection .section2 button #firstRow {
+    display: none;
+  }
+}
 .albumSection .section2 i {
   font-size: 14px;
 }
@@ -133,7 +138,8 @@ header section {
 }
 
 .bgArtist {
-  background: linear-gradient(0deg, rgb(2, 0, 2) -492%, rgba(255, 255, 255, 0.8293029872) 122%);
+  padding: 2rem;
+  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
 }
 
 .mainBody .following {
@@ -214,6 +220,21 @@ header section {
 /* Handle on hover */
 .mainBody::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  position: absolute;
+  left: 65% !important;
+  top: 65%;
+  color: #1db954;
+}
+
+.push {
+  color: #1db954;
 }
 
 .recentActivity {

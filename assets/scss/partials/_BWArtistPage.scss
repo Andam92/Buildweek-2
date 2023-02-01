@@ -118,3 +118,20 @@
 .mainBody::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+//EFFETTI SUI BOTTONI
+
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  position: absolute;
+  left: 65% !important;
+  top: 65%;
+  color: $mainGreen;
+}
+
+.push {
+  color: $mainGreen;
+}
