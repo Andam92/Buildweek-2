@@ -135,11 +135,6 @@ header section {
   margin: 0;
 }
 
-.bgArtist {
-  padding: 2rem;
-  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
-}
-
 .mainBody .following {
   background-color: #191414;
 }
@@ -445,7 +440,7 @@ header section {
 }
 @media screen and (max-width: 768px) {
   .sectionPlayBar {
-    bottom: 8%;
+    bottom: 6%;
   }
 }
 .sectionPlayBar i {
@@ -460,6 +455,49 @@ header section {
   font-size: 2.1em;
 }
 
+.playBar {
+  width: 60%;
+}
+
+.timerCurrent, .totalTimer {
+  width: 35px;
+  font-size: 0.8em;
+  margin: 0% 3%;
+}
+
+.containerBar {
+  width: 350px;
+  background-color: gray;
+  border-radius: 10px;
+  height: 7px;
+}
+
+.barra {
+  border-radius: 10px;
+  height: 7px;
+  width: 200px;
+  background: white;
+  -webkit-animation: animazione 50s linear;
+          animation: animazione 50s linear;
+}
+
+@-webkit-keyframes animazione {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: -20px;
+  }
+}
+
+@keyframes animazione {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: -20px;
+  }
+}
 .bottone1 {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
