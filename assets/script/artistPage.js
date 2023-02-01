@@ -13,6 +13,10 @@ const likedArtistReference = document.querySelector(".likedArtist");
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
 
+let dataFromUrl = new URLSearchParams(window.location.search);
+dataFromUrl = dataFromUrl.get("artistId");
+console.log(dataFromUrl);
+
 // FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
 
 const titlePicker = function (title, background, fans) {
@@ -40,7 +44,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(120);
+titleAssign(dataFromUrl);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 
@@ -52,7 +56,6 @@ const songGenerator = function (artistId) {
       }
     })
     .then(function (element) {
-      console.log("ciao", element.data[0].title);
       element = element.data;
       let title;
       let rank;
@@ -81,4 +84,4 @@ const songGenerator = function (artistId) {
     });
 };
 
-songGenerator(120);
+songGenerator(dataFromUrl);
