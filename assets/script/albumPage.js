@@ -8,6 +8,13 @@ const albumAuthorandDateReference =
 const albumTracksNumberReference = document.getElementById("albumTracksNumber");
 const albumDurationReference = document.getElementById("albumDuration");
 const tracksContainerReference = document.getElementById("tracksContainer");
+const heartIconChangerReference = document.getElementById("heartIcon");
+const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
+const playFunction = document.querySelector("button");
+const playBarImgReference = document.getElementById("playBarImg");
+const playBarAuthorReference = document.getElementById("playBarAuthor");
+const playBarTitleReference = document.getElementById("playBarTitle");
+const footerReference = document.querySelector("footer");
 
 // API LINK
 
@@ -21,6 +28,8 @@ dataFromUrl = dataFromUrl.get("albumId");
 if (dataFromUrl === null) {
   window.location.href = "homepage.html";
 }
+
+console.log(playBarImgReference);
 
 // PER GENERARE NOME ALBUM E IMMAGINE
 
@@ -63,7 +72,9 @@ const albumAssign = function (albumName) {
               <div class="d-flex align-items-center  col-6">
                     <p class="opacity-75 d-none d-md-block">${index + 1}</p>
                     <div class="ms-0 ms-md-3">
-                      <p class="m-0">${trackList[index].title}</p> 
+                      <p class="m-0 trackSelector">${
+                        trackList[index].title
+                      }</p> 
                       <p id="authorName" class="opacity-75 mt-1">${
                         trackList[index].artist.name
                       }</p>
@@ -82,6 +93,19 @@ const albumAssign = function (albumName) {
               </div>`;
         /*  if (index >= 4) break; */
       }
+      // const trackSelectorReference = document.querySelectorAll("trackSelector");
+      // console.log(trackSelectorReference);
+      const trackItems = document.querySelectorAll(".trackSelector");
+      console.log("track", trackItems);
+      trackItems.forEach((item, index) => {
+        item.addEventListener("click", function () {
+          console.log(playBarImgReference);
+          footerReference.classList.remove("d-none");
+          playBarImgReference.src = element.cover;
+          playBarAuthorReference.innerText = element.artist.name;
+          playBarTitleReference.innerText = element.tracks.data[index].title;
+        });
+      });
     });
 };
 
@@ -91,18 +115,51 @@ albumAssign(dataFromUrl);
   try {
     let res = await fetch(
       "https://striveschool-api.herokuapp.com/api/deezer/album/75621062"
-    );
-    console.log(res);
-    if (res.ok) {
-      let data = await res.json();
-      console.log(data);
-
-      console.log("L'ARRAY E': ", jsonArray);
-    } else {
-      console.log("Attenzione! res !== ok");
+      );
+      console.log(res);
+      if (res.ok) {
+        let data = await res.json();
+        console.log(data);
+        
+        console.log("L'ARRAY E': ", jsonArray);
+      } else {
+        console.log("Attenzione! res !== ok");
+      }
+    } catch (error) {
+      console.log("ATTENZIONE, ERRORE CATCH", error);
     }
-  } catch (error) {
-    console.log("ATTENZIONE, ERRORE CATCH", error);
-  }
+  };
+  */
+
+// FUNZIONE PER RIEMPIRE IL CUORE PREFERITI
+
+const favourite = function (icon) {
+  icon.classList.toggle("bi-heart");
+  icon.classList.toggle("bi-heart-fill");
+  icon.classList.toggle("text-danger");
 };
- */
+
+heartIconChangerReference.addEventListener("click", function () {
+  favourite(this);
+});
+
+playerHeartIconChangerReference.addEventListener("click", function () {
+  favourite(this);
+});
+
+// SPOSTARE CANZONE NELLA BARRA
+
+playFunction.addEventListener("click", function () {
+  fetch(`${apiLink}/${dataFromUrl}`)
+    .then(function (response) {
+      if (response.ok) {
+        return response.json();
+      }
+    })
+    .then(function (element) {
+      footerReference.classList.remove("d-none");
+      playBarImgReference.src = element.cover;
+      playBarAuthorReference.innerText = element.artist.name;
+      playBarTitleReference.innerText = element.tracks.data[0].title;
+    });
+});
