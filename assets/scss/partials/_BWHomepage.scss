@@ -67,6 +67,6 @@
 }
 
 .viewEverything {
-  @include fontStyle($fontFamily, 10px, grey);
+  @include fontStyle($fontFamily, 12px, grey);
   margin: 0;
 }
