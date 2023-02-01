@@ -15,6 +15,8 @@ const playBarImgReference = document.getElementById("playBarImg");
 const playBarAuthorReference = document.getElementById("playBarAuthor");
 const playBarTitleReference = document.getElementById("playBarTitle");
 const footerReference = document.querySelector("footer");
+const audioReference = document.querySelector("audio");
+const audioSrcReference = document.getElementById("audioSrc");
 
 // API LINK
 
@@ -101,7 +103,11 @@ const albumAssign = function (albumName) {
         item.addEventListener("click", function () {
           console.log(playBarImgReference);
           footerReference.classList.remove("d-none");
+          // audioSrcReference.src = element.tracks.data[index].preview;
           playBarImgReference.src = element.cover;
+          console.log(element.tracks.data[index].preview);
+          audioReference.play();
+          console.log("wefiefw", audioReference.play());
           playBarAuthorReference.innerText = element.artist.name;
           playBarTitleReference.innerText = element.tracks.data[index].title;
         });
@@ -158,6 +164,8 @@ playFunction.addEventListener("click", function () {
     })
     .then(function (element) {
       footerReference.classList.remove("d-none");
+      audioSrcReference.src = element.tracks.data[0].preview;
+      console.log(audioReference.play());
       playBarImgReference.src = element.cover;
       playBarAuthorReference.innerText = element.artist.name;
       playBarTitleReference.innerText = element.tracks.data[0].title;
