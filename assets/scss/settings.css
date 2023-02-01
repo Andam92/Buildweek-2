@@ -47,11 +47,9 @@ header section {
   width: 30%;
   margin: 1%;
 }
-.cardPlaylist img {
-  width: 50%;
-}
 .cardPlaylist h6 {
   margin-left: 5%;
+  font-size: 0.65em;
 }
 
 .albumSection {
@@ -91,6 +89,11 @@ header section {
   .albumSection .section2 button {
     color: white;
     background-color: #1db954;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .albumSection .section2 button #firstRow {
+    display: none;
   }
 }
 .albumSection .section2 i {
@@ -255,18 +258,180 @@ header section {
 .mainPageSearch .searchGenreSection {
   padding: 0.5% 0;
 }
-.mainPageSearch .cardAlbumPage {
-  padding: 5%;
-  height: 150px;
+.mainPageSearch .cardAlbumPage1 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
   border-radius: 20px;
-  background-color: salmon;
   margin: 1%;
+  background-color: red;
 }
-.mainPageSearch #profile {
+.mainPageSearch .cardAlbumPage1:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage2 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: blue;
+}
+.mainPageSearch .cardAlbumPage2:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage3 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: green;
+}
+.mainPageSearch .cardAlbumPage3:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage4 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: purple;
+}
+.mainPageSearch .cardAlbumPage4:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage5 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: salmon;
+}
+.mainPageSearch .cardAlbumPage5:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage6 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: brown;
+}
+.mainPageSearch .cardAlbumPage6:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage7 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: grey;
+}
+.mainPageSearch .cardAlbumPage7:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage8 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: palevioletred;
+}
+.mainPageSearch .cardAlbumPage8:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage9 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: fuchsia;
+}
+.mainPageSearch .cardAlbumPage9:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage10 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: darkblue;
+}
+.mainPageSearch .cardAlbumPage10:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage11 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: peru;
+}
+.mainPageSearch .cardAlbumPage11:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage12 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: orangered;
+}
+.mainPageSearch .cardAlbumPage12:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch #profileSearch {
   background-color: #191414;
   border-radius: 20px;
   padding: 0 4px;
   color: white;
+  width: 50%;
 }
 
 .sectionPlayBar {
@@ -279,7 +444,7 @@ header section {
 }
 @media screen and (max-width: 768px) {
   .sectionPlayBar {
-    bottom: 8%;
+    bottom: 6%;
   }
 }
 .sectionPlayBar i {
@@ -294,6 +459,49 @@ header section {
   font-size: 2.1em;
 }
 
+.playBar {
+  width: 60%;
+}
+
+.timerCurrent, .totalTimer {
+  width: 35px;
+  font-size: 0.8em;
+  margin: 0% 3%;
+}
+
+.containerBar {
+  width: 350px;
+  background-color: gray;
+  border-radius: 10px;
+  height: 7px;
+}
+
+.barra {
+  border-radius: 10px;
+  height: 7px;
+  width: 200px;
+  background: white;
+  -webkit-animation: animazione 5s linear;
+          animation: animazione 5s linear;
+}
+
+@-webkit-keyframes animazione {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: -20px;
+  }
+}
+
+@keyframes animazione {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: -20px;
+  }
+}
 .bottone1 {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
@@ -334,7 +542,7 @@ header section {
 }
 
 .riga3 .cardRiga3 {
-  background: linear-gradient(326deg, rgba(2, 0, 36, 0.8748221906) 15%, rgb(255, 118, 0) 100%);
+  background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
 }
 
 .titleElement {
