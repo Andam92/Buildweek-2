@@ -1,3 +1,7 @@
+.push {
+  color: #1db954;
+}
+
 header {
   background-color: #191414;
   color: white;
@@ -59,11 +63,7 @@ header section {
 .albumSection {
   margin: 0 auto;
   background: rgb(25, 20, 20);
-  background: linear-gradient(
-    0deg,
-    rgb(25, 20, 20) 45%,
-    rgb(221, 191, 79) 100%
-  );
+  background: linear-gradient(0deg, rgb(25, 20, 20) 45%, rgb(221, 191, 79) 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -146,11 +146,8 @@ header section {
 }
 
 .bgArtist {
-  background: linear-gradient(
-    0deg,
-    rgb(2, 0, 2) -492%,
-    rgba(255, 255, 255, 0.8293029872) 122%
-  );
+  padding: 2rem;
+  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
 }
 
 .mainBody .following {
@@ -481,8 +478,7 @@ header section {
   width: 60%;
 }
 
-.timerCurrent,
-.totalTimer {
+.timerCurrent, .totalTimer {
   width: 35px;
   font-size: 0.8em;
   margin: 0% 3%;
@@ -501,7 +497,7 @@ header section {
   width: 200px;
   background: white;
   -webkit-animation: animazione 5s linear;
-  animation: animazione 5s linear;
+          animation: animazione 5s linear;
 }
 
 @-webkit-keyframes animazione {
@@ -563,11 +559,6 @@ header section {
 
 .riga3 .cardRiga3 {
   background: linear-gradient(326deg, rgba(53, 51, 51, 0.875) 15%, rgb(65, 61, 57) 100%);
-  background: linear-gradient(
-    326deg,
-    rgba(0, 0, 0, 0.875) 15%,
-    rgb(65, 61, 57) 100%
-  );
 }
 
 .titleElement {
@@ -592,4 +583,4 @@ header section {
     width: 100px;
     height: 100px;
   }
-} /*# sourceMappingURL=settings.css.map */
+}/*# sourceMappingURL=settings.css.map */

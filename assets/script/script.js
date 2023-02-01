@@ -1,4 +1,4 @@
-// DOM ELEMENTS REFERENCES
+/*// DOM ELEMENTS REFERENCES
 
 const artistBackgroundReference = document.getElementById("artistBackground");
 const titleReference = document.getElementById("title");
@@ -81,7 +81,7 @@ const songGenerator = function (artistId) {
     });
 };
 
-songGenerator(120);
+songGenerator(120);*/
 
 //Funzioni extra al click
 let playButton = document.getElementById("playButton");
