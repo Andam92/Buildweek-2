@@ -119,3 +119,22 @@
 .mainBody::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  bottom: 10%;
+  position: absolute;
+  left: 60%;
+  color: $mainGreen;
+}
+
+.push {
+  color: $mainGreen;
+}
+
+.play {
+  display: none;
+}
