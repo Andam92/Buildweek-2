@@ -18,6 +18,8 @@ const footerReference = document.querySelector("footer");
 const audioReference = document.querySelector("audio");
 const audioSrcReference = document.getElementById("audioSrc");
 
+const overlayReference = document.querySelector(".overly");
+
 // API LINK
 
 let apiLink = "https://striveschool-api.herokuapp.com/api/deezer/album";
@@ -101,15 +103,22 @@ const albumAssign = function (albumName) {
       console.log("track", trackItems);
       trackItems.forEach((item, index) => {
         item.addEventListener("click", function () {
-          console.log(playBarImgReference);
           footerReference.classList.remove("d-none");
-          // audioSrcReference.src = element.tracks.data[index].preview;
           playBarImgReference.src = element.cover;
-          console.log(element.tracks.data[index].preview);
-          audioReference.play();
-          console.log("wefiefw", audioReference.play());
+          audioSrcReference.src = element.tracks.data[index].preview;
+
           playBarAuthorReference.innerText = element.artist.name;
           playBarTitleReference.innerText = element.tracks.data[index].title;
+          const audio = new Audio();
+          audio.src = element.tracks.data[index].preview;
+          audio.play();
+
+          // Overlay ferma la canzone
+          overlayReference.classList.remove("d-none");
+          overlayReference.addEventListener("click", function () {
+            audio.pause();
+            overlayReference.classList.add("d-none");
+          });
         });
       });
     });
@@ -165,9 +174,19 @@ playFunction.addEventListener("click", function () {
     .then(function (element) {
       footerReference.classList.remove("d-none");
       audioSrcReference.src = element.tracks.data[0].preview;
-      console.log(audioReference.play());
+
       playBarImgReference.src = element.cover;
       playBarAuthorReference.innerText = element.artist.name;
       playBarTitleReference.innerText = element.tracks.data[0].title;
+      const audio = new Audio();
+      audio.src = element.tracks.data[0].preview;
+
+      audio.play();
+
+      overlayReference.classList.remove("d-none");
+      overlayReference.addEventListener("click", function () {
+        audio.pause();
+        overlayReference.classList.add("d-none");
+      });
     });
 });
