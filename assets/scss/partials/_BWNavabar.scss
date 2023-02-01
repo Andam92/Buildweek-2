@@ -28,8 +28,6 @@ header {
 }
 
 .navBarPlaylist { 
-    @include BWoverflow;
-    height: 200px;
     p {
         font-size: 0.7em;
     }
