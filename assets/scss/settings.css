@@ -47,11 +47,9 @@ header section {
   width: 30%;
   margin: 1%;
 }
-.cardPlaylist img {
-  width: 50%;
-}
 .cardPlaylist h6 {
   margin-left: 5%;
+  font-size: 0.65em;
 }
 
 .albumSection {
@@ -93,6 +91,11 @@ header section {
     background-color: #1db954;
   }
 }
+@media screen and (max-width: 1100px) {
+  .albumSection .section2 button #firstRow {
+    display: none;
+  }
+}
 .albumSection .section2 i {
   font-size: 14px;
 }
@@ -130,6 +133,11 @@ header section {
   font-size: 1rem;
   color: white;
   margin: 0;
+}
+
+.bgArtist {
+  padding: 2rem;
+  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
 }
 
 .mainBody .following {
@@ -251,18 +259,180 @@ header section {
 .mainPageSearch .searchGenreSection {
   padding: 0.5% 0;
 }
-.mainPageSearch .cardAlbumPage {
-  padding: 5%;
-  height: 150px;
+.mainPageSearch .cardAlbumPage1 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
   border-radius: 20px;
-  background-color: salmon;
   margin: 1%;
+  background-color: red;
 }
-.mainPageSearch #profile {
+.mainPageSearch .cardAlbumPage1:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage2 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: blue;
+}
+.mainPageSearch .cardAlbumPage2:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage3 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: green;
+}
+.mainPageSearch .cardAlbumPage3:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage4 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: purple;
+}
+.mainPageSearch .cardAlbumPage4:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage5 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: salmon;
+}
+.mainPageSearch .cardAlbumPage5:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage6 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: brown;
+}
+.mainPageSearch .cardAlbumPage6:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage7 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: grey;
+}
+.mainPageSearch .cardAlbumPage7:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage8 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: palevioletred;
+}
+.mainPageSearch .cardAlbumPage8:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage9 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: fuchsia;
+}
+.mainPageSearch .cardAlbumPage9:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage10 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: darkblue;
+}
+.mainPageSearch .cardAlbumPage10:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage11 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: peru;
+}
+.mainPageSearch .cardAlbumPage11:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch .cardAlbumPage12 {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2%;
+  height: 100px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 1%;
+  background-color: orangered;
+}
+.mainPageSearch .cardAlbumPage12:hover {
+  transform: scale(1.1);
+}
+.mainPageSearch #profileSearch {
   background-color: #191414;
   border-radius: 20px;
   padding: 0 4px;
   color: white;
+  width: 50%;
 }
 
 .sectionPlayBar {
