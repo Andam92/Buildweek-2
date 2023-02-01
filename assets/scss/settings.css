@@ -237,6 +237,10 @@ header section {
   color: #1db954;
 }
 
+.play {
+  display: none;
+}
+
 .recentActivity {
   background-color: #191414;
   color: white;
@@ -312,6 +316,9 @@ header section {
   cursor: pointer;
 }
 .sectionPlayBar .bi-play-circle {
+  font-size: 2.1em;
+}
+.sectionPlayBar .bi-pause-circle {
   font-size: 2.1em;
 }
 

@@ -84,6 +84,25 @@ const songGenerator = function (artistId) {
 songGenerator(120);
 
 //Funzioni extra al click
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+
+function play() {
+  pauseButton.classList.add("visible");
+  playButton.classList.add("invisible");
+}
+
+function pause() {
+  pauseButton.classList.add("invisible");
+  playButton.classList.add("visible");
+}
+
+/* function playFunction() {
+  playButton.innerHTML = <i class="bi bi-play-circle d-none"></i>;
+  playButton.innerHTML = `<i class="bi bi-pause-circle d-block"></i>`;
+  ;
+}
+playButton.addEventListener("click", playFunction); */
 
 let pressedElem1 = document.getElementById("press1");
 let pressedElem2 = document.getElementById("press2");
