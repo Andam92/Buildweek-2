@@ -22,8 +22,15 @@
 }
 
 .playBar {
-    width:60%
+    width:60%;
 }
+
+@media screen and (max-width:768px) {
+    .playBar {
+    display: none !important;
+    }        
+}
+
 .timerCurrent, .totalTimer{
     width: 35px;
     font-size: 0.8em;
