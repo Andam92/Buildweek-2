@@ -125,8 +125,25 @@ playerHeartIconChangerReference.addEventListener("click", function () {
 
 // Follow Button
 
-const follow = function () {
-  followBtn.classList.toggle("followBtnActive");
+/* const follow = function () {
+  followBtn.classList.add("followBtnActive");
+  followBtn.innerText = "Following";
 };
+const buttonFollowed = document.querySelector(".followBtnActive");
+const unfollow = function () {
+  followBtn.innerText = "Follow";
+  followBtn.classList.remove("followBtnActive");
+}; */
 
-followBtn.addEventListener("click", follow);
+// followBtn.addEventListener("click", follow);
+followBtn.addEventListener("click", function () {
+  if (followBtn.classList.contains("followBtnActive")) {
+    followBtn.classList.remove("followBtnActive");
+    followBtn.innerText = "Follow";
+    followBtn.classList.add("px-4");
+  } else {
+    followBtn.classList.add("followBtnActive");
+    followBtn.innerText = "Following";
+    followBtn.classList.remove("px-4");
+  }
+});

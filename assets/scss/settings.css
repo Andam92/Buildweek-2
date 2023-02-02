@@ -648,9 +648,8 @@ header section {
   color: black !important;
   background-color: #1db954;
   border: black !important;
-  font-weight: 700;
+  font-weight: 600;
   transform: scale(1.1);
-  transition: all 0.5s;
 }
 
 .vertical-scroll::-webkit-scrollbar {
