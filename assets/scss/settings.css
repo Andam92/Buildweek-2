@@ -481,7 +481,8 @@ header section {
 .sectionPlayBar:hover {
   cursor: pointer;
 }
-.sectionPlayBar .bi-play-circle {
+.sectionPlayBar .bi-play-circle,
+.sectionPlayBar .bi-pause-circle {
   font-size: 2.1em;
 }
 
@@ -489,7 +490,8 @@ header section {
   width: 60%;
 }
 
-.timerCurrent, .totalTimer {
+.timerCurrent,
+.totalTimer {
   width: 35px;
   font-size: 0.8em;
   margin: 0% 3%;
