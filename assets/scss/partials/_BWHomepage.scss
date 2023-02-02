@@ -1,3 +1,4 @@
+@include overFlow;
 .bottone1 {
   @include button($mainGreen);
   padding: 0.5rem 1.3rem;
@@ -14,6 +15,7 @@
   letter-spacing: 3px;
 }
 .mainBodyHome {
+  @include overFlow;
   background: linear-gradient(
     180deg,
     rgba(50, 50, 50, 1) 0%,
@@ -69,4 +71,8 @@
 .viewEverything {
   @include fontStyle($fontFamily, 12px, grey);
   margin: 0;
+}
+
+.bi-pause-circle {
+  font-size: 2.1em;
 }

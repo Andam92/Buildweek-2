@@ -2,6 +2,138 @@
   color: #1db954;
 }
 
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
 header {
   background-color: #191414;
   color: white;
@@ -30,6 +162,9 @@ header section {
   margin-bottom: 15%;
 }
 
+.navBarPlaylist {
+  height: 40vh;
+}
 .navBarPlaylist p {
   font-size: 0.7em;
 }
@@ -54,6 +189,138 @@ header section {
 .cardPlaylist h6 {
   margin-left: 5%;
   font-size: 0.65em;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
 }
 
 .albumSection {
@@ -106,6 +373,138 @@ header section {
   .songRanks {
     display: none;
   }
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
 }
 
 .mainBody {
@@ -228,7 +627,159 @@ header section {
   background: #555;
 }
 
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  bottom: 10%;
+  position: absolute;
+  left: 60%;
+  color: #1db954;
+}
+
+.push {
+  color: #1db954;
+}
+
+.play {
+  display: none;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
 .recentActivity {
+  height: 100vh;
   background-color: #191414;
   color: white;
   padding: 1% 0.5% 1% 1.5%;
@@ -254,6 +805,138 @@ header section {
 
 .recentActivityCardText {
   font-size: 0.4em;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
 }
 
 .mainPageSearch {
@@ -464,7 +1147,8 @@ header section {
 .sectionPlayBar:hover {
   cursor: pointer;
 }
-.sectionPlayBar .bi-play-circle {
+.sectionPlayBar .bi-play-circle,
+.sectionPlayBar .bi-pause-circle {
   font-size: 2.1em;
 }
 
@@ -472,7 +1156,13 @@ header section {
   width: 60%;
 }
 
-.timerCurrent, .totalTimer {
+@media screen and (max-width: 768px) {
+  .playBar {
+    display: none !important;
+  }
+}
+.timerCurrent,
+.totalTimer {
   width: 35px;
   font-size: 0.8em;
   margin: 0% 3%;
@@ -511,6 +1201,138 @@ header section {
     width: -20px;
   }
 }
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+
+.vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+
+.mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
+.mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+
+.mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+
+.mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+
 .bottone1 {
   background-color: #1db954;
   padding: 1.2rem 1.6rem;
@@ -534,6 +1356,112 @@ header section {
 .mainBodyHome {
   background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
   margin-bottom: 6%;
+}
+.mainBodyHome .vertical-scroll::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+.mainBodyHome .vertical-scroll::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+.mainBodyHome .vertical-scroll::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+.mainBodyHome .vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+.mainBodyHome .vertical-scroll {
+  overflow-x: scroll;
+  padding: 1%;
+  border-radius: 1em;
+}
+.mainBodyHome .vertical-scroll > div {
+  border-radius: 1em;
+  border: 0.5em solid hsl(0deg, 0%, 60%);
+  padding: 1em;
+}
+.mainBodyHome .mainBodyHome {
+  overflow-y: scroll;
+  height: 100vh;
+}
+.mainBodyHome .mainBodyHome::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+.mainBodyHome .mainBodyHome::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+.mainBodyHome .mainBodyHome::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+.mainBodyHome .mainBodyHome::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+.mainBodyHome .mainBody {
+  overflow-y: scroll;
+  height: 100vh;
+}
+.mainBodyHome .mainBody::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+.mainBodyHome .mainBody::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+.mainBodyHome .mainBody::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+.mainBodyHome .mainBodY::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+.mainBodyHome .albumSection {
+  overflow-y: scroll;
+  height: 100vh;
+}
+.mainBodyHome .albumSection::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+.mainBodyHome .albumSection::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+.mainBodyHome .albumSection::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+.mainBodyHome .albumSection::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
+.mainBodyHome .mainPageSearch {
+  overflow-y: scroll;
+  height: 100vh;
+}
+.mainBodyHome .mainPageSearch::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.1em;
+}
+.mainBodyHome .mainPageSearch::-webkit-scrollbar-track {
+  background: #181818;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+.mainBodyHome .mainPageSearch::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 100vw;
+}
+.mainBodyHome .mainPageSearch::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
 }
 
 .bottoneX {
@@ -585,4 +1513,8 @@ header section {
   font-size: 12px;
   color: grey;
   margin: 0;
+}
+
+.bi-pause-circle {
+  font-size: 2.1em;
 }/*# sourceMappingURL=settings.css.map */
