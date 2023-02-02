@@ -522,15 +522,20 @@ header section {
   box-sizing: border-box;
 }
 .mainBody .artistContainer {
+  height: 340px;
   background-position-y: -170px;
   background-size: cover;
-  height: 340px;
+}
+.mainBody .artistContainer #bgArtist {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1411764706) !important;
 }
 .mainBody .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   color: white;
   margin: 0;
+  padding-top: 8.6em;
 }
 .mainBody .artistContainer .songTitle {
   font-family: "Roboto", sans-serif;
@@ -544,11 +549,6 @@ header section {
   font-size: 1rem;
   color: white;
   margin: 0;
-}
-
-.bgArtist {
-  padding: 2rem;
-  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
 }
 
 .mainBody .following {
@@ -1531,8 +1531,4 @@ header section {
   font-size: 12px;
   color: grey;
   margin: 0;
-}
-
-.bi-pause-circle {
-  font-size: 2.1em;
 }/*# sourceMappingURL=settings.css.map */
