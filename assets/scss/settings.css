@@ -119,13 +119,15 @@ header section {
 .mainBody .artistContainer {
   background-position-y: -170px;
   background-size: cover;
-  height: 340px;
+  background-repeat: no-repeat;
+  /* height: 340px; */
 }
 .mainBody .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   color: white;
   margin: 0;
+  padding-top: 8.6em;
 }
 .mainBody .artistContainer .songTitle {
   font-family: "Roboto", sans-serif;
