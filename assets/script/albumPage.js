@@ -17,11 +17,17 @@ const playBarTitleReference = document.getElementById("playBarTitle");
 const footerReference = document.querySelector("footer");
 const audioReference = document.querySelector("audio");
 const audioSrcReference = document.getElementById("audioSrc");
-const pauseSignGreenBtnReference = document.getElementById(
+/* const pauseSignGreenBtnReference = document.getElementById(
   "pauseSignGreenButton"
-);
+); */
+const shuffleBtn = document.getElementById("shuffleBtn");
+// RIFERIMENTI BOTTONI PLAYER
+const pauseBtnReference = document.getElementById("pauseButton");
+const playBtnReference = document.getElementById("playButton");
 
 const overlayReference = document.querySelector(".overly");
+const skipBackward = document.getElementById("skipBackward");
+const skipForward = document.getElementById("skipForward");
 
 // API LINK
 
@@ -102,11 +108,15 @@ const albumAssign = function (albumName) {
       }
       // const trackSelectorReference = document.querySelectorAll("trackSelector");
       // console.log(trackSelectorReference);
+
+      // FUNZIONALITA' AUDIO
       const trackItems = document.querySelectorAll(".trackSelector");
-      console.log("track", trackItems);
+
       trackItems.forEach((item, index) => {
         item.addEventListener("click", function () {
           footerReference.classList.remove("d-none");
+          playBtnReference.classList.add("d-none");
+          pauseBtnReference.classList.remove("d-none");
           playBarImgReference.src = element.cover;
           audioSrcReference.src = element.tracks.data[index].preview;
 
@@ -115,6 +125,35 @@ const albumAssign = function (albumName) {
           const audio = new Audio();
           audio.src = element.tracks.data[index].preview;
           audio.play();
+
+          // Skip forward-backward (TENTATIVO)
+
+          /*      skipBackward.addEventListener("click", function () {
+            console.log(element.tracks.data[index - 1].preview);
+            console.log(audioSrcReference.src);
+            audioSrcReference.src = element.tracks.data[index - 1].preview;
+            audio.pause();
+            const musica = function () {
+              audio.play();
+            };
+            setTimeout(musica, 2000);
+
+            // audioSrcReference.src = element.tracks.data[index - 1].preview;
+          }); */
+
+          // Comandi player-pausa
+          pauseBtnReference.addEventListener("click", function () {
+            pauseBtnReference.classList.add("d-none");
+            playBtnReference.classList.remove("d-none");
+            audio.pause();
+          });
+
+          // Comandi player-play
+          playBtnReference.addEventListener("click", function () {
+            playBtnReference.classList.add("d-none");
+            pauseBtnReference.classList.remove("d-none");
+            audio.play();
+          });
 
           // Overlay ferma la canzone
           overlayReference.classList.remove("d-none");
@@ -207,3 +246,17 @@ playFunction.addEventListener("click", function () {
       });
     });
 });
+
+// SHUFFLE
+
+shuffleBtn.addEventListener("click", function () {
+  if (shuffleBtn.classList.contains("shuffleOn")) {
+    shuffleBtn.classList.remove("shuffleOn");
+  } else shuffleBtn.classList.add("shuffleOn");
+});
+
+/* shuffleBtn.addEventListener("click", function () {
+  shuffleBtn.classList.contains("shuffleOn")
+    ? shuffleBtn.classList.remove("shuffleOn")
+    : shuffleBtn.classList.add("shuffleOne");
+}); */

@@ -138,3 +138,11 @@
 .play {
   display: none;
 }
+
+.followBtnActive {
+  color: black !important;
+  background-color: $mainGreen;
+  border: black !important;
+  font-weight: 600;
+  transform: scale(1.1);
+}
