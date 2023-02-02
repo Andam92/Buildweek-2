@@ -81,7 +81,7 @@ const songGenerator = function (artistId) {
         title = element[i].title;
         rank = rankOrder[i];
         duration = (element[i].duration / 60).toFixed(2);
-        imgPreview = element[i].contributors[0].picture_small;
+        imgPreview = element[i].album.cover_small;
         popularSongsReference.innerHTML += `<div class="d-flex song">
         <div class="col-12 col-lg-6 d-flex align-items-center mb-3">
           <p class="ms-2 mb-0">${i + 1}</p>
@@ -97,7 +97,7 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < songReference.length; i++) {
         songReference[i].addEventListener("click", function () {
           footerReference.classList.remove("d-none");
-          playBarImgReference.src = element[i].contributors[0].picture;
+          playBarImgReference.src = element[i].album.cover;
           playBarAuthorReference.innerText = element[i].title;
           playBarTitleReference.innerText = element[i].contributors[0].name;
           const audio = new Audio();
@@ -109,3 +109,15 @@ const songGenerator = function (artistId) {
 };
 
 songGenerator(dataFromUrl);
+
+// PLAYER
+
+const favourite = function (icon) {
+  icon.classList.toggle("bi-heart");
+  icon.classList.toggle("bi-heart-fill");
+  icon.classList.toggle("text-danger");
+};
+
+playerHeartIconChangerReference.addEventListener("click", function () {
+  favourite(this);
+});
