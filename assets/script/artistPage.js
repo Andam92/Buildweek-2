@@ -18,6 +18,12 @@ const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playBtn");
 const followBtn = document.getElementById("followBtn");
 
+// PLAYER REF
+const pauseBtnReference = document.getElementById("pauseButton");
+const playerPlayBtnReference = document.getElementById("playButton");
+
+const overlayReference = document.querySelector(".overly");
+
 // API LINK
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
@@ -98,12 +104,42 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < songReference.length; i++) {
         songReference[i].addEventListener("click", function () {
           footerReference.classList.remove("d-none");
+          playerPlayBtnReference.classList.add("d-none");
           playBarImgReference.src = element[i].album.cover;
           playBarAuthorReference.innerText = element[i].title;
           playBarTitleReference.innerText = element[i].contributors[0].name;
           const audio = new Audio();
           audio.src = element[i].preview;
-          // audio.play();
+          audio.play();
+
+          // Comandi player-pausa
+          pauseBtnReference.addEventListener("click", function () {
+            pauseBtnReference.classList.add("d-none");
+            playerPlayBtnReference.classList.remove("d-none");
+            audio.pause();
+          });
+
+          // Comandi player-play
+          playerPlayBtnReference.addEventListener("click", function () {
+            playerPlayBtnReference.classList.add("d-none");
+            pauseBtnReference.classList.remove("d-none");
+            audio.play();
+          });
+
+          /*           // Overlay ferma la canzone
+          overlayReference.classList.remove("d-none");
+          overlayReference.addEventListener("click", function () {
+            audio.pause();
+
+            overlayReference.classList.add("d-none");
+          });
+
+          // Esc o Barra spaziatrice ferma la canzone
+          document.addEventListener("keydown", function (e) {
+            if (e.key === " " || e.key === "Escape") {
+              audio.pause();
+            }
+          }); */
         });
       }
     });
