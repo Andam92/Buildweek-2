@@ -17,7 +17,7 @@ let dataFromUrl = new URLSearchParams(window.location.search);
 dataFromUrl = dataFromUrl.get("albumId");
 // console.log(dataFromUrl);
 if (dataFromUrl === null) {
-  window.location.href = "homepage.html";
+  // window.location.href = "homepage.html";
 }
 
 // FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
@@ -27,7 +27,7 @@ const titlePicker = function (title, background, fans) {
     ? (titleReference.innerText = String(title))
     : (titleReference.innerText = `Oops something goeas wrong`);
 
-  artistBackgroundReference.style.backgroundImage = ` url(${background})`;
+  artistBackgroundReference.style.background = `url(${background})`;
   monthlyViewersReference.innerText = `${fans} ascoltatori mensili`;
 };
 
@@ -47,7 +47,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(dataFromUrl);
+titleAssign(412);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 

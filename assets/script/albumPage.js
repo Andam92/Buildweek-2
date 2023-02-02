@@ -33,7 +33,7 @@ let dataFromUrl = new URLSearchParams(window.location.search);
 dataFromUrl = dataFromUrl.get("albumId");
 // console.log(dataFromUrl);
 if (dataFromUrl === null) {
-  window.location.href = "homepage.html";
+  // window.location.href = "homepage.html";
 }
 
 console.log(playBarImgReference);
