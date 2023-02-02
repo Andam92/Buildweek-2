@@ -167,6 +167,8 @@ const albumAssign = function (albumName) {
           document.addEventListener("keydown", function (e) {
             if (e.key === " " || e.key === "Escape") {
               audio.pause();
+              pauseBtnReference.classList.add("d-none");
+              playBtnReference.classList.remove("d-none");
             }
           });
         });

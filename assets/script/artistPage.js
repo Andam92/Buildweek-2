@@ -126,7 +126,7 @@ const songGenerator = function (artistId) {
             audio.play();
           });
 
-          /*           // Overlay ferma la canzone
+          // Overlay ferma la canzone
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
@@ -138,8 +138,10 @@ const songGenerator = function (artistId) {
           document.addEventListener("keydown", function (e) {
             if (e.key === " " || e.key === "Escape") {
               audio.pause();
+              playerPlayBtnReference.classList.remove("d-none");
+              pauseBtnReference.classList.add("d-none");
             }
-          }); */
+          });
         });
       }
     });

@@ -15,7 +15,9 @@ const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
 const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playFunction");
 
-
+// BOTTONI PLAY-PAUSE
+const playBtnReference = document.getElementById("playButton");
+const pauseBtnReference = document.getElementById("pauseButton");
 
 // Id dell'album
 let albumIdRef = 75621062;
@@ -65,11 +67,24 @@ let albumAssign = function (albumId) {
 
       const audio = new Audio();
       audio.src = element.tracks.data[1].preview;
-      playFunction.addEventListener("click", function () {
+
+      // Comandi del player
+      playBtnReference.addEventListener("click", function () {
+        playBtnReference.classList.add("d-none");
+        pauseBtnReference.classList.remove("d-none");
         audio.play();
       });
-      playFunction.addEventListener("click", function () {
+      pauseBtnReference.addEventListener("click", function () {
+        pauseBtnReference.classList.add("d-none");
+        playBtnReference.classList.remove("d-none");
         audio.pause();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === " ") {
+          audio.pause();
+          pauseBtnReference.classList.add("d-none");
+          playBtnReference.classList.remove("d-none");
+        }
       });
     });
 };
