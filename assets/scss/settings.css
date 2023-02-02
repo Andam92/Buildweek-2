@@ -545,6 +545,13 @@ header section {
 .bgArtist {
   padding: 2rem;
   background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
+  /* 
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2190126050420168) 51%,
+    rgba(255, 255, 255, 0.0313375350140056) 96%
+  ); */
 }
 
 .mainBody .following {
