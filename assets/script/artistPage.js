@@ -9,6 +9,14 @@ const popularSongsReference = document.getElementById("popularSongs");
 const roundedArtistImgRefercence = document.querySelector(".likedImg");
 const likedArtistReference = document.querySelector(".likedArtist");
 
+const footerReference = document.querySelector("footer");
+const playBarImgReference = document.getElementById("playBarImg");
+const playBarAuthorReference = document.getElementById("playBarAuthor");
+const playBarTitleReference = document.getElementById("playBarTitle");
+const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
+const audioSrcReference = document.getElementById("audioSrc");
+const playFunction = document.getElementById("playBtn");
+
 // API LINK
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
@@ -47,7 +55,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(412);
+titleAssign(dataFromUrl);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 
@@ -83,6 +91,18 @@ const songGenerator = function (artistId) {
         <div class="offset-1 col-2 d-flex align-items-center justify-content-end views mb-3"><p class="mb-0">${rank}</p></div>
         <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${duration}</p></div>
       </div>`;
+      }
+      const songReference = document.querySelectorAll(".song");
+      console.log(element[0].preview);
+      for (let i = 0; i < songReference.length; i++) {
+        songReference[i].addEventListener("click", function () {
+          footerReference.classList.remove("d-none");
+          playBarImgReference.src = element[i].contributors[0].picture;
+          playBarAuthorReference.innerText = element[i].title;
+          const audio = new Audio();
+          audio.src = element[i].preview;
+          // audio.play();
+        });
       }
     });
 };
