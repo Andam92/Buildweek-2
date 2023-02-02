@@ -516,10 +516,13 @@ header section {
   box-sizing: border-box;
 }
 .mainBody .artistContainer {
+  height: 340px;
   background-position-y: -170px;
   background-size: cover;
-  background-repeat: no-repeat;
-  /* height: 340px; */
+}
+.mainBody .artistContainer #bgArtist {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1411764706) !important;
 }
 .mainBody .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
@@ -540,18 +543,6 @@ header section {
   font-size: 1rem;
   color: white;
   margin: 0;
-}
-
-.bgArtist {
-  padding: 2rem;
-  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
-  /* 
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.2190126050420168) 51%,
-    rgba(255, 255, 255, 0.0313375350140056) 96%
-  ); */
 }
 
 .mainBody .following {

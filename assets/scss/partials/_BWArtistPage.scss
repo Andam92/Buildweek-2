@@ -8,10 +8,14 @@
   padding: 0;
   box-sizing: border-box;
   .artistContainer {
+    height: 340px;
     background-position-y: -170px;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* height: 340px; */
+    #bgArtist {
+      padding: 2rem;
+      background-color: #00000024 !important;
+    }
+
     .verifiedArtist {
       @include fontStyle($fontFamily, 0.8rem, white);
       margin: 0;
@@ -27,23 +31,6 @@
       margin: 0;
     }
   }
-}
-
-.bgArtist {
-  padding: 2rem;
-  background: linear-gradient(
-    0deg,
-    rgb(2, 0, 2) -150%,
-    rgba(255, 255, 255, 0.8293029872) 122%
-  );
-
-  /* 
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.2190126050420168) 51%,
-    rgba(255, 255, 255, 0.0313375350140056) 96%
-  ); */
 }
 
 // FOLLOWING SECTION
