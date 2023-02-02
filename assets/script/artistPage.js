@@ -9,6 +9,14 @@ const popularSongsReference = document.getElementById("popularSongs");
 const roundedArtistImgRefercence = document.querySelector(".likedImg");
 const likedArtistReference = document.querySelector(".likedArtist");
 
+const footerReference = document.querySelector("footer");
+const playBarImgReference = document.getElementById("playBarImg");
+const playBarAuthorReference = document.getElementById("playBarAuthor");
+const playBarTitleReference = document.getElementById("playBarTitle");
+const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
+const audioSrcReference = document.getElementById("audioSrc");
+const playFunction = document.getElementById("playBtn");
+
 // API LINK
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
@@ -47,7 +55,7 @@ const titleAssign = function (artistId) {
     });
 };
 
-titleAssign(412);
+titleAssign(dataFromUrl);
 
 // FUNZIONE PER GENERARE CANZONI DAL JSON
 
@@ -73,7 +81,7 @@ const songGenerator = function (artistId) {
         title = element[i].title;
         rank = rankOrder[i];
         duration = (element[i].duration / 60).toFixed(2);
-        imgPreview = element[i].contributors[0].picture_small;
+        imgPreview = element[i].album.cover_small;
         popularSongsReference.innerHTML += `<div class="d-flex song">
         <div class="col-12 col-lg-6 d-flex align-items-center mb-3">
           <p class="ms-2 mb-0">${i + 1}</p>
@@ -84,7 +92,32 @@ const songGenerator = function (artistId) {
         <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${duration}</p></div>
       </div>`;
       }
+      const songReference = document.querySelectorAll(".song");
+      console.log(element[0].preview);
+      for (let i = 0; i < songReference.length; i++) {
+        songReference[i].addEventListener("click", function () {
+          footerReference.classList.remove("d-none");
+          playBarImgReference.src = element[i].album.cover;
+          playBarAuthorReference.innerText = element[i].title;
+          playBarTitleReference.innerText = element[i].contributors[0].name;
+          const audio = new Audio();
+          audio.src = element[i].preview;
+          // audio.play();
+        });
+      }
     });
 };
 
 songGenerator(dataFromUrl);
+
+// PLAYER
+
+const favourite = function (icon) {
+  icon.classList.toggle("bi-heart");
+  icon.classList.toggle("bi-heart-fill");
+  icon.classList.toggle("text-danger");
+};
+
+playerHeartIconChangerReference.addEventListener("click", function () {
+  favourite(this);
+});
