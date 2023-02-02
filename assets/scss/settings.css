@@ -644,6 +644,15 @@ header section {
   display: none;
 }
 
+.followBtnActive {
+  color: black !important;
+  background-color: #1db954;
+  border: black !important;
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 .vertical-scroll::-webkit-scrollbar {
   width: 0.5em;
   height: 0.1em;

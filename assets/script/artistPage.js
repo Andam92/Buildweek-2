@@ -16,6 +16,7 @@ const playBarTitleReference = document.getElementById("playBarTitle");
 const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
 const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playBtn");
+const followBtn = document.getElementById("followBtn");
 
 // API LINK
 
@@ -121,3 +122,11 @@ const favourite = function (icon) {
 playerHeartIconChangerReference.addEventListener("click", function () {
   favourite(this);
 });
+
+// Follow Button
+
+const follow = function () {
+  followBtn.classList.toggle("followBtnActive");
+};
+
+followBtn.addEventListener("click", follow);
