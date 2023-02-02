@@ -99,6 +99,7 @@ const songGenerator = function (artistId) {
           footerReference.classList.remove("d-none");
           playBarImgReference.src = element[i].contributors[0].picture;
           playBarAuthorReference.innerText = element[i].title;
+          playBarTitleReference.innerText = element[i].contributors[0].name;
           const audio = new Audio();
           audio.src = element[i].preview;
           // audio.play();
