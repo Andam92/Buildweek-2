@@ -1,5 +1,5 @@
 const h1Reference = document.querySelector("h1");
-const buttonReference = document.getElementById("play");
+const buttonReference = document.getElementById("playBtn");
 const imgReference = document.getElementById("albumImg");
 const authorReference = document.getElementById("author");
 const descriptionReference = document.getElementById("description");
@@ -102,11 +102,11 @@ const sideAlbumsAssign = function (albumId, index) {
     document.location.href = `albumpage.html?albumId=${String(albumId)}`;
   });
 };
-sideAlbumsAssign(8293584, 0);
-sideAlbumsAssign(8293586, 1);
+sideAlbumsAssign(303413, 0);
+sideAlbumsAssign(915785, 1);
 sideAlbumsAssign(8904269, 2);
-sideAlbumsAssign(934176, 3);
-sideAlbumsAssign(934177, 4);
+sideAlbumsAssign(1121182, 3);
+sideAlbumsAssign(1121181, 4);
 sideAlbumsAssign(375765, 5);
 
 // FUNZIONE PER ARTIST PAGE

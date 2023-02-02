@@ -257,17 +257,17 @@
       </div>
     </aside>
     <footer
-      class="sectionPlayBar d-flex justify-content-between align-items-center"
+      class="sectionPlayBar d-flex justify-content-between align-items-center d-none"
     >
       <div
         class="d-flex justify-content-evenly align-items-center col-10 col-md-6 col-lg-4 cardPlayBar"
       >
-        <img src="http://placekitten.com/100/100" alt="" />
+        <img id="playBarImg" src="http://placekitten.com/100/100" alt="" />
         <div class="cardPlayContainer">
-          <p>GATTONE PRESLEY</p>
-          <p>Love Me Pollon</p>
+          <p class="ps-3" id="playBarAuthor">GATTONE PRESLEY</p>
+          <p class="ps-3" id="playBarTitle">Love Me Pollon</p>
         </div>
-        <i class="bi bi-heart"></i>
+        <i class="bi bi-heart" id="barHeartIcon"></i>
       </div>
       <div
         class="playBarContainer col-2 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center"
@@ -315,7 +315,10 @@
         </p>
       </div>
     </nav>
-
+    <audio controls>
+      <source id="audioSrc" src="" type="audio/mp3" />
+      browser
+    </audio>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
