@@ -42,7 +42,8 @@ const titlePicker = function (title, background, fans) {
     ? (titleReference.innerText = String(title))
     : (titleReference.innerText = `Oops something goeas wrong`);
 
-  artistBackgroundReference.style.background = `url(${background})`;
+  artistBackgroundReference.style.backgroundImage = `url(${background})`; // IMPORTANTE! In Js le proprietà css col trattino si scrivono in camelCase
+  artistBackgroundReference.classList.add("backgroundSettings");
   monthlyViewersReference.innerText = `${fans} ascoltatori mensili`;
 };
 

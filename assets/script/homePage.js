@@ -67,6 +67,7 @@ let albumAssign = function (albumId) {
 
       const audio = new Audio();
       audio.src = element.tracks.data[1].preview;
+      // audio.volume = 0.3;  funziona?
 
       // Comandi del player
       playBtnReference.addEventListener("click", function () {

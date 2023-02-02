@@ -521,11 +521,6 @@ header section {
   padding: 0;
   box-sizing: border-box;
 }
-.mainBody .artistContainer {
-  background-position-y: -170px;
-  background-size: cover;
-  height: 340px;
-}
 .mainBody .artistContainer .verifiedArtist {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
@@ -548,7 +543,8 @@ header section {
 
 .bgArtist {
   padding: 2rem;
-  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 87%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .mainBody .following {
@@ -656,6 +652,12 @@ header section {
   border: black !important;
   font-weight: 600;
   transform: scale(1.1);
+}
+
+.backgroundSettings {
+  background-position-y: -170px;
+  background-size: cover;
+  height: 340px;
 }
 
 .vertical-scroll::-webkit-scrollbar {
