@@ -326,11 +326,7 @@ header section {
 .albumSection {
   margin: 0 auto;
   background: rgb(25, 20, 20);
-  background: linear-gradient(
-    0deg,
-    rgb(25, 20, 20) 45%,
-    rgb(221, 191, 79) 100%
-  );
+  background: linear-gradient(0deg, rgb(25, 20, 20) 45%, rgb(221, 191, 79) 100%);
   color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -546,11 +542,7 @@ header section {
 
 .bgArtist {
   padding: 2rem;
-  background: linear-gradient(
-    0deg,
-    rgb(2, 0, 2) -150%,
-    rgba(255, 255, 255, 0.8293029872) 122%
-  );
+  background: linear-gradient(0deg, rgb(2, 0, 2) -150%, rgba(255, 255, 255, 0.8293029872) 122%);
 }
 
 .mainBody .following {
@@ -631,6 +623,25 @@ header section {
 /* Handle on hover */
 .mainBody::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  bottom: 10%;
+  position: absolute;
+  left: 60%;
+  color: #1db954;
+}
+
+.push {
+  color: #1db954;
+}
+
+.play {
+  display: none;
 }
 
 .vertical-scroll::-webkit-scrollbar {
@@ -1134,7 +1145,8 @@ header section {
 .sectionPlayBar:hover {
   cursor: pointer;
 }
-.sectionPlayBar .bi-play-circle {
+.sectionPlayBar .bi-play-circle,
+.sectionPlayBar .bi-pause-circle {
   font-size: 2.1em;
 }
 
@@ -1167,7 +1179,7 @@ header section {
   width: 200px;
   background: white;
   -webkit-animation: animazione 5s linear;
-  animation: animazione 5s linear;
+          animation: animazione 5s linear;
 }
 
 @-webkit-keyframes animazione {
@@ -1466,11 +1478,7 @@ header section {
 }
 
 .riga3 .cardRiga3 {
-  background: linear-gradient(
-    326deg,
-    rgba(0, 0, 0, 0.875) 15%,
-    rgb(65, 61, 57) 100%
-  );
+  background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
 }
 
 .titleElement {
@@ -1507,4 +1515,4 @@ header section {
 
 .bi-pause-circle {
   font-size: 2.1em;
-} /*# sourceMappingURL=settings.css.map */
+}/*# sourceMappingURL=settings.css.map */

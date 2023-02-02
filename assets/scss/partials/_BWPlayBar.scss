@@ -1,58 +1,62 @@
 .sectionPlayBar {
-    background-color: $playBarColor;
-    color: white;
-    padding: 1%;
-    width: 100%;
-    position: fixed;
-    bottom:0;
-    @media screen and (max-width: 768px) {
-        bottom: 6%;
-    }
-    i {
-        margin-right: 10px;
-        margin-left: 10px;
-        font-size: 1.2em;
-    }
-    &:hover {
-        cursor: pointer;
-    }
-    .bi-play-circle{
-        font-size: 2.1em;
-    }
+  background-color: $playBarColor;
+  color: white;
+  padding: 1%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  @media screen and (max-width: 768px) {
+    bottom: 6%;
+  }
+  i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  .bi-play-circle,
+  .bi-pause-circle {
+    font-size: 2.1em;
+  }
 }
 
 .playBar {
-    width:60%;
+  width: 60%;
 }
 
-@media screen and (max-width:768px) {
-    .playBar {
+@media screen and (max-width: 768px) {
+  .playBar {
     display: none !important;
-    }        
+  }
 }
-
-.timerCurrent, .totalTimer{
-    width: 35px;
-    font-size: 0.8em;
-    margin:0% 3%;
+.timerCurrent,
+.totalTimer {
+  width: 35px;
+  font-size: 0.8em;
+  margin: 0% 3%;
 }
 
 .containerBar {
-    width: 350px;
-    background-color: gray;
-    border-radius: 10px;
-    height: 7px;
+  width: 350px;
+  background-color: gray;
+  border-radius: 10px;
+  height: 7px;
 }
 .barra {
-    border-radius: 10px;
-    height: 7px;
-    width: 200px;
-    background: white;
-    animation: animazione 5s linear ;
+  border-radius: 10px;
+  height: 7px;
+  width: 200px;
+  background: white;
+  animation: animazione 5s linear;
 }
 
-@keyframes animazione
-{
-    0% {width: 0px;}
-    100% {width: -20px;}
+@keyframes animazione {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: -20px;
+  }
 }
