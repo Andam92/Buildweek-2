@@ -15,6 +15,8 @@ const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
 const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playFunction");
 
+
+
 // Id dell'album
 let albumIdRef = 75621062;
 
