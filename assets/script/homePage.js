@@ -135,11 +135,11 @@ const bottomAlbumsAssign = function (albumId, index) {
       //  </div>`;
       bottomAlbumsReference[index].innerHTML = "";
       bottomAlbumsReference[index].innerHTML = `
-        <div class="d-flex justify-content-between align-items-center flex-md-column ">
+        <div class="d-flex justify-content-between align-items-center flex-md-column px-3">
           <div class="imgContainerCardRiga3 w-90">
           <img class="img-fluid w-100 rounded" src="${element.picture}">
           </div>
-          <div class="containerCardTextRiga3 d-flex py-4 justify-content-evenly align-items-center">
+          <div class="containerCardTextRiga3 d-flex py-2 justify-content-evenly align-items-center">
             <p>${element.name}</p>
           </div>
         </div>
