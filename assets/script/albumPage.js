@@ -20,6 +20,7 @@ const audioSrcReference = document.getElementById("audioSrc");
 const pauseSignGreenBtnReference = document.getElementById(
   "pauseSignGreenButton"
 );
+const shuffleBtn = document.getElementById("shuffleBtn");
 
 const overlayReference = document.querySelector(".overly");
 
@@ -207,3 +208,17 @@ playFunction.addEventListener("click", function () {
       });
     });
 });
+
+// SHUFFLE
+
+shuffleBtn.addEventListener("click", function () {
+  if (shuffleBtn.classList.contains("shuffleOn")) {
+    shuffleBtn.classList.remove("shuffleOn");
+  } else shuffleBtn.classList.add("shuffleOn");
+});
+
+/* shuffleBtn.addEventListener("click", function () {
+  shuffleBtn.classList.contains("shuffleOn")
+    ? shuffleBtn.classList.remove("shuffleOn")
+    : shuffleBtn.classList.add("shuffleOne");
+}); */

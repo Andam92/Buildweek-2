@@ -347,8 +347,6 @@ header section {
 }
 .albumSection .section2 button {
   background-color: #1db954;
-  padding: 0 8px 0 11px;
-  background-color: #1ed760;
   padding: 1.2rem 1.6rem;
   border-radius: 20px;
   border-radius: 50%;
@@ -373,6 +371,14 @@ header section {
   .songRanks {
     display: none;
   }
+}
+
+.shuffleOn {
+  color: #1db954;
+}
+
+#heartIcon {
+  cursor: pointer;
 }
 
 .vertical-scroll::-webkit-scrollbar {
