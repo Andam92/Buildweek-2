@@ -1,3 +1,4 @@
+@include overFlow;
 header {
     background-color: $spotifyBlack;
     color: white;
@@ -28,6 +29,8 @@ header {
 }
 
 .navBarPlaylist { 
+
+    height: 40vh;
     p {
         font-size: 0.7em;
     }
