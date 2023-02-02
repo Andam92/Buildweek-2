@@ -118,4 +118,57 @@
     }
 }
 
+.easterEgg {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    padding: 5px 20px;
+    width: 300px;
+    border: 1px solid white; 
+    border-radius: 20px;   
+    text-decoration: none;
+    &:hover {
+        animation: easterEgg 2.5s linear;
+    }
 
+    @keyframes easterEgg {
+        0% {
+            transform: scale(1.2);
+            background-color: red;
+            color: white;
+        }
+        15% {
+            transform: scale(1);
+            background-color: white;
+            color: black;
+        }
+        30% {transform: scale(1.2);
+            background-color: red;
+            color: white;
+        }
+        45% {transform: scale(1);
+            background-color: white;
+            color: black;
+        }
+        60% {
+            transform: scale(1.2);
+            background-color: red;
+            color: white;
+        }
+        75% {transform: scale(1);
+            background-color: white;
+            color: black;
+        }
+        90% {transform: scale(1.2);
+            background-color: red;
+            color: white;
+        }
+        100% {transform:scale(1);
+            background-color: white;
+            color: black;}
+
+    }
+
+}

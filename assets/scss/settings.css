@@ -1124,6 +1124,107 @@ header section {
   width: 50%;
 }
 
+.easterEgg {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  padding: 5px 20px;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.easterEgg:hover {
+  -webkit-animation: easterEgg 2.5s linear;
+          animation: easterEgg 2.5s linear;
+}
+@-webkit-keyframes easterEgg {
+  0% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  15% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  30% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  45% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  60% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  75% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  90% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+}
+@keyframes easterEgg {
+  0% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  15% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  30% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  45% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  60% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  75% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+  90% {
+    transform: scale(1.2);
+    background-color: red;
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: white;
+    color: black;
+  }
+}
+
 .sectionPlayBar {
   background-color: #181818;
   color: white;
@@ -1355,120 +1456,21 @@ header section {
   background: linear-gradient(180deg, rgb(50, 50, 50) 0%, rgb(25, 20, 20) 39%);
   margin-bottom: 6%;
 }
-.mainBodyHome .vertical-scroll::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.1em;
-}
-.mainBodyHome .vertical-scroll::-webkit-scrollbar-track {
-  background: #181818;
-  border-radius: 100vw;
-  margin-block: 0.5em;
-}
-.mainBodyHome .vertical-scroll::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 100vw;
-}
-.mainBodyHome .vertical-scroll::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
-}
-.mainBodyHome .vertical-scroll {
-  overflow-x: scroll;
-  padding: 1%;
-  border-radius: 1em;
-}
-.mainBodyHome .vertical-scroll > div {
-  border-radius: 1em;
-  border: 0.5em solid hsl(0deg, 0%, 60%);
-  padding: 1em;
-}
-.mainBodyHome .mainBodyHome {
-  overflow-y: scroll;
-  height: 100vh;
-}
-.mainBodyHome .mainBodyHome::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.1em;
-}
-.mainBodyHome .mainBodyHome::-webkit-scrollbar-track {
-  background: #181818;
-  border-radius: 100vw;
-  margin-block: 0.5em;
-}
-.mainBodyHome .mainBodyHome::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 100vw;
-}
-.mainBodyHome .mainBodyHome::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
-}
-.mainBodyHome .mainBody {
-  overflow-y: scroll;
-  height: 100vh;
-}
-.mainBodyHome .mainBody::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.1em;
-}
-.mainBodyHome .mainBody::-webkit-scrollbar-track {
-  background: #181818;
-  border-radius: 100vw;
-  margin-block: 0.5em;
-}
-.mainBodyHome .mainBody::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 100vw;
-}
-.mainBodyHome .mainBodY::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
-}
-.mainBodyHome .albumSection {
-  overflow-y: scroll;
-  height: 100vh;
-}
-.mainBodyHome .albumSection::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.1em;
-}
-.mainBodyHome .albumSection::-webkit-scrollbar-track {
-  background: #181818;
-  border-radius: 100vw;
-  margin-block: 0.5em;
-}
-.mainBodyHome .albumSection::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 100vw;
-}
-.mainBodyHome .albumSection::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
-}
-.mainBodyHome .mainPageSearch {
-  overflow-y: scroll;
-  height: 100vh;
-}
-.mainBodyHome .mainPageSearch::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.1em;
-}
-.mainBodyHome .mainPageSearch::-webkit-scrollbar-track {
-  background: #181818;
-  border-radius: 100vw;
-  margin-block: 0.5em;
-}
-.mainBodyHome .mainPageSearch::-webkit-scrollbar-thumb {
-  background: gray;
-  border-radius: 100vw;
-}
-.mainBodyHome .mainPageSearch::-webkit-scrollbar-thumb:hover {
-  background: whitesmoke;
-}
 
 .bottoneX {
   font-size: 0.8rem;
+  position: absolute;
+  top: 1em;
+  right: 2em;
 }
 
 .cardContainer {
-  background-color: rgb(50, 50, 50) 0%;
   width: 95%;
+  background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+}
+
+.riga1 {
+  position: relative;
 }
 
 @media screen and (max-width: 430px) {
@@ -1477,8 +1479,11 @@ header section {
   }
 }
 
-.riga3 .cardRiga3 {
+.cardRiga3 {
   background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+}
+.cardRiga3 .containerCardTextRiga3 {
+  font-size: 1.1em;
 }
 
 .titleElement {

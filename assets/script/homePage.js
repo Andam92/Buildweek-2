@@ -92,7 +92,7 @@ const sideAlbumsAssign = function (albumId, index) {
         <img class="albumPreview" src="${element.cover}">
       </div>
       <div class="col-8 ps-2 m-0 ms-md-4 p-0 pe-sm-5 overflow-hidden">
-        <p class="card-text">${element.title}</p>
+        <p class="text-truncate card-text">${element.title}</p>
       </div>
      </div>`;
     });
@@ -134,17 +134,16 @@ const bottomAlbumsAssign = function (albumId, index) {
       //   </div>
       //  </div>`;
       bottomAlbumsReference[index].innerHTML = "";
-      bottomAlbumsReference[
-        index
-      ].innerHTML = `<div class="cardRiga3 d-flex flex-column flex-md-row flex-wrap justify-content-evenly m-2 col-12 col-md-2">
-        <div class=" d-flex justify-content-evenly align-items-center flex-md-column my-2 ">
+      bottomAlbumsReference[index].innerHTML = `
+        <div class="d-flex justify-content-between align-items-center flex-md-column ">
+          <div class="imgContainerCardRiga3 w-90">
           <img class="img-fluid" src="${element.picture}">
-          <div class="d-flex flex-column">
-            <h5>${element.name}</h5>
-            <p>${element.type}</p>
+          </div>
+          <div class="containerCardTextRiga3 d-flex justify-content-center align-items-center">
+            <p>${element.name}</p>
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-between d-md-none">
+        <div class="col-12 py-1 px-3 d-flex justify-content-between d-md-none">
           <section class="d-flex justify-content-evenly align-items-center">
              <i class="bi bi-suit-heart-fill m-1"></i>
              <i class="bi bi-three-dots-vertical m-1"></i>
