@@ -223,8 +223,9 @@ playFunction.addEventListener("click", function () {
     })
     .then(function (element) {
       footerReference.classList.remove("d-none");
+      playBtnReference.classList.add("d-none");
+      pauseBtnReference.classList.remove("d-none");
       audioSrcReference.src = element.tracks.data[0].preview;
-
       playBarImgReference.src = element.cover;
       playBarAuthorReference.innerText = element.artist.name;
       playBarTitleReference.innerText = element.tracks.data[0].title;
@@ -232,6 +233,20 @@ playFunction.addEventListener("click", function () {
       audio.src = element.tracks.data[0].preview;
 
       audio.play();
+
+      // Comandi player-pausa
+      pauseBtnReference.addEventListener("click", function () {
+        pauseBtnReference.classList.add("d-none");
+        playBtnReference.classList.remove("d-none");
+        audio.pause();
+      });
+
+      // Comandi player-play
+      playBtnReference.addEventListener("click", function () {
+        playBtnReference.classList.add("d-none");
+        pauseBtnReference.classList.remove("d-none");
+        audio.play();
+      });
 
       overlayReference.classList.remove("d-none");
       overlayReference.addEventListener("click", function () {
