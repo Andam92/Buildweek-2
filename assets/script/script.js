@@ -84,7 +84,7 @@
 // songGenerator(120);
 
 //Funzioni extra al click
-let playButton = document.getElementById("playButton");
+/* let playButton = document.getElementById("playButton");
 let pauseButton = document.getElementById("pauseButton");
 
 function play() {
@@ -96,7 +96,7 @@ function pause() {
   pauseButton.classList.add("invisible");
   playButton.classList.add("visible");
 }
-
+ */
 /* function playFunction() {
   playButton.innerHTML = <i class="bi bi-play-circle d-none"></i>;
   playButton.innerHTML = `<i class="bi bi-pause-circle d-block"></i>`;

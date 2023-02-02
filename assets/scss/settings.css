@@ -226,6 +226,25 @@ header section {
   background: #555;
 }
 
+.likedImg {
+  position: relative;
+}
+
+.heartIcon {
+  bottom: 10%;
+  position: absolute;
+  left: 60%;
+  color: #1db954;
+}
+
+.push {
+  color: #1db954;
+}
+
+.play {
+  display: none;
+}
+
 .recentActivity {
   background-color: #191414;
   color: white;
