@@ -126,8 +126,9 @@ const albumAssign = function (albumName) {
           const audio = new Audio();
           audio.src = element.tracks.data[index].preview;
           audio.play();
-          let volume = volumeReference.value / 100;
-          audio.volume = volume;
+          volumeReference.addEventListener("input", function () {
+            audio.volume = this.value / 100;
+          });
 
           console.log(volume);
 
@@ -158,6 +159,9 @@ const albumAssign = function (albumName) {
             playBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
             audio.play();
+            volumeReference.addEventListener("input", function () {
+              audio.volume = this.value / 100;
+            });
           });
 
           // Overlay ferma la canzone
@@ -218,8 +222,10 @@ playFunction.addEventListener("click", function () {
       playBarTitleReference.innerText = element.tracks.data[0].title;
       const audio = new Audio();
       audio.src = element.tracks.data[0].preview;
-
       audio.play();
+      volumeReference.addEventListener("input", function () {
+        audio.volume = this.value / 100;
+      });
 
       // Comandi player-pausa
       pauseBtnReference.addEventListener("click", function () {
