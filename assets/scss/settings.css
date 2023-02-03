@@ -384,7 +384,8 @@ header section {
 }
 
 #heartIcon,
-.pointer {
+.pointer,
+#profileImg {
   cursor: pointer;
 }
 
@@ -537,10 +538,24 @@ header section {
 }
 .mainBody .artistContainer .songTitle {
   font-family: "Roboto", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .mainBody .artistContainer .songTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mainBody .artistContainer .songTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 5rem;
+    color: white;
+  }
 }
 .mainBody .artistContainer .monthlyViewers {
   font-family: "Roboto", sans-serif;
@@ -663,9 +678,13 @@ header section {
 }
 
 .backgroundSettings {
-  background-position-y: -170px;
   background-size: cover;
   height: 340px;
+}
+@media screen and (min-width: 768px) {
+  .backgroundSettings {
+    background-position-y: -170px;
+  }
 }
 
 .vertical-scroll::-webkit-scrollbar {

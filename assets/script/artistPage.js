@@ -104,8 +104,8 @@ const songGenerator = function (artistId) {
           <img class="ms-2" src=${imgPreview} alt="" />
           <p class="ms-2 mb-0">${title}</p>
         </div>
-        <div class="offset-1 col-2 d-flex align-items-center justify-content-end views mb-3"><p class="mb-0">${rank}</p></div>
-        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${
+        <div class="offset-1 col-2 d-flex align-items-center justify-content-end views mb-3"><p class="mb-0 d-none d-lg-block">${rank}</p></div>
+        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-1 me-lg-4">${
           duration > 59
             ? `${(duration / 60).toFixed(0)}:${
                 Math.trunc((duration % 60) / 1.85) === 0

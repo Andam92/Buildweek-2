@@ -14,9 +14,15 @@
       padding-top: 8.6em;
     }
     .songTitle {
-      @include fontStyle($fontFamily, 5rem, white);
+      @include fontStyle($fontFamily, 3rem, white);
       font-weight: 700;
       margin-bottom: 1rem;
+      @media screen and(min-width: 768px) {
+        @include fontStyle($fontFamily, 4rem, white);
+      }
+      @media screen and(min-width: 1200px) {
+        @include fontStyle($fontFamily, 5rem, white);
+      }
     }
     .monthlyViewers {
       @include fontStyle($fontFamily, 1rem, white);
@@ -152,7 +158,9 @@
 }
 
 .backgroundSettings {
-  background-position-y: -170px;
   background-size: cover;
   height: 340px;
+  @media screen and(min-width: 768px) {
+    background-position-y: -170px;
+  }
 }
