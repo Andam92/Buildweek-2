@@ -40,7 +40,7 @@ let dataFromUrl = new URLSearchParams(window.location.search);
 dataFromUrl = dataFromUrl.get("albumId");
 // console.log(dataFromUrl);
 if (dataFromUrl === null) {
-  // window.location.href = "homepage.html";
+  window.location.href = "homepage.html";
 }
 
 console.log(playBarImgReference);
@@ -75,6 +75,13 @@ const albumAssign = function (albumName) {
         element.nb_tracks,
         element.artist.picture_small
       );
+
+      // REDIRECT ARTIST PAGE FROM IMAGE
+
+      console.log(element.artist);
+      authorImg.addEventListener("click", function () {
+        document.location.href = `artistpage.html?albumId=${element.artist.id}`;
+      });
 
       // FUNZIONE PER GENERARE LE CANZONI DELL'ALBUM
       let trackList = element.tracks.data;
