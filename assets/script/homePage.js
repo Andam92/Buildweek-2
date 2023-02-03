@@ -203,3 +203,26 @@ const favourite = function (icon) {
 playerHeartIconChangerReference.addEventListener("click", function () {
   favourite(this);
 });
+
+const rangeInputs = document.querySelector('input[type="range"]');
+
+console.log(rangeInputs);
+
+rangeInputs.addEventListener("mouseover", function () {
+  rangeInputs.classList.add("mouseOver1");
+});
+
+rangeInputs.addEventListener("mouseleave", function () {
+  rangeInputs.classList.remove("mouseOver1");
+});
+
+/* rangeInputs.addEventListener("mouseover", function () {
+  rangeInputs.classList.add("mouseOver");
+  console.log("mouseOver");
+});
+
+h1Reference.addEventListener("mouseover", function () {
+  rangeInputs.style.display = "block";
+  console.log("over");
+});
+ */

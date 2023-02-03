@@ -1286,6 +1286,43 @@ header section {
   width: 60%;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: #afafaf;
+  border-radius: 5px;
+  background-image: linear-gradient(#ffffff, #fffbfb);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mouseOver::-webkit-slider-thumb {
+  display: none;
+}
+
+.mouseOver1::-webkit-slider-thumb {
+  display: block;
+  transform: scale(0.8);
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #afafaf;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
 @media screen and (max-width: 768px) {
   .playBar {
     display: none !important;
