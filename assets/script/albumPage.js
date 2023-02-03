@@ -24,6 +24,7 @@ const shuffleBtn = document.getElementById("shuffleBtn");
 // RIFERIMENTI BOTTONI PLAYER
 const pauseBtnReference = document.getElementById("pauseButton");
 const playBtnReference = document.getElementById("playButton");
+const volumeReference = document.getElementById("volume");
 
 const overlayReference = document.querySelector(".overly");
 const skipBackward = document.getElementById("skipBackward");
@@ -125,6 +126,11 @@ const albumAssign = function (albumName) {
           const audio = new Audio();
           audio.src = element.tracks.data[index].preview;
           audio.play();
+          volumeReference.addEventListener("input", function () {
+            audio.volume = this.value / 100;
+          });
+
+          console.log(volume);
 
           // Skip forward-backward (TENTATIVO)
 
@@ -153,6 +159,9 @@ const albumAssign = function (albumName) {
             playBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
             audio.play();
+            volumeReference.addEventListener("input", function () {
+              audio.volume = this.value / 100;
+            });
           });
 
           // Overlay ferma la canzone
@@ -167,6 +176,8 @@ const albumAssign = function (albumName) {
           document.addEventListener("keydown", function (e) {
             if (e.key === " " || e.key === "Escape") {
               audio.pause();
+              pauseBtnReference.classList.add("d-none");
+              playBtnReference.classList.remove("d-none");
             }
           });
         });
@@ -175,26 +186,6 @@ const albumAssign = function (albumName) {
 };
 
 albumAssign(dataFromUrl);
-
-/* let fetch = async function () {
-  try {
-    let res = await fetch(
-      "https://striveschool-api.herokuapp.com/api/deezer/album/75621062"
-      );
-      console.log(res);
-      if (res.ok) {
-        let data = await res.json();
-        console.log(data);
-        
-        console.log("L'ARRAY E': ", jsonArray);
-      } else {
-        console.log("Attenzione! res !== ok");
-      }
-    } catch (error) {
-      console.log("ATTENZIONE, ERRORE CATCH", error);
-    }
-  };
-  */
 
 // FUNZIONE PER RIEMPIRE IL CUORE PREFERITI
 
@@ -231,8 +222,11 @@ playFunction.addEventListener("click", function () {
       playBarTitleReference.innerText = element.tracks.data[0].title;
       const audio = new Audio();
       audio.src = element.tracks.data[0].preview;
-
       audio.play();
+      volumeReference.value = 20;
+      volumeReference.addEventListener("input", function () {
+        audio.volume = this.value / 100;
+      });
 
       // Comandi player-pausa
       pauseBtnReference.addEventListener("click", function () {
@@ -246,6 +240,7 @@ playFunction.addEventListener("click", function () {
         playBtnReference.classList.add("d-none");
         pauseBtnReference.classList.remove("d-none");
         audio.play();
+        volumeReference.value = 20;
       });
 
       overlayReference.classList.remove("d-none");

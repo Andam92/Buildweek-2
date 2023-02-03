@@ -14,8 +14,11 @@ const playBarTitleReference = document.getElementById("playBarTitle");
 const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
 const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playFunction");
+const volumeReference = document.getElementById("volume");
 
-
+// BOTTONI PLAY-PAUSE
+const playBtnReference = document.getElementById("playButton");
+const pauseBtnReference = document.getElementById("pauseButton");
 
 // Id dell'album
 let albumIdRef = 75621062;
@@ -65,11 +68,29 @@ let albumAssign = function (albumId) {
 
       const audio = new Audio();
       audio.src = element.tracks.data[1].preview;
-      playFunction.addEventListener("click", function () {
+      // audio.volume = 0.3;  funziona?
+
+      // Comandi del player
+      playBtnReference.addEventListener("click", function () {
+        playBtnReference.classList.add("d-none");
+        pauseBtnReference.classList.remove("d-none");
         audio.play();
+        volumeReference.value = 20;
+        volumeReference.addEventListener("input", function () {
+          audio.volume = this.value / 100;
+        });
       });
-      playFunction.addEventListener("click", function () {
+      pauseBtnReference.addEventListener("click", function () {
+        pauseBtnReference.classList.add("d-none");
+        playBtnReference.classList.remove("d-none");
         audio.pause();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === " ") {
+          audio.pause();
+          pauseBtnReference.classList.add("d-none");
+          playBtnReference.classList.remove("d-none");
+        }
       });
     });
 };

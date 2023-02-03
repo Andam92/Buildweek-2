@@ -21,6 +21,7 @@ const followBtn = document.getElementById("followBtn");
 // PLAYER REF
 const pauseBtnReference = document.getElementById("pauseButton");
 const playerPlayBtnReference = document.getElementById("playButton");
+const volumeReference = document.getElementById("volume");
 
 const overlayReference = document.querySelector(".overly");
 
@@ -42,7 +43,8 @@ const titlePicker = function (title, background, fans) {
     ? (titleReference.innerText = String(title))
     : (titleReference.innerText = `Oops something goeas wrong`);
 
-  artistBackgroundReference.style.background = `url(${background})`;
+  artistBackgroundReference.style.backgroundImage = `url(${background})`; // IMPORTANTE! In Js le proprietà css col trattino si scrivono in camelCase
+  artistBackgroundReference.classList.add("backgroundSettings");
   monthlyViewersReference.innerText = `${fans} ascoltatori mensili`;
 };
 
@@ -105,12 +107,17 @@ const songGenerator = function (artistId) {
         songReference[i].addEventListener("click", function () {
           footerReference.classList.remove("d-none");
           playerPlayBtnReference.classList.add("d-none");
+          pauseBtnReference.classList.remove("d-none");
           playBarImgReference.src = element[i].album.cover;
           playBarAuthorReference.innerText = element[i].title;
           playBarTitleReference.innerText = element[i].contributors[0].name;
           const audio = new Audio();
           audio.src = element[i].preview;
+          volumeReference.value = 20;
           audio.play();
+          volumeReference.addEventListener("input", function () {
+            audio.volume = this.value / 100;
+          });
 
           // Comandi player-pausa
           pauseBtnReference.addEventListener("click", function () {
@@ -124,9 +131,13 @@ const songGenerator = function (artistId) {
             playerPlayBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
             audio.play();
+            volumeReference.value = 20;
+            volumeReference.addEventListener("input", function () {
+              audio.volume = this.value / 100;
+            });
           });
 
-          /*           // Overlay ferma la canzone
+          // Overlay ferma la canzone
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
@@ -138,8 +149,10 @@ const songGenerator = function (artistId) {
           document.addEventListener("keydown", function (e) {
             if (e.key === " " || e.key === "Escape") {
               audio.pause();
+              playerPlayBtnReference.classList.remove("d-none");
+              pauseBtnReference.classList.add("d-none");
             }
-          }); */
+          });
         });
       }
     });
