@@ -2,6 +2,10 @@
   color: #1db954;
 }
 
+body {
+  cursor: default;
+}
+
 .vertical-scroll::-webkit-scrollbar {
   width: 0.5em;
   height: 0.1em;
@@ -379,7 +383,8 @@ header section {
   color: #1db954;
 }
 
-#heartIcon {
+#heartIcon,
+.pointer {
   cursor: pointer;
 }
 
@@ -1492,6 +1497,7 @@ header section {
 .cardContainer {
   width: 95%;
   background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+  cursor: pointer;
 }
 
 .riga1 {
@@ -1506,6 +1512,7 @@ header section {
 
 .cardRiga3 {
   background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+  cursor: pointer;
 }
 .cardRiga3 .containerCardTextRiga3 {
   text-align: center;

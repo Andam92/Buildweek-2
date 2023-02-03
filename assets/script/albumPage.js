@@ -92,7 +92,7 @@ const albumAssign = function (albumName) {
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center  col-6">
                     <p class="opacity-75 d-none d-md-block">${index + 1}</p>
-                    <div class="ms-0 ms-md-3">
+                    <div class="ms-0 ms-md-3 pointer">
                       <p class="m-0 trackSelector">${
                         trackList[index].title
                       }</p> 
@@ -106,7 +106,12 @@ const albumAssign = function (albumName) {
               }</p> </div>
               <div class="col-3 d-flex justify-content-end"> <p class="opacity-75 d-none d-md-block">${
                 trackList[index].duration > 59
-                  ? `${(trackList[index].duration / 60).toFixed(2)} min`
+                  ? `${(trackList[index].duration / 60).toFixed(0)} min ${
+                      Math.trunc((trackList[index].duration % 60) / 1.85) === 0
+                        ? ` `
+                        : Math.trunc((trackList[index].duration % 60) / 1.85) +
+                          ` sec`
+                    }`
                   : `${trackList[index].duration} sec`
               }</p></div>
               <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
@@ -283,3 +288,7 @@ shuffleBtn.addEventListener("click", function () {
     ? shuffleBtn.classList.remove("shuffleOn")
     : shuffleBtn.classList.add("shuffleOne");
 }); */
+
+/* (trackList[index].duration % 60) / 1.85 === 0
+  ? ` `
+  : (trackList[index].duration % 60) / 1.85 + ` sec`; */
