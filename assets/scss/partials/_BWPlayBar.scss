@@ -84,15 +84,16 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-radius: 10px;
   height: 7px;
   width: 200px;
-  background: white;
-  animation: animazione 5s linear;
+  background: grey;
 }
 
 @keyframes animazione {
   0% {
+    background: white;
     width: 0px;
   }
   100% {
+    background: white;
     width: -20px;
   }
 }

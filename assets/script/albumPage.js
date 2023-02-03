@@ -30,6 +30,9 @@ const overlayReference = document.querySelector(".overly");
 const skipBackward = document.getElementById("skipBackward");
 const skipForward = document.getElementById("skipForward");
 
+// PLAYER BAR REFERENCE
+const timeBarReference = document.querySelector(".barra");
+
 // API LINK
 
 let apiLink = "https://striveschool-api.herokuapp.com/api/deezer/album";
@@ -130,6 +133,8 @@ const albumAssign = function (albumName) {
 
       trackItems.forEach((item, index) => {
         item.addEventListener("click", function () {
+          timeBarReference.style.animation = `animazione ${30}s linear`;
+
           footerReference.classList.remove("d-none");
           playBtnReference.classList.add("d-none");
           pauseBtnReference.classList.remove("d-none");

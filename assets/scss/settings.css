@@ -1346,25 +1346,27 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 10px;
   height: 7px;
   width: 200px;
-  background: white;
-  -webkit-animation: animazione 5s linear;
-          animation: animazione 5s linear;
+  background: grey;
 }
 
 @-webkit-keyframes animazione {
   0% {
+    background: white;
     width: 0px;
   }
   100% {
+    background: white;
     width: -20px;
   }
 }
 
 @keyframes animazione {
   0% {
+    background: white;
     width: 0px;
   }
   100% {
+    background: white;
     width: -20px;
   }
 }

@@ -20,6 +20,9 @@ const volumeReference = document.getElementById("volume");
 const playBtnReference = document.getElementById("playButton");
 const pauseBtnReference = document.getElementById("pauseButton");
 
+// PLAYER BAR REFERENCE
+const timeBarReference = document.querySelector(".barra");
+
 // Id dell'album
 let albumIdRef = 75621062;
 
@@ -46,7 +49,7 @@ let albumAssign = function (albumId) {
       }
     })
     .then(function (element) {
-      console.log(element.title);
+      console.log("awawa", element.tracks.data[1].duration);
       let artistId = element.artist.id;
       dataGathering(
         element.title,
@@ -91,6 +94,10 @@ let albumAssign = function (albumId) {
           pauseBtnReference.classList.add("d-none");
           playBtnReference.classList.remove("d-none");
         }
+      });
+
+      playBtnReference.addEventListener("click", function () {
+        timeBarReference.style.animation = `animazione ${30}s linear`;
       });
     });
 };
@@ -211,18 +218,3 @@ console.log(rangeInputs);
 rangeInputs.addEventListener("mouseover", function () {
   rangeInputs.classList.add("mouseOver1");
 });
-
-rangeInputs.addEventListener("mouseleave", function () {
-  rangeInputs.classList.remove("mouseOver1");
-});
-
-/* rangeInputs.addEventListener("mouseover", function () {
-  rangeInputs.classList.add("mouseOver");
-  console.log("mouseOver");
-});
-
-h1Reference.addEventListener("mouseover", function () {
-  rangeInputs.style.display = "block";
-  console.log("over");
-});
- */

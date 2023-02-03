@@ -24,6 +24,7 @@ const playerPlayBtnReference = document.getElementById("playButton");
 const volumeReference = document.getElementById("volume");
 
 const overlayReference = document.querySelector(".overly");
+const timeBarReference = document.querySelector(".barra");
 
 // VARIE
 const heartIconContainerReference = document.querySelector("#heartIcon");
@@ -122,6 +123,7 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < songReference.length; i++) {
         songReference[i].addEventListener("click", function () {
           footerReference.classList.remove("d-none");
+          timeBarReference.style.animation = `animazione ${30}s linear`;
           playerPlayBtnReference.classList.add("d-none");
           pauseBtnReference.classList.remove("d-none");
           playBarImgReference.src = element[i].album.cover;
