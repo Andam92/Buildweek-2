@@ -137,7 +137,7 @@
 header {
   background-color: #191414;
   color: white;
-  padding: 1% 2%;
+  padding: 1% 0 2% 1%;
 }
 header section {
   margin-bottom: 5%;
@@ -799,9 +799,6 @@ header section {
   padding: 1% 0.5% 1% 1.5%;
   cursor: pointer;
 }
-.recentActivityi:hover {
-  transform: scale(1.1);
-}
 
 .recentActivityCard {
   display: flex;
@@ -810,11 +807,22 @@ header section {
   font-size: 1.5em;
   margin: 2% 0;
 }
+@media screen and (max-width: 1080px) {
+  .recentActivityCard i {
+    display: none;
+  }
+}
 .recentActivityCard p {
   margin: 0;
 }
 .recentActivityCard h6 {
   font-size: 0.4em;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  .recentActivityCard h6 {
+    display: none;
+  }
 }
 
 .recentActivityCardText {
