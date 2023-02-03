@@ -147,17 +147,11 @@ const albumAssign = function (albumName) {
             // audioSrcReference.src = element.tracks.data[index - 1].preview;
           }); */
 
-          // Comandi player-pausa
-          pauseBtnReference.addEventListener("click", function () {
-            pauseBtnReference.classList.add("d-none");
-            playBtnReference.classList.remove("d-none");
-            audio.pause();
-          });
-
           // Comandi player-play
           playBtnReference.addEventListener("click", function () {
             playBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
+            overlayReference.classList.remove("d-none");
             audio.play();
             volumeReference.addEventListener("input", function () {
               audio.volume = this.value / 100;
@@ -168,8 +162,18 @@ const albumAssign = function (albumName) {
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
-
             overlayReference.classList.add("d-none");
+            pauseBtnReference.classList.add("d-none");
+            playBtnReference.classList.remove("d-none");
+          });
+
+          // Comandi player-pausa
+          pauseBtnReference.addEventListener("click", function () {
+            pauseBtnReference.classList.add("d-none");
+            playBtnReference.classList.remove("d-none");
+            overlayReference.classList.add("d-none");
+
+            audio.pause();
           });
 
           // Esc o Barra spaziatrice ferma la canzone
@@ -228,13 +232,6 @@ playFunction.addEventListener("click", function () {
         audio.volume = this.value / 100;
       });
 
-      // Comandi player-pausa
-      pauseBtnReference.addEventListener("click", function () {
-        pauseBtnReference.classList.add("d-none");
-        playBtnReference.classList.remove("d-none");
-        audio.pause();
-      });
-
       // Comandi player-play
       playBtnReference.addEventListener("click", function () {
         playBtnReference.classList.add("d-none");
@@ -248,6 +245,15 @@ playFunction.addEventListener("click", function () {
         audio.pause();
         overlayReference.classList.add("d-none");
       });
+
+      // Comandi player-pausa
+      pauseBtnReference.addEventListener("click", function () {
+        pauseBtnReference.classList.add("d-none");
+        playBtnReference.classList.remove("d-none");
+        overlayReference.classList.add("d-none");
+        audio.pause();
+      });
+
       document.addEventListener("keydown", function (e) {
         if (e.key === " " || e.key === "Escape") {
           audio.pause();

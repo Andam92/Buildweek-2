@@ -130,6 +130,7 @@ const songGenerator = function (artistId) {
           playerPlayBtnReference.addEventListener("click", function () {
             playerPlayBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
+            overlayReference.classList.remove("d-none");
             audio.play();
             volumeReference.value = 20;
             volumeReference.addEventListener("input", function () {
@@ -141,8 +142,9 @@ const songGenerator = function (artistId) {
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
-
             overlayReference.classList.add("d-none");
+            playerPlayBtnReference.classList.remove("d-none");
+            pauseBtnReference.classList.add("d-none");
           });
 
           // Esc o Barra spaziatrice ferma la canzone
