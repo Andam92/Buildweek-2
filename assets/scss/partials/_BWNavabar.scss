@@ -17,6 +17,7 @@ header {
   }
   p {
     display: flex;
+    cursor: pointer;
     span {
       margin-right: 3%;
       cursor: pointer;
@@ -31,5 +32,6 @@ header {
   height: 40vh;
   p {
     font-size: 0.7em;
+    cursor: pointer;
   }
 }

@@ -153,6 +153,7 @@ header section {
 }
 .navBarMenu p {
   display: flex;
+  cursor: pointer;
 }
 .navBarMenu p span {
   margin-right: 3%;
@@ -167,6 +168,7 @@ header section {
 }
 .navBarPlaylist p {
   font-size: 0.7em;
+  cursor: pointer;
 }
 
 .navBarMobile {
