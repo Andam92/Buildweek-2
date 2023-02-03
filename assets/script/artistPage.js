@@ -113,6 +113,7 @@ const songGenerator = function (artistId) {
           playBarTitleReference.innerText = element[i].contributors[0].name;
           const audio = new Audio();
           audio.src = element[i].preview;
+          volumeReference.value = 20;
           audio.play();
           volumeReference.addEventListener("input", function () {
             audio.volume = this.value / 100;
@@ -130,6 +131,7 @@ const songGenerator = function (artistId) {
             playerPlayBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
             audio.play();
+            volumeReference.value = 20;
             volumeReference.addEventListener("input", function () {
               audio.volume = this.value / 100;
             });

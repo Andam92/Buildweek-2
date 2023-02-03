@@ -223,6 +223,7 @@ playFunction.addEventListener("click", function () {
       const audio = new Audio();
       audio.src = element.tracks.data[0].preview;
       audio.play();
+      volumeReference.value = 20;
       volumeReference.addEventListener("input", function () {
         audio.volume = this.value / 100;
       });
@@ -239,6 +240,7 @@ playFunction.addEventListener("click", function () {
         playBtnReference.classList.add("d-none");
         pauseBtnReference.classList.remove("d-none");
         audio.play();
+        volumeReference.value = 20;
       });
 
       overlayReference.classList.remove("d-none");

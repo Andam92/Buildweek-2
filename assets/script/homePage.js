@@ -75,6 +75,7 @@ let albumAssign = function (albumId) {
         playBtnReference.classList.add("d-none");
         pauseBtnReference.classList.remove("d-none");
         audio.play();
+        volumeReference.value = 20;
         volumeReference.addEventListener("input", function () {
           audio.volume = this.value / 100;
         });
