@@ -25,6 +25,10 @@ const volumeReference = document.getElementById("volume");
 
 const overlayReference = document.querySelector(".overly");
 
+// VARIE
+const heartIconContainerReference = document.querySelector("#heartIcon");
+const heartIconReference = document.getElementById("heartLike");
+
 // API LINK
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
@@ -176,17 +180,6 @@ playerHeartIconChangerReference.addEventListener("click", function () {
 
 // Follow Button
 
-/* const follow = function () {
-  followBtn.classList.add("followBtnActive");
-  followBtn.innerText = "Following";
-};
-const buttonFollowed = document.querySelector(".followBtnActive");
-const unfollow = function () {
-  followBtn.innerText = "Follow";
-  followBtn.classList.remove("followBtnActive");
-}; */
-
-// followBtn.addEventListener("click", follow);
 followBtn.addEventListener("click", function () {
   if (followBtn.classList.contains("followBtnActive")) {
     followBtn.classList.remove("followBtnActive");
@@ -198,3 +191,11 @@ followBtn.addEventListener("click", function () {
     followBtn.classList.remove("px-4");
   }
 });
+
+// LIKE ALL'ARTISTA
+
+const likeArtist = function () {
+  heartIconReference.classList.toggle("d-none");
+};
+
+heartIconContainerReference.addEventListener("click", likeArtist);
