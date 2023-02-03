@@ -14,6 +14,7 @@ const playBarTitleReference = document.getElementById("playBarTitle");
 const playerHeartIconChangerReference = document.getElementById("barHeartIcon");
 const audioSrcReference = document.getElementById("audioSrc");
 const playFunction = document.getElementById("playFunction");
+const volumeReference = document.getElementById("volume");
 
 // BOTTONI PLAY-PAUSE
 const playBtnReference = document.getElementById("playButton");
@@ -74,6 +75,9 @@ let albumAssign = function (albumId) {
         playBtnReference.classList.add("d-none");
         pauseBtnReference.classList.remove("d-none");
         audio.play();
+        volumeReference.addEventListener("input", function () {
+          audio.volume = this.value / 100;
+        });
       });
       pauseBtnReference.addEventListener("click", function () {
         pauseBtnReference.classList.add("d-none");
