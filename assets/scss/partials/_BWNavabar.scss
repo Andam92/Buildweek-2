@@ -1,37 +1,37 @@
 @include overFlow;
 header {
-    background-color: $spotifyBlack;
-    color: white;
-    padding: 1% 2%;
-    section {
-        margin-bottom: 5%;
-
-    }
+  background-color: $spotifyBlack;
+  color: white;
+  padding: 1% 0 2% 1%;
+  section {
+    margin-bottom: 5%;
+  }
 }
 
 .navBarMenu {
-    width: 100%;
-    border-bottom: 1px solid white;
-    a{
-        text-decoration: none;
-        color: white;
+  width: 100%;
+  border-bottom: 1px solid white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  p {
+    display: flex;
+    cursor: pointer;
+    span {
+      margin-right: 3%;
+      cursor: pointer;
     }
-    p{
-        display: flex;
-        span {
-            margin-right: 3%;
-            cursor: pointer;
-        }
-    }
-    div {
-        margin-bottom: 15%;
-    }
+  }
+  div {
+    margin-bottom: 15%;
+  }
 }
 
-.navBarPlaylist { 
-
-    height: 40vh;
-    p {
-        font-size: 0.7em;
-    }
+.navBarPlaylist {
+  height: 40vh;
+  p {
+    font-size: 0.7em;
+    cursor: pointer;
+  }
 }

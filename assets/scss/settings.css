@@ -2,6 +2,10 @@
   color: #1db954;
 }
 
+body {
+  cursor: default;
+}
+
 .vertical-scroll::-webkit-scrollbar {
   width: 0.5em;
   height: 0.1em;
@@ -137,7 +141,7 @@
 header {
   background-color: #191414;
   color: white;
-  padding: 1% 2%;
+  padding: 1% 0 2% 1%;
 }
 header section {
   margin-bottom: 5%;
@@ -153,6 +157,7 @@ header section {
 }
 .navBarMenu p {
   display: flex;
+  cursor: pointer;
 }
 .navBarMenu p span {
   margin-right: 3%;
@@ -167,6 +172,7 @@ header section {
 }
 .navBarPlaylist p {
   font-size: 0.7em;
+  cursor: pointer;
 }
 
 .navBarMobile {
@@ -377,7 +383,8 @@ header section {
   color: #1db954;
 }
 
-#heartIcon {
+#heartIcon,
+.pointer {
   cursor: pointer;
 }
 
@@ -545,7 +552,7 @@ header section {
 .bgArtist {
   padding: 2rem;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 87%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.6) 87%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .mainBody .following {
@@ -800,9 +807,6 @@ header section {
   padding: 1% 0.5% 1% 1.5%;
   cursor: pointer;
 }
-.recentActivityi:hover {
-  transform: scale(1.1);
-}
 
 .recentActivityCard {
   display: flex;
@@ -811,11 +815,22 @@ header section {
   font-size: 1.5em;
   margin: 2% 0;
 }
+@media screen and (max-width: 1080px) {
+  .recentActivityCard i {
+    display: none;
+  }
+}
 .recentActivityCard p {
   margin: 0;
 }
 .recentActivityCard h6 {
   font-size: 0.4em;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+  .recentActivityCard h6 {
+    display: none;
+  }
 }
 
 .recentActivityCardText {
@@ -1272,6 +1287,43 @@ header section {
   width: 60%;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: #afafaf;
+  border-radius: 5px;
+  background-image: linear-gradient(#ffffff, #fffbfb);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mouseOver::-webkit-slider-thumb {
+  display: none;
+}
+
+.mouseOver1::-webkit-slider-thumb {
+  display: block;
+  transform: scale(0.8);
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #afafaf;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
 @media screen and (max-width: 768px) {
   .playBar {
     display: none !important;
@@ -1295,25 +1347,27 @@ header section {
   border-radius: 10px;
   height: 7px;
   width: 200px;
-  background: white;
-  -webkit-animation: animazione 5s linear;
-          animation: animazione 5s linear;
+  background: grey;
 }
 
 @-webkit-keyframes animazione {
   0% {
+    background: white;
     width: 0px;
   }
   100% {
+    background: white;
     width: -20px;
   }
 }
 
 @keyframes animazione {
   0% {
+    background: white;
     width: 0px;
   }
   100% {
+    background: white;
     width: -20px;
   }
 }
@@ -1483,6 +1537,7 @@ header section {
 .cardContainer {
   width: 95%;
   background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+  cursor: pointer;
 }
 
 .riga1 {
@@ -1497,6 +1552,7 @@ header section {
 
 .cardRiga3 {
   background: linear-gradient(326deg, rgba(0, 0, 0, 0.875) 15%, rgb(65, 61, 57) 100%);
+  cursor: pointer;
 }
 .cardRiga3 .containerCardTextRiga3 {
   text-align: center;

@@ -30,6 +30,9 @@ const overlayReference = document.querySelector(".overly");
 const skipBackward = document.getElementById("skipBackward");
 const skipForward = document.getElementById("skipForward");
 
+// PLAYER BAR REFERENCE
+const timeBarReference = document.querySelector(".barra");
+
 // API LINK
 
 let apiLink = "https://striveschool-api.herokuapp.com/api/deezer/album";
@@ -40,7 +43,7 @@ let dataFromUrl = new URLSearchParams(window.location.search);
 dataFromUrl = dataFromUrl.get("albumId");
 // console.log(dataFromUrl);
 if (dataFromUrl === null) {
-  // window.location.href = "homepage.html";
+  window.location.href = "homepage.html";
 }
 
 console.log(playBarImgReference);
@@ -76,6 +79,13 @@ const albumAssign = function (albumName) {
         element.artist.picture_small
       );
 
+      // REDIRECT ARTIST PAGE FROM IMAGE
+
+      console.log(element.artist);
+      authorImg.addEventListener("click", function () {
+        document.location.href = `artistpage.html?albumId=${element.artist.id}`;
+      });
+
       // FUNZIONE PER GENERARE LE CANZONI DELL'ALBUM
       let trackList = element.tracks.data;
       console.log(trackList);
@@ -85,7 +95,7 @@ const albumAssign = function (albumName) {
               <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex align-items-center  col-6">
                     <p class="opacity-75 d-none d-md-block">${index + 1}</p>
-                    <div class="ms-0 ms-md-3">
+                    <div class="ms-0 ms-md-3 pointer">
                       <p class="m-0 trackSelector">${
                         trackList[index].title
                       }</p> 
@@ -99,7 +109,15 @@ const albumAssign = function (albumName) {
               }</p> </div>
               <div class="col-3 d-flex justify-content-end"> <p class="opacity-75 d-none d-md-block">${
                 trackList[index].duration > 59
-                  ? `${(trackList[index].duration / 60).toFixed(2)} min`
+                  ? `${(trackList[index].duration / 60).toFixed(0)}:${
+                      Math.trunc((trackList[index].duration % 60) / 1.85) === 0
+                        ? `00`
+                        : Math.trunc((trackList[index].duration % 60) / 1.85) <
+                          10
+                        ? "0" +
+                          Math.trunc((trackList[index].duration % 60) / 1.85)
+                        : Math.trunc((trackList[index].duration % 60) / 1.85)
+                    }`
                   : `${trackList[index].duration} sec`
               }</p></div>
               <i class="bi bi-three-dots-vertical d-inline d-md-none fs-3 mb-2 pb-2 opacity-75"></i>
@@ -115,6 +133,8 @@ const albumAssign = function (albumName) {
 
       trackItems.forEach((item, index) => {
         item.addEventListener("click", function () {
+          timeBarReference.style.animation = `animazione ${30}s linear`;
+
           footerReference.classList.remove("d-none");
           playBtnReference.classList.add("d-none");
           pauseBtnReference.classList.remove("d-none");
@@ -147,17 +167,11 @@ const albumAssign = function (albumName) {
             // audioSrcReference.src = element.tracks.data[index - 1].preview;
           }); */
 
-          // Comandi player-pausa
-          pauseBtnReference.addEventListener("click", function () {
-            pauseBtnReference.classList.add("d-none");
-            playBtnReference.classList.remove("d-none");
-            audio.pause();
-          });
-
           // Comandi player-play
           playBtnReference.addEventListener("click", function () {
             playBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
+            overlayReference.classList.remove("d-none");
             audio.play();
             volumeReference.addEventListener("input", function () {
               audio.volume = this.value / 100;
@@ -168,8 +182,18 @@ const albumAssign = function (albumName) {
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
-
             overlayReference.classList.add("d-none");
+            pauseBtnReference.classList.add("d-none");
+            playBtnReference.classList.remove("d-none");
+          });
+
+          // Comandi player-pausa
+          pauseBtnReference.addEventListener("click", function () {
+            pauseBtnReference.classList.add("d-none");
+            playBtnReference.classList.remove("d-none");
+            overlayReference.classList.add("d-none");
+
+            audio.pause();
           });
 
           // Esc o Barra spaziatrice ferma la canzone
@@ -228,13 +252,6 @@ playFunction.addEventListener("click", function () {
         audio.volume = this.value / 100;
       });
 
-      // Comandi player-pausa
-      pauseBtnReference.addEventListener("click", function () {
-        pauseBtnReference.classList.add("d-none");
-        playBtnReference.classList.remove("d-none");
-        audio.pause();
-      });
-
       // Comandi player-play
       playBtnReference.addEventListener("click", function () {
         playBtnReference.classList.add("d-none");
@@ -248,6 +265,15 @@ playFunction.addEventListener("click", function () {
         audio.pause();
         overlayReference.classList.add("d-none");
       });
+
+      // Comandi player-pausa
+      pauseBtnReference.addEventListener("click", function () {
+        pauseBtnReference.classList.add("d-none");
+        playBtnReference.classList.remove("d-none");
+        overlayReference.classList.add("d-none");
+        audio.pause();
+      });
+
       document.addEventListener("keydown", function (e) {
         if (e.key === " " || e.key === "Escape") {
           audio.pause();
@@ -270,3 +296,7 @@ shuffleBtn.addEventListener("click", function () {
     ? shuffleBtn.classList.remove("shuffleOn")
     : shuffleBtn.classList.add("shuffleOne");
 }); */
+
+/* (trackList[index].duration % 60) / 1.85 === 0
+  ? ` `
+  : (trackList[index].duration % 60) / 1.85 + ` sec`; */

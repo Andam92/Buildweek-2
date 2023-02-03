@@ -24,16 +24,22 @@ const playerPlayBtnReference = document.getElementById("playButton");
 const volumeReference = document.getElementById("volume");
 
 const overlayReference = document.querySelector(".overly");
+const timeBarReference = document.querySelector(".barra");
+
+// VARIE
+const heartIconContainerReference = document.querySelector("#heartIcon");
+const heartIconReference = document.getElementById("heartLike");
 
 // API LINK
 
 let apiLink = `https://striveschool-api.herokuapp.com/api/deezer/artist`;
 
 let dataFromUrl = new URLSearchParams(window.location.search);
-dataFromUrl = dataFromUrl.get("albumId");
 // console.log(dataFromUrl);
+
+dataFromUrl = dataFromUrl.get("albumId");
 if (dataFromUrl === null) {
-  // window.location.href = "homepage.html";
+  window.location.href = "homepage.html";
 }
 
 // FUNZIONE PER GENERARE NEL DOM ARTISTA e BACKGROUND DINAMICAMENTE
@@ -89,8 +95,9 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < element.length; i++) {
         title = element[i].title;
         rank = rankOrder[i];
-        duration = (element[i].duration / 60).toFixed(2);
+        duration = element[i].duration;
         imgPreview = element[i].album.cover_small;
+        // ADDIVETTITI
         popularSongsReference.innerHTML += `<div class="d-flex song">
         <div class="col-12 col-lg-6 d-flex align-items-center mb-3">
           <p class="ms-2 mb-0">${i + 1}</p>
@@ -98,7 +105,17 @@ const songGenerator = function (artistId) {
           <p class="ms-2 mb-0">${title}</p>
         </div>
         <div class="offset-1 col-2 d-flex align-items-center justify-content-end views mb-3"><p class="mb-0">${rank}</p></div>
-        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${duration}</p></div>
+        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${
+          duration > 59
+            ? `${(duration / 60).toFixed(0)}:${
+                Math.trunc((duration % 60) / 1.85) === 0
+                  ? `00`
+                  : Math.trunc((duration % 60) / 1.85) < 10
+                  ? "0" + Math.trunc((duration % 60) / 1.85)
+                  : Math.trunc((duration % 60) / 1.85)
+              }`
+            : `${duration} sec`
+        }</p></div>
       </div>`;
       }
       const songReference = document.querySelectorAll(".song");
@@ -106,6 +123,7 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < songReference.length; i++) {
         songReference[i].addEventListener("click", function () {
           footerReference.classList.remove("d-none");
+          timeBarReference.style.animation = `animazione ${30}s linear`;
           playerPlayBtnReference.classList.add("d-none");
           pauseBtnReference.classList.remove("d-none");
           playBarImgReference.src = element[i].album.cover;
@@ -130,6 +148,7 @@ const songGenerator = function (artistId) {
           playerPlayBtnReference.addEventListener("click", function () {
             playerPlayBtnReference.classList.add("d-none");
             pauseBtnReference.classList.remove("d-none");
+            overlayReference.classList.remove("d-none");
             audio.play();
             volumeReference.value = 20;
             volumeReference.addEventListener("input", function () {
@@ -141,8 +160,9 @@ const songGenerator = function (artistId) {
           overlayReference.classList.remove("d-none");
           overlayReference.addEventListener("click", function () {
             audio.pause();
-
             overlayReference.classList.add("d-none");
+            playerPlayBtnReference.classList.remove("d-none");
+            pauseBtnReference.classList.add("d-none");
           });
 
           // Esc o Barra spaziatrice ferma la canzone
@@ -174,17 +194,6 @@ playerHeartIconChangerReference.addEventListener("click", function () {
 
 // Follow Button
 
-/* const follow = function () {
-  followBtn.classList.add("followBtnActive");
-  followBtn.innerText = "Following";
-};
-const buttonFollowed = document.querySelector(".followBtnActive");
-const unfollow = function () {
-  followBtn.innerText = "Follow";
-  followBtn.classList.remove("followBtnActive");
-}; */
-
-// followBtn.addEventListener("click", follow);
 followBtn.addEventListener("click", function () {
   if (followBtn.classList.contains("followBtnActive")) {
     followBtn.classList.remove("followBtnActive");
@@ -196,3 +205,11 @@ followBtn.addEventListener("click", function () {
     followBtn.classList.remove("px-4");
   }
 });
+
+// LIKE ALL'ARTISTA
+
+const likeArtist = function () {
+  heartIconReference.classList.toggle("d-none");
+};
+
+heartIconContainerReference.addEventListener("click", likeArtist);
