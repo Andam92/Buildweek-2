@@ -94,8 +94,9 @@ const songGenerator = function (artistId) {
       for (let i = 0; i < element.length; i++) {
         title = element[i].title;
         rank = rankOrder[i];
-        duration = (element[i].duration / 60).toFixed(2);
+        duration = element[i].duration;
         imgPreview = element[i].album.cover_small;
+        // ADDIVETTITI
         popularSongsReference.innerHTML += `<div class="d-flex song">
         <div class="col-12 col-lg-6 d-flex align-items-center mb-3">
           <p class="ms-2 mb-0">${i + 1}</p>
@@ -103,7 +104,17 @@ const songGenerator = function (artistId) {
           <p class="ms-2 mb-0">${title}</p>
         </div>
         <div class="offset-1 col-2 d-flex align-items-center justify-content-end views mb-3"><p class="mb-0">${rank}</p></div>
-        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${duration}</p></div>
+        <div class="col-3 d-flex align-items-center justify-content-end duration mb-3"><p class="mb-0 me-5">${
+          duration > 59
+            ? `${(duration / 60).toFixed(0)}:${
+                Math.trunc((duration % 60) / 1.85) === 0
+                  ? `00`
+                  : Math.trunc((duration % 60) / 1.85) < 10
+                  ? "0" + Math.trunc((duration % 60) / 1.85)
+                  : Math.trunc((duration % 60) / 1.85)
+              }`
+            : `${duration} sec`
+        }</p></div>
       </div>`;
       }
       const songReference = document.querySelectorAll(".song");

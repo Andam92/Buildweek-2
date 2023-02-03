@@ -106,11 +106,14 @@ const albumAssign = function (albumName) {
               }</p> </div>
               <div class="col-3 d-flex justify-content-end"> <p class="opacity-75 d-none d-md-block">${
                 trackList[index].duration > 59
-                  ? `${(trackList[index].duration / 60).toFixed(0)} min ${
+                  ? `${(trackList[index].duration / 60).toFixed(0)}:${
                       Math.trunc((trackList[index].duration % 60) / 1.85) === 0
-                        ? ` `
-                        : Math.trunc((trackList[index].duration % 60) / 1.85) +
-                          ` sec`
+                        ? `00`
+                        : Math.trunc((trackList[index].duration % 60) / 1.85) <
+                          10
+                        ? "0" +
+                          Math.trunc((trackList[index].duration % 60) / 1.85)
+                        : Math.trunc((trackList[index].duration % 60) / 1.85)
                     }`
                   : `${trackList[index].duration} sec`
               }</p></div>
